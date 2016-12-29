@@ -1,0 +1,32 @@
+2016-05-22 17:27:16.676197 # on eduroam-169-233-210-202.ucsc.edu: deepdive do spouses_dbpedia
+2016-05-22 17:27:16.676490 # run/20160522/172715.489116000/plan.sh
+2016-05-22 17:27:16.676520 # execution plan for data/spouses_dbpedia
+2016-05-22 17:27:16.676545 
+2016-05-22 17:27:16.676565 : ## process/init/app ##########################################################
+2016-05-22 17:27:16.676583 : # Done: 2016-05-22T17:21:25-0700 (5m 50s ago)
+2016-05-22 17:27:16.676602 : process/init/app/run.sh
+2016-05-22 17:27:16.676624 : mark_done process/init/app
+2016-05-22 17:27:16.676644 : ##############################################################################
+2016-05-22 17:27:16.676665 
+2016-05-22 17:27:16.676687 ## process/init/relation/spouses_dbpedia #####################################
+2016-05-22 17:27:16.676709 # Done: 2016-05-22T17:08:19-0700 (18m 56s ago)
+2016-05-22 17:27:16.676729 process/init/relation/spouses_dbpedia/run.sh
+2016-05-22 17:27:16.676750 ++ dirname process/init/relation/spouses_dbpedia/run.sh
+2016-05-22 17:27:16.676771 + cd process/init/relation/spouses_dbpedia
+2016-05-22 17:27:16.676792 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/spouses_dbpedia
+2016-05-22 17:27:16.676812 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/spouses_dbpedia
+2016-05-22 17:27:16.676832 + deepdive create table spouses_dbpedia
+2016-05-22 17:27:16.781518 NOTICE:  table "spouses_dbpedia" does not exist, skipping
+2016-05-22 17:27:16.788059 CREATE TABLE
+2016-05-22 17:27:16.788901 + deepdive load spouses_dbpedia
+2016-05-22 17:27:16.929682 Loading spouses_dbpedia from input/spouses_dbpedia.csv (csv format)
+2016-05-22 17:27:16.991055 COPY 363
+2016-05-22 17:27:16.998363 mark_done process/init/relation/spouses_dbpedia
+2016-05-22 17:27:17.020944 ##############################################################################
+2016-05-22 17:27:17.021012 
+2016-05-22 17:27:17.021039 ## data/spouses_dbpedia ######################################################
+2016-05-22 17:27:17.021058 # Done: 2016-05-22T17:08:19-0700 (18m 56s ago)
+2016-05-22 17:27:17.021078 # no-op
+2016-05-22 17:27:17.021097 mark_done data/spouses_dbpedia
+2016-05-22 17:27:17.045171 ##############################################################################
+2016-05-22 17:27:17.045224 

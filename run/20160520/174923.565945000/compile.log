@@ -1,0 +1,82 @@
+2016-05-20 17:49:23.635591 ‘run/LATEST.COMPILE/174923.565945000’ -> ‘20160520/174923.565945000’
+2016-05-20 17:49:23.635957 ‘run/RUNNING.COMPILE’ -> ‘20160520/174923.565945000’
+2016-05-20 17:49:23.635989 Parsing DeepDive application (/Users/emerson/Documents/Github/deepdive/examples/Coach_NBA) to generate:
+2016-05-20 17:49:23.636010  run/compiled/schema.json
+2016-05-20 17:49:23.636028   from app.ddlog
+2016-05-20 17:49:24.474153  run/compiled/deepdive.conf
+2016-05-20 17:49:24.474362   from app.ddlog
+2016-05-20 17:49:25.487289   from deepdive.conf
+2016-05-20 17:49:25.496204  run/compiled/deepdive.conf.json
+2016-05-20 17:49:25.873129 Performing sanity checks on run/compiled/deepdive.conf.json:
+2016-05-20 17:49:25.931679  checking if input_extractors_well_defined
+2016-05-20 17:49:25.931790  checking if input_schema_wellformed
+2016-05-20 17:49:25.932332 Normalizing and adding built-in processes to the data flow to compile:
+2016-05-20 17:49:25.933399  run/compiled/config-0.00-init_objects.json
+2016-05-20 17:49:25.954935  run/compiled/config-0.01-parse_calibration.json
+2016-05-20 17:49:25.979853  run/compiled/config-0.01-parse_schema.json
+2016-05-20 17:49:26.016016  run/compiled/config-0.51-add_init_app.json
+2016-05-20 17:49:26.043626  run/compiled/config-0.52-input_loader.json
+2016-05-20 17:49:26.071328  run/compiled/config-1.00-qualified_names.json
+2016-05-20 17:49:26.101521  run/compiled/config-1.01-parse_inference_rules.json
+2016-05-20 17:49:26.145812  run/compiled/config-2.01-grounding.json
+2016-05-20 17:49:26.253737  run/compiled/config-2.02-learning_inference.json
+2016-05-20 17:49:26.285922  run/compiled/config-2.03-calibration_plots.json
+2016-05-20 17:49:26.324738  run/compiled/config-9.98-ensure_init_app.json
+2016-05-20 17:49:26.353949  run/compiled/config-9.99-dependencies.json
+2016-05-20 17:49:26.394315  run/compiled/config.json
+2016-05-20 17:49:26.399487 Validating run/compiled/config.json:
+2016-05-20 17:49:26.531348  checking if compiled_base_relations_have_input_data
+2016-05-20 17:49:26.531417  [WARNING] input/init.sh should load all base relations: articles spouses_dbpedia 
+2016-05-20 17:49:26.531442  checking if compiled_dependencies_correct
+2016-05-20 17:49:26.531462  checking if compiled_input_output_well_defined
+2016-05-20 17:49:26.531481  checking if compiled_output_uniquely_defined
+2016-05-20 17:49:26.531743 Compiling executable code into:
+2016-05-20 17:49:26.532052  run/compiled/code-Makefile.json
+2016-05-20 17:49:26.564728  run/compiled/code-cmd_extractor.json
+2016-05-20 17:49:26.604386  run/compiled/code-dataflow_dot.json
+2016-05-20 17:49:26.635562  run/compiled/code-sql_extractor.json
+2016-05-20 17:49:26.677713  run/compiled/code-tsv_extractor.json
+2016-05-20 17:49:26.709403 Generating files:
+2016-05-20 17:49:26.750958  run/Makefile
+2016-05-20 17:49:26.769341  run/process/init/app/run.sh
+2016-05-20 17:49:26.789924  run/process/init/relation/articles/run.sh
+2016-05-20 17:49:26.821572  run/process/init/relation/spouses_dbpedia/run.sh
+2016-05-20 17:49:26.844762  run/process/ext_has_spouse/run.sh
+2016-05-20 17:49:26.871115  run/process/ext_num_people/run.sh
+2016-05-20 17:49:26.893273  run/process/ext_spouse_candidate/run.sh
+2016-05-20 17:49:26.921886  run/process/ext_spouse_label/run.sh
+2016-05-20 17:49:26.949596  run/process/ext_spouse_label_resolved/run.sh
+2016-05-20 17:49:26.970173  run/process/grounding/variable_id_partition/run.sh
+2016-05-20 17:49:26.994125  run/process/grounding/variable/has_spouse/assign_id/run.sh
+2016-05-20 17:49:27.026551  run/process/grounding/variable_holdout/run.sh
+2016-05-20 17:49:27.047946  run/process/grounding/variable/has_spouse/dump/run.sh
+2016-05-20 17:49:27.073317  run/process/grounding/factor/inf1_imply_has_spouse_has_spouse/materialize/run.sh
+2016-05-20 17:49:27.097578  run/process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize/run.sh
+2016-05-20 17:49:27.122354  run/process/grounding/factor/inf_istrue_has_spouse/materialize/run.sh
+2016-05-20 17:49:27.146827  run/process/grounding/weight_id_partition/run.sh
+2016-05-20 17:49:27.171775  run/process/grounding/global_weight_table/run.sh
+2016-05-20 17:49:27.196523  run/process/grounding/factor/inf1_imply_has_spouse_has_spouse/assign_weight_id/run.sh
+2016-05-20 17:49:27.222021  run/process/grounding/factor/inf_imply_has_spouse_has_spouse/assign_weight_id/run.sh
+2016-05-20 17:49:27.248572  run/process/grounding/factor/inf_istrue_has_spouse/assign_weight_id/run.sh
+2016-05-20 17:49:27.278913  run/process/grounding/factor/inf1_imply_has_spouse_has_spouse/dump/run.sh
+2016-05-20 17:49:27.303868  run/process/grounding/factor/inf_imply_has_spouse_has_spouse/dump/run.sh
+2016-05-20 17:49:27.330551  run/process/grounding/factor/inf_istrue_has_spouse/dump/run.sh
+2016-05-20 17:49:27.353586  run/process/grounding/factor/inf1_imply_has_spouse_has_spouse/dump_weights/run.sh
+2016-05-20 17:49:27.375024  run/process/grounding/factor/inf_imply_has_spouse_has_spouse/dump_weights/run.sh
+2016-05-20 17:49:27.408381  run/process/grounding/factor/inf_istrue_has_spouse/dump_weights/run.sh
+2016-05-20 17:49:27.430407  run/process/grounding/combine_factorgraph/run.sh
+2016-05-20 17:49:27.456192  run/process/model/learning/run.sh
+2016-05-20 17:49:27.479732  run/process/model/inference/run.sh
+2016-05-20 17:49:27.503764  run/process/model/load_weights/run.sh
+2016-05-20 17:49:27.528906  run/process/model/load_probabilities/run.sh
+2016-05-20 17:49:27.554782  run/process/model/calibration/run.sh
+2016-05-20 17:49:27.578992  run/dataflow.dot
+2016-05-20 17:49:27.600587  run/process/ext_person_mention_by_map_person_mention/run.sh
+2016-05-20 17:49:27.626235  run/process/ext_sentences_by_nlp_markup/run.sh
+2016-05-20 17:49:27.649077  run/process/ext_spouse_feature_by_extract_spouse_features/run.sh
+2016-05-20 17:49:27.675875  run/process/ext_spouse_label__0_by_supervise/run.sh
+2016-05-20 17:49:27.700141  run/process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-20 17:49:27.763631 Warning: Could not load "/Users/emerson/local/lib/bundled/graphviz/prefix/bin/../lib/graphviz/libgvplugin_pango.6.dylib" - file not found
+2016-05-20 17:49:27.772953  run/dataflow.svg
+2016-05-20 17:49:27.774853   (file:///Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/run/dataflow.svg)
+2016-05-20 17:49:27.782315 mv: cannot move ‘run/compiled’ to ‘run/compiled~’: Directory not empty

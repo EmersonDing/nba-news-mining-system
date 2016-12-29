@@ -1,0 +1,24 @@
+2016-06-06 11:10:50.534243 # on dhcp-169-233-155-76.cruznet.ucsc.edu: deepdive do articles
+2016-06-06 11:10:50.534925 # run/20160606/111048.708286000/plan.sh
+2016-06-06 11:10:50.534967 # execution plan for data/articles
+2016-06-06 11:10:50.535010 
+2016-06-06 11:10:50.535040 : ## process/init/app ##########################################################
+2016-06-06 11:10:50.535066 : # Done: 2016-05-22T17:21:25-0700 (14d 17h 49m 23s ago)
+2016-06-06 11:10:50.535089 : process/init/app/run.sh
+2016-06-06 11:10:50.535113 : mark_done process/init/app
+2016-06-06 11:10:50.535136 : ##############################################################################
+2016-06-06 11:10:50.535160 
+2016-06-06 11:10:50.535185 ## process/init/relation/articles ############################################
+2016-06-06 11:10:50.535208 # Done: 2016-05-23T12:16:43-0700 (13d 22h 54m 5s ago)
+2016-06-06 11:10:50.535230 process/init/relation/articles/run.sh
+2016-06-06 11:10:50.535279 ++ dirname process/init/relation/articles/run.sh
+2016-06-06 11:10:50.535312 + cd process/init/relation/articles
+2016-06-06 11:10:50.535334 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-06-06 11:10:50.535355 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-06-06 11:10:50.535381 + deepdive create table articles
+2016-06-06 11:10:50.830877 psql: could not connect to server: Connection refused
+2016-06-06 11:10:50.830946 	Is the server running on host "localhost" (::1) and accepting
+2016-06-06 11:10:50.830976 	TCP/IP connections on port 5432?
+2016-06-06 11:10:50.831001 could not connect to server: Connection refused
+2016-06-06 11:10:50.831031 	Is the server running on host "localhost" (127.0.0.1) and accepting
+2016-06-06 11:10:50.831055 	TCP/IP connections on port 5432?

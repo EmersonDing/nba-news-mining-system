@@ -1,0 +1,831 @@
+2016-05-30 23:27:32.065671 # on dhcp-169-233-170-85.cruznet.ucsc.edu: deepdive do process/grounding/variable_id_partition process/grounding/combine_factorgraph
+2016-05-30 23:27:32.066065 # run/20160530/232729.055863000/plan.sh
+2016-05-30 23:27:32.066098 # execution plan for process/grounding/variable_id_partition process/grounding/combine_factorgraph
+2016-05-30 23:27:32.066119 
+2016-05-30 23:27:32.066138 : ## process/init/app ##########################################################
+2016-05-30 23:27:32.066155 : # Done: 2016-05-22T17:21:25-0700 (8d 6h 6m 4s ago)
+2016-05-30 23:27:32.066175 : process/init/app/run.sh
+2016-05-30 23:27:32.066234 : mark_done process/init/app
+2016-05-30 23:27:32.066257 : ##############################################################################
+2016-05-30 23:27:32.066275 
+2016-05-30 23:27:32.066293 : ## process/init/relation/articles ############################################
+2016-05-30 23:27:32.066312 : # Done: 2016-05-23T12:16:43-0700 (7d 11h 10m 46s ago)
+2016-05-30 23:27:32.066330 : process/init/relation/articles/run.sh
+2016-05-30 23:27:32.066350 : mark_done process/init/relation/articles
+2016-05-30 23:27:32.066368 : ##############################################################################
+2016-05-30 23:27:32.066384 
+2016-05-30 23:27:32.066400 : ## data/articles #############################################################
+2016-05-30 23:27:32.066418 : # Done: 2016-05-23T12:16:43-0700 (7d 11h 10m 46s ago)
+2016-05-30 23:27:32.066435 : # no-op
+2016-05-30 23:27:32.066452 : mark_done data/articles
+2016-05-30 23:27:32.066470 : ##############################################################################
+2016-05-30 23:27:32.066488 
+2016-05-30 23:27:32.066505 : ## process/ext_sentences_by_nlp_markup #######################################
+2016-05-30 23:27:32.066522 : # Done: 2016-05-23T15:05:01-0700 (7d 8h 22m 28s ago)
+2016-05-30 23:27:32.066539 : process/ext_sentences_by_nlp_markup/run.sh
+2016-05-30 23:27:32.066557 : mark_done process/ext_sentences_by_nlp_markup
+2016-05-30 23:27:32.066575 : ##############################################################################
+2016-05-30 23:27:32.066593 
+2016-05-30 23:27:32.066631 : ## data/sentences ############################################################
+2016-05-30 23:27:32.066670 : # Done: 2016-05-23T15:05:01-0700 (7d 8h 22m 28s ago)
+2016-05-30 23:27:32.066715 : # no-op
+2016-05-30 23:27:32.066750 : mark_done data/sentences
+2016-05-30 23:27:32.066774 : ##############################################################################
+2016-05-30 23:27:32.066795 
+2016-05-30 23:27:32.066815 : ## process/ext_person_mention_by_map_person_mention ##########################
+2016-05-30 23:27:32.066836 : # Done: 2016-05-23T15:05:52-0700 (7d 8h 21m 37s ago)
+2016-05-30 23:27:32.066857 : process/ext_person_mention_by_map_person_mention/run.sh
+2016-05-30 23:27:32.066878 : mark_done process/ext_person_mention_by_map_person_mention
+2016-05-30 23:27:32.066899 : ##############################################################################
+2016-05-30 23:27:32.066919 
+2016-05-30 23:27:32.066940 : ## data/person_mention #######################################################
+2016-05-30 23:27:32.066962 : # Done: 2016-05-23T15:05:52-0700 (7d 8h 21m 37s ago)
+2016-05-30 23:27:32.066983 : # no-op
+2016-05-30 23:27:32.067004 : mark_done data/person_mention
+2016-05-30 23:27:32.067025 : ##############################################################################
+2016-05-30 23:27:32.067046 
+2016-05-30 23:27:32.067067 : ## process/ext_num_people ####################################################
+2016-05-30 23:27:32.067088 : # Done: 2016-05-23T15:06:46-0700 (7d 8h 20m 43s ago)
+2016-05-30 23:27:32.067109 : process/ext_num_people/run.sh
+2016-05-30 23:27:32.067129 : mark_done process/ext_num_people
+2016-05-30 23:27:32.067149 : ##############################################################################
+2016-05-30 23:27:32.067170 
+2016-05-30 23:27:32.067191 : ## data/num_people ###########################################################
+2016-05-30 23:27:32.067212 : # Done: 2016-05-23T15:06:46-0700 (7d 8h 20m 43s ago)
+2016-05-30 23:27:32.067233 : # no-op
+2016-05-30 23:27:32.067253 : mark_done data/num_people
+2016-05-30 23:27:32.067274 : ##############################################################################
+2016-05-30 23:27:32.067295 
+2016-05-30 23:27:32.067316 : ## process/ext_team_mention_by_map_team_mention ##############################
+2016-05-30 23:27:32.067337 : # Done: 2016-05-23T15:06:19-0700 (7d 8h 21m 10s ago)
+2016-05-30 23:27:32.067358 : process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-30 23:27:32.067378 : mark_done process/ext_team_mention_by_map_team_mention
+2016-05-30 23:27:32.067400 : ##############################################################################
+2016-05-30 23:27:32.067421 
+2016-05-30 23:27:32.067441 : ## data/team_mention #########################################################
+2016-05-30 23:27:32.067463 : # Done: 2016-05-23T15:06:19-0700 (7d 8h 21m 10s ago)
+2016-05-30 23:27:32.067484 : # no-op
+2016-05-30 23:27:32.067505 : mark_done data/team_mention
+2016-05-30 23:27:32.067526 : ##############################################################################
+2016-05-30 23:27:32.067548 
+2016-05-30 23:27:32.067569 : ## process/ext_spouse_candidate ##############################################
+2016-05-30 23:27:32.067590 : # Done: 2016-05-23T15:07:38-0700 (7d 8h 19m 51s ago)
+2016-05-30 23:27:32.067611 : process/ext_spouse_candidate/run.sh
+2016-05-30 23:27:32.067631 : mark_done process/ext_spouse_candidate
+2016-05-30 23:27:32.067652 : ##############################################################################
+2016-05-30 23:27:32.067672 
+2016-05-30 23:27:32.067694 : ## data/spouse_candidate #####################################################
+2016-05-30 23:27:32.067717 : # Done: 2016-05-23T15:07:38-0700 (7d 8h 19m 51s ago)
+2016-05-30 23:27:32.067738 : # no-op
+2016-05-30 23:27:32.067758 : mark_done data/spouse_candidate
+2016-05-30 23:27:32.067779 : ##############################################################################
+2016-05-30 23:27:32.067800 
+2016-05-30 23:27:32.067821 : ## process/ext_spouse_label__0_by_supervise ##################################
+2016-05-30 23:27:32.067841 : # Done: 2016-05-23T15:08:48-0700 (7d 8h 18m 41s ago)
+2016-05-30 23:27:32.067863 : process/ext_spouse_label__0_by_supervise/run.sh
+2016-05-30 23:27:32.067884 : mark_done process/ext_spouse_label__0_by_supervise
+2016-05-30 23:27:32.067904 : ##############################################################################
+2016-05-30 23:27:32.067925 
+2016-05-30 23:27:32.067946 : ## data/spouse_label__0 ######################################################
+2016-05-30 23:27:32.067967 : # Done: 2016-05-23T15:08:48-0700 (7d 8h 18m 41s ago)
+2016-05-30 23:27:32.067988 : # no-op
+2016-05-30 23:27:32.068011 : mark_done data/spouse_label__0
+2016-05-30 23:27:32.068033 : ##############################################################################
+2016-05-30 23:27:32.068054 
+2016-05-30 23:27:32.068075 : ## process/init/relation/spouses_dbpedia #####################################
+2016-05-30 23:27:32.068096 : # Done: 2016-05-23T15:08:28-0700 (7d 8h 19m 1s ago)
+2016-05-30 23:27:32.068117 : process/init/relation/spouses_dbpedia/run.sh
+2016-05-30 23:27:32.068137 : mark_done process/init/relation/spouses_dbpedia
+2016-05-30 23:27:32.068158 : ##############################################################################
+2016-05-30 23:27:32.068179 
+2016-05-30 23:27:32.068200 : ## data/spouses_dbpedia ######################################################
+2016-05-30 23:27:32.068220 : # Done: 2016-05-23T15:08:28-0700 (7d 8h 19m 1s ago)
+2016-05-30 23:27:32.068241 : # no-op
+2016-05-30 23:27:32.068262 : mark_done data/spouses_dbpedia
+2016-05-30 23:27:32.068283 : ##############################################################################
+2016-05-30 23:27:32.068306 
+2016-05-30 23:27:32.068326 : ## process/ext_spouse_label ##################################################
+2016-05-30 23:27:32.068346 : # Done: 2016-05-23T15:08:50-0700 (7d 8h 18m 39s ago)
+2016-05-30 23:27:32.068368 : process/ext_spouse_label/run.sh
+2016-05-30 23:27:32.068389 : mark_done process/ext_spouse_label
+2016-05-30 23:27:32.068410 : ##############################################################################
+2016-05-30 23:27:32.068430 
+2016-05-30 23:27:32.068452 : ## data/spouse_label #########################################################
+2016-05-30 23:27:32.068473 : # Done: 2016-05-23T15:08:50-0700 (7d 8h 18m 39s ago)
+2016-05-30 23:27:32.068493 : # no-op
+2016-05-30 23:27:32.068513 : mark_done data/spouse_label
+2016-05-30 23:27:32.068533 : ##############################################################################
+2016-05-30 23:27:32.068554 
+2016-05-30 23:27:32.068574 : ## process/ext_spouse_label_resolved #########################################
+2016-05-30 23:27:32.068595 : # Done: 2016-05-23T15:08:50-0700 (7d 8h 18m 40s ago)
+2016-05-30 23:27:32.068616 : process/ext_spouse_label_resolved/run.sh
+2016-05-30 23:27:32.068637 : mark_done process/ext_spouse_label_resolved
+2016-05-30 23:27:32.068657 : ##############################################################################
+2016-05-30 23:27:32.068678 
+2016-05-30 23:27:32.068699 : ## data/spouse_label_resolved ################################################
+2016-05-30 23:27:32.068720 : # Done: 2016-05-23T15:08:50-0700 (7d 8h 18m 40s ago)
+2016-05-30 23:27:32.068742 : # no-op
+2016-05-30 23:27:32.068764 : mark_done data/spouse_label_resolved
+2016-05-30 23:27:32.068785 : ##############################################################################
+2016-05-30 23:27:32.068806 
+2016-05-30 23:27:32.068826 : ## process/init/relation/spouses_dbpedia_negative ############################
+2016-05-30 23:27:32.068849 : # Done: 2016-05-25T12:13:43-0700 (5d 11h 13m 47s ago)
+2016-05-30 23:27:32.068870 : process/init/relation/spouses_dbpedia_negative/run.sh
+2016-05-30 23:27:32.068890 : mark_done process/init/relation/spouses_dbpedia_negative
+2016-05-30 23:27:32.068911 : ##############################################################################
+2016-05-30 23:27:32.068932 
+2016-05-30 23:27:32.068953 : ## data/spouses_dbpedia_negative #############################################
+2016-05-30 23:27:32.068973 : # Done: 2016-05-25T12:13:43-0700 (5d 11h 13m 47s ago)
+2016-05-30 23:27:32.068994 : # no-op
+2016-05-30 23:27:32.069014 : mark_done data/spouses_dbpedia_negative
+2016-05-30 23:27:32.069035 : ##############################################################################
+2016-05-30 23:27:32.069056 
+2016-05-30 23:27:32.069077 : ## process/ext_has_spouse ####################################################
+2016-05-30 23:27:32.069099 : # Done: 2016-05-29T12:10:14-0700 (1d 11h 17m 16s ago)
+2016-05-30 23:27:32.069120 : process/ext_has_spouse/run.sh
+2016-05-30 23:27:32.069140 : mark_done process/ext_has_spouse
+2016-05-30 23:27:32.069161 : ##############################################################################
+2016-05-30 23:27:32.069182 
+2016-05-30 23:27:32.069202 : ## data/has_spouse ###########################################################
+2016-05-30 23:27:32.069222 : # Done: 2016-05-29T12:10:14-0700 (1d 11h 17m 16s ago)
+2016-05-30 23:27:32.069243 : # no-op
+2016-05-30 23:27:32.069264 : mark_done data/has_spouse
+2016-05-30 23:27:32.069284 : ##############################################################################
+2016-05-30 23:27:32.069305 
+2016-05-30 23:27:32.069325 ## process/grounding/variable_id_partition ###################################
+2016-05-30 23:27:32.069345 : # Done: 2016-05-30T23:25:27-0700 (2m 3s ago)
+2016-05-30 23:27:32.069366 # Done: 2016-05-30T23:25:27-0700 (2m 2s ago)
+2016-05-30 23:27:32.069386 process/grounding/variable_id_partition/run.sh
+2016-05-30 23:27:32.069407 ++ dirname process/grounding/variable_id_partition/run.sh
+2016-05-30 23:27:32.069428 + cd process/grounding/variable_id_partition
+2016-05-30 23:27:32.069448 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable_id_partition
+2016-05-30 23:27:32.069470 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable_id_partition
+2016-05-30 23:27:32.069491 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:32.069513 + RANGE_BEGIN=0
+2016-05-30 23:27:32.069533 + partition_id_range has_spouse
+2016-05-30 23:27:32.069554 + variableCountTotal=0
+2016-05-30 23:27:32.069582 + read table begin excludeEnd
+2016-05-30 23:27:32.117520 + varPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-05-30 23:27:32.117586 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-05-30 23:27:32.122917 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-05-30 23:27:32.122973 + echo 0
+2016-05-30 23:27:32.130131 + echo 3211
+2016-05-30 23:27:32.137401 + echo 3211
+2016-05-30 23:27:32.144414 + variableCountTotal=3211
+2016-05-30 23:27:32.144471 + read table begin excludeEnd
+2016-05-30 23:27:32.144492 + echo 3211
+2016-05-30 23:27:32.151838 mark_done process/grounding/variable_id_partition
+2016-05-30 23:27:32.175182 ##############################################################################
+2016-05-30 23:27:32.175283 
+2016-05-30 23:27:32.175311 ## process/grounding/variable/has_spouse/assign_id ###########################
+2016-05-30 23:27:32.175421 : # Done: 2016-05-30T23:25:27-0700 (2m 3s ago)
+2016-05-30 23:27:32.175488 # Done: 2016-05-30T23:25:27-0700 (2m 2s ago)
+2016-05-30 23:27:32.175554 process/grounding/variable/has_spouse/assign_id/run.sh
+2016-05-30 23:27:32.181147 ++ dirname process/grounding/variable/has_spouse/assign_id/run.sh
+2016-05-30 23:27:32.184199 + cd process/grounding/variable/has_spouse/assign_id
+2016-05-30 23:27:32.184323 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable/has_spouse/assign_id
+2016-05-30 23:27:32.184427 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable/has_spouse/assign_id
+2016-05-30 23:27:32.184556 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:32.184801 + table=has_spouse
+2016-05-30 23:27:32.184844 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-05-30 23:27:32.185579 ++ cat id_begin
+2016-05-30 23:27:32.193270 + baseId=0
+2016-05-30 23:27:32.193386 + deepdive db assign_sequential_id has_spouse id 0
+2016-05-30 23:27:32.274799 NOTICE:  sequence "dd_seq_has_spouse_id" does not exist, skipping
+2016-05-30 23:27:32.286367 UPDATE 3211
+2016-05-30 23:27:32.288039 mark_done process/grounding/variable/has_spouse/assign_id
+2016-05-30 23:27:32.304256 ##############################################################################
+2016-05-30 23:27:32.304339 
+2016-05-30 23:27:32.304369 ## process/grounding/factor/inf1_istrue_has_spouse/materialize ###############
+2016-05-30 23:27:32.304389 : # Done: 2016-05-30T23:25:28-0700 (2m 2s ago)
+2016-05-30 23:27:32.304492 # Done: 2016-05-30T23:25:28-0700 (2m 1s ago)
+2016-05-30 23:27:32.304553 process/grounding/factor/inf1_istrue_has_spouse/materialize/run.sh
+2016-05-30 23:27:32.313893 ++ dirname process/grounding/factor/inf1_istrue_has_spouse/materialize/run.sh
+2016-05-30 23:27:32.317591 + cd process/grounding/factor/inf1_istrue_has_spouse/materialize
+2016-05-30 23:27:32.317730 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_istrue_has_spouse/materialize
+2016-05-30 23:27:32.317804 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_istrue_has_spouse/materialize
+2016-05-30 23:27:32.317855 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:32.317911 + deepdive create table dd_factors_inf1_istrue_has_spouse as '
+2016-05-30 23:27:32.317960           SELECT R0.id AS "has_spouse.R0.id" 
+2016-05-30 23:27:32.318004           FROM has_spouse R0, person_mention R1, team_mention R2, spouses_dbpedia R3
+2016-05-30 23:27:32.318048         WHERE R1.mention_id = R0.p_id  AND R2.team_id = R0.t_id  AND R3.p_name = R1.mention_text  AND R3.t_name = R2.team_text '
+2016-05-30 23:27:32.554401 SELECT 312
+2016-05-30 23:27:32.555642 + deepdive create table dd_weights_inf1_istrue_has_spouse as 'SELECT true AS "isfixed"
+2016-05-30 23:27:32.555727      , 3 AS "initvalue"
+2016-05-30 23:27:32.555762      , -1 AS "id"'
+2016-05-30 23:27:32.756057 SELECT 1
+2016-05-30 23:27:32.757440 mark_done process/grounding/factor/inf1_istrue_has_spouse/materialize
+2016-05-30 23:27:32.773321 ##############################################################################
+2016-05-30 23:27:32.773380 
+2016-05-30 23:27:32.773401 ## process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize ######
+2016-05-30 23:27:32.773421 : # Done: 2016-05-29T12:22:01-0700 (1d 11h 5m 29s ago)
+2016-05-30 23:27:32.773441 # Done: 2016-05-29T12:22:01-0700 (1d 11h 5m 28s ago)
+2016-05-30 23:27:32.773460 process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize/run.sh
+2016-05-30 23:27:32.779741 ++ dirname process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize/run.sh
+2016-05-30 23:27:32.782649 + cd process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize
+2016-05-30 23:27:32.782749 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize
+2016-05-30 23:27:32.782794 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize
+2016-05-30 23:27:32.782904 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:32.782997 + deepdive create table dd_factors_inf_imply_has_spouse_has_spouse as '
+2016-05-30 23:27:32.783034           SELECT R0.id AS "has_spouse.R0.id" , R1.id AS "has_spouse.R1.id" 
+2016-05-30 23:27:32.783058           FROM has_spouse R0, has_spouse R1, spouse_candidate R2, spouse_candidate R3, spouse_candidate R4
+2016-05-30 23:27:32.783081         WHERE R1.p_id = R0.p_id  AND R1.t_id = R0.t_id  AND R2.p_id = R0.p_id  AND R2.t_id = R0.t_id  AND R3.t_id = R0.t_id  AND R4.p_id = R0.p_id '
+2016-05-30 23:27:33.024125 SELECT 11115
+2016-05-30 23:27:33.025033 + deepdive create table dd_weights_inf_imply_has_spouse_has_spouse as 'SELECT true AS "isfixed"
+2016-05-30 23:27:33.025109      , -1 AS "initvalue"
+2016-05-30 23:27:33.025146      , -1 AS "id"'
+2016-05-30 23:27:33.221357 SELECT 1
+2016-05-30 23:27:33.222690 mark_done process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize
+2016-05-30 23:27:33.239262 ##############################################################################
+2016-05-30 23:27:33.239340 
+2016-05-30 23:27:33.239361 : ## process/ext_spouse_feature_by_extract_spouse_features #####################
+2016-05-30 23:27:33.239382 : # Done: 2016-05-23T15:08:09-0700 (7d 8h 19m 21s ago)
+2016-05-30 23:27:33.239403 : process/ext_spouse_feature_by_extract_spouse_features/run.sh
+2016-05-30 23:27:33.239423 : mark_done process/ext_spouse_feature_by_extract_spouse_features
+2016-05-30 23:27:33.239442 : ##############################################################################
+2016-05-30 23:27:33.239496 
+2016-05-30 23:27:33.239522 : ## data/spouse_feature #######################################################
+2016-05-30 23:27:33.239543 : # Done: 2016-05-23T15:08:09-0700 (7d 8h 19m 21s ago)
+2016-05-30 23:27:33.239565 : # no-op
+2016-05-30 23:27:33.239629 : mark_done data/spouse_feature
+2016-05-30 23:27:33.239659 : ##############################################################################
+2016-05-30 23:27:33.239690 
+2016-05-30 23:27:33.239713 ## process/grounding/factor/inf_istrue_has_spouse/materialize ################
+2016-05-30 23:27:33.239732 : # Done: 2016-05-29T12:22:02-0700 (1d 11h 5m 28s ago)
+2016-05-30 23:27:33.239751 # Done: 2016-05-29T12:22:02-0700 (1d 11h 5m 27s ago)
+2016-05-30 23:27:33.239771 process/grounding/factor/inf_istrue_has_spouse/materialize/run.sh
+2016-05-30 23:27:33.248585 ++ dirname process/grounding/factor/inf_istrue_has_spouse/materialize/run.sh
+2016-05-30 23:27:33.252405 + cd process/grounding/factor/inf_istrue_has_spouse/materialize
+2016-05-30 23:27:33.252536 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_istrue_has_spouse/materialize
+2016-05-30 23:27:33.252583 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_istrue_has_spouse/materialize
+2016-05-30 23:27:33.252636 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:33.252703 + deepdive create table dd_factors_inf_istrue_has_spouse as '
+2016-05-30 23:27:33.252734           SELECT R0.id AS "has_spouse.R0.id" , R2.feature AS "dd_weight_column_0" 
+2016-05-30 23:27:33.252756           FROM has_spouse R0, spouse_candidate R1, spouse_feature R2
+2016-05-30 23:27:33.252778         WHERE R1.p_id = R0.p_id  AND R1.t_id = R0.t_id  AND R2.p_id = R0.p_id  AND R2.t_id = R0.t_id '
+2016-05-30 23:27:34.054783 SELECT 194760
+2016-05-30 23:27:34.055890 + deepdive create table dd_weights_inf_istrue_has_spouse as 'SELECT "dd_weight_column_0"
+2016-05-30 23:27:34.055965      , false AS "isfixed"
+2016-05-30 23:27:34.055992      , 0 AS "initvalue"
+2016-05-30 23:27:34.056011      , -1 AS "id"
+2016-05-30 23:27:34.056039 FROM "dd_factors_inf_istrue_has_spouse"
+2016-05-30 23:27:34.056058 
+2016-05-30 23:27:34.056076 
+2016-05-30 23:27:34.056100 GROUP BY "dd_weight_column_0"'
+2016-05-30 23:27:34.437605 SELECT 72261
+2016-05-30 23:27:34.439140 mark_done process/grounding/factor/inf_istrue_has_spouse/materialize
+2016-05-30 23:27:34.455395 ##############################################################################
+2016-05-30 23:27:34.455454 
+2016-05-30 23:27:34.455474 ## process/grounding/weight_id_partition #####################################
+2016-05-30 23:27:34.455496 : # Done: 2016-05-29T12:22:02-0700 (1d 11h 5m 28s ago)
+2016-05-30 23:27:34.455516 # Done: 2016-05-29T12:22:02-0700 (1d 11h 5m 27s ago)
+2016-05-30 23:27:34.455535 process/grounding/weight_id_partition/run.sh
+2016-05-30 23:27:34.464523 ++ dirname process/grounding/weight_id_partition/run.sh
+2016-05-30 23:27:34.467604 + cd process/grounding/weight_id_partition
+2016-05-30 23:27:34.467702 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/weight_id_partition
+2016-05-30 23:27:34.467731 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/weight_id_partition
+2016-05-30 23:27:34.467779 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:34.468431 + RANGE_BEGIN=0
+2016-05-30 23:27:34.468478 + RANGE_STEP=1
+2016-05-30 23:27:34.468514 + partition_id_range dd_weights_inf1_istrue_has_spouse dd_weights_inf_imply_has_spouse_has_spouse dd_weights_inf_istrue_has_spouse
+2016-05-30 23:27:34.468659 + weightsCountTotal=0
+2016-05-30 23:27:34.468705 + read table begin excludeEnd
+2016-05-30 23:27:34.573929 + factor=inf1_istrue_has_spouse
+2016-05-30 23:27:34.574013 + facPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse
+2016-05-30 23:27:34.574052 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse
+2016-05-30 23:27:34.578270 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse
+2016-05-30 23:27:34.578342 + echo 0
+2016-05-30 23:27:34.580293 + echo 1
+2016-05-30 23:27:34.584838 + echo 1
+2016-05-30 23:27:34.590554 + weightsCountTotal=1
+2016-05-30 23:27:34.590634 + read table begin excludeEnd
+2016-05-30 23:27:34.662864 + factor=inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:34.662934 + facPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:34.662965 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:34.666476 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:34.666590 + echo 1
+2016-05-30 23:27:34.669829 + echo 2
+2016-05-30 23:27:34.675498 + echo 1
+2016-05-30 23:27:34.681176 + weightsCountTotal=2
+2016-05-30 23:27:34.681244 + read table begin excludeEnd
+2016-05-30 23:27:34.764329 + factor=inf_istrue_has_spouse
+2016-05-30 23:27:34.764412 + facPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse
+2016-05-30 23:27:34.764452 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse
+2016-05-30 23:27:34.768089 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse
+2016-05-30 23:27:34.768143 + echo 2
+2016-05-30 23:27:34.770493 + echo 72263
+2016-05-30 23:27:34.782005 + echo 72261
+2016-05-30 23:27:34.786977 + weightsCountTotal=72263
+2016-05-30 23:27:34.787036 + read table begin excludeEnd
+2016-05-30 23:27:34.787062 + echo 72263
+2016-05-30 23:27:34.794067 mark_done process/grounding/weight_id_partition
+2016-05-30 23:27:34.817023 ##############################################################################
+2016-05-30 23:27:34.817074 
+2016-05-30 23:27:34.817093 ## process/grounding/factor/inf1_istrue_has_spouse/assign_weight_id ##########
+2016-05-30 23:27:34.817114 : # Done: 2016-05-29T12:22:02-0700 (1d 11h 5m 28s ago)
+2016-05-30 23:27:34.817135 # Done: 2016-05-29T12:22:02-0700 (1d 11h 5m 27s ago)
+2016-05-30 23:27:34.817155 process/grounding/factor/inf1_istrue_has_spouse/assign_weight_id/run.sh
+2016-05-30 23:27:34.828667 ++ dirname process/grounding/factor/inf1_istrue_has_spouse/assign_weight_id/run.sh
+2016-05-30 23:27:34.831790 + cd process/grounding/factor/inf1_istrue_has_spouse/assign_weight_id
+2016-05-30 23:27:34.831870 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_istrue_has_spouse/assign_weight_id
+2016-05-30 23:27:34.831923 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_istrue_has_spouse/assign_weight_id
+2016-05-30 23:27:34.831977 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:34.832018 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse
+2016-05-30 23:27:34.832662 ++ cat weights_id_begin
+2016-05-30 23:27:34.836207 + baseId=0
+2016-05-30 23:27:34.836267 + inc=1
+2016-05-30 23:27:34.836284 + deepdive db assign_sequential_id dd_weights_inf1_istrue_has_spouse id 0 1
+2016-05-30 23:27:34.920455 NOTICE:  sequence "dd_seq_dd_weights_inf1_istrue_has_spouse_id" does not exist, skipping
+2016-05-30 23:27:34.925169 UPDATE 1
+2016-05-30 23:27:34.926773 mark_done process/grounding/factor/inf1_istrue_has_spouse/assign_weight_id
+2016-05-30 23:27:34.942659 ##############################################################################
+2016-05-30 23:27:34.942711 
+2016-05-30 23:27:34.942729 ## process/grounding/factor/inf1_istrue_has_spouse/dump ######################
+2016-05-30 23:27:34.942749 : # Done: 2016-05-29T12:22:03-0700 (1d 11h 5m 27s ago)
+2016-05-30 23:27:34.942770 # Done: 2016-05-29T12:22:03-0700 (1d 11h 5m 26s ago)
+2016-05-30 23:27:34.942790 process/grounding/factor/inf1_istrue_has_spouse/dump/run.sh
+2016-05-30 23:27:34.952014 ++ dirname process/grounding/factor/inf1_istrue_has_spouse/dump/run.sh
+2016-05-30 23:27:34.958536 + cd process/grounding/factor/inf1_istrue_has_spouse/dump
+2016-05-30 23:27:34.958738 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_istrue_has_spouse/dump
+2016-05-30 23:27:34.958835 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_istrue_has_spouse/dump
+2016-05-30 23:27:34.958891 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:34.958934 + facPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse
+2016-05-30 23:27:34.958974 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse
+2016-05-30 23:27:34.963583 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse
+2016-05-30 23:27:34.963703 + find . '(' -name 'factors.part-*.bin.bz2' -o -name 'nfactors.part-*' -o -name 'nedges.part-*' ')' -exec rm -rf '{}' +
+2016-05-30 23:27:34.992302 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:34.992352 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:34.992373 + export DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:34.992394 + DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:34.992438 + deepdive compute execute 'input_sql=SELECT "weights"."id" AS "weight_id"
+2016-05-30 23:27:34.992462      , "factors"."has_spouse.R0.id"
+2016-05-30 23:27:34.992485 FROM "dd_factors_inf1_istrue_has_spouse" "factors", "dd_weights_inf1_istrue_has_spouse" "weights"' 'command=
+2016-05-30 23:27:34.992508                     # also record the factor count
+2016-05-30 23:27:34.992530                     tee >(wc -l >nfactors.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}) |
+2016-05-30 23:27:34.992552                     format_converter factor /dev/stdin >(pbzip2 >factors.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}.bin.bz2) 0 1 original 1 |
+2016-05-30 23:27:34.992574                     # and the edge count
+2016-05-30 23:27:34.992595                     tee nedges.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}
+2016-05-30 23:27:34.992617                 ' output_relation=
+2016-05-30 23:27:35.097768 Executing with the following configuration:
+2016-05-30 23:27:35.097835  DEEPDIVE_NUM_PROCESSES=3
+2016-05-30 23:27:35.097863  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-30 23:27:35.097889  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-30 23:27:35.250249 unloading to feed_processes-1: 'SELECT "weights"."id" AS "weight_id"
+2016-05-30 23:27:35.250302      , "factors"."has_spouse.R0.id"
+2016-05-30 23:27:35.250327 FROM "dd_factors_inf1_istrue_has_spouse" "factors", "dd_weights_inf1_istrue_has_spouse" "weights"'
+2016-05-30 23:27:35.391329 0
+2016-05-30 23:27:35.391425 0
+2016-05-30 23:27:35.391502 312
+2016-05-30 23:27:36.339247 mark_done process/grounding/factor/inf1_istrue_has_spouse/dump
+2016-05-30 23:27:36.363094 ##############################################################################
+2016-05-30 23:27:36.363146 
+2016-05-30 23:27:36.363163 ## process/grounding/factor/inf1_istrue_has_spouse/dump_weights ##############
+2016-05-30 23:27:36.363183 : # Done: 2016-05-29T12:22:04-0700 (1d 11h 5m 26s ago)
+2016-05-30 23:27:36.363203 # Done: 2016-05-29T12:22:04-0700 (1d 11h 5m 25s ago)
+2016-05-30 23:27:36.363222 process/grounding/factor/inf1_istrue_has_spouse/dump_weights/run.sh
+2016-05-30 23:27:36.372994 ++ dirname process/grounding/factor/inf1_istrue_has_spouse/dump_weights/run.sh
+2016-05-30 23:27:36.380560 + cd process/grounding/factor/inf1_istrue_has_spouse/dump_weights
+2016-05-30 23:27:36.380725 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_istrue_has_spouse/dump_weights
+2016-05-30 23:27:36.380782 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_istrue_has_spouse/dump_weights
+2016-05-30 23:27:36.380812 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:36.380835 + facPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse
+2016-05-30 23:27:36.380880 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse
+2016-05-30 23:27:36.384680 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse
+2016-05-30 23:27:36.384779 + find . '(' -name 'weights.part-*.bin.bz2' ')' -exec rm -rf '{}' +
+2016-05-30 23:27:36.393105 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:36.393155 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:36.393171 + export DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:36.393189 + DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:36.393210 + reuseFlag=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/weights.reuse
+2016-05-30 23:27:36.393979 ++ [[ -e /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/weights.reuse ]]
+2016-05-30 23:27:36.394031 ++ echo 'SELECT "id"
+2016-05-30 23:27:36.394053      , CASE WHEN isfixed THEN 1 ELSE 0 END
+2016-05-30 23:27:36.394075      , COALESCE(initvalue, 0)
+2016-05-30 23:27:36.394094 FROM "dd_weights_inf1_istrue_has_spouse"'
+2016-05-30 23:27:36.394319 + deepdive compute execute 'input_sql=SELECT "id"
+2016-05-30 23:27:36.394355      , CASE WHEN isfixed THEN 1 ELSE 0 END
+2016-05-30 23:27:36.394377      , COALESCE(initvalue, 0)
+2016-05-30 23:27:36.394398 FROM "dd_weights_inf1_istrue_has_spouse"' 'command=
+2016-05-30 23:27:36.394434                     format_converter weight /dev/stdin >(pbzip2 >weights.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}.bin.bz2)
+2016-05-30 23:27:36.394460                 ' output_relation=
+2016-05-30 23:27:36.479261 Executing with the following configuration:
+2016-05-30 23:27:36.479312  DEEPDIVE_NUM_PROCESSES=3
+2016-05-30 23:27:36.479336  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-30 23:27:36.479357  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-30 23:27:36.590567 unloading to feed_processes-1: 'SELECT "id"
+2016-05-30 23:27:36.590628      , CASE WHEN isfixed THEN 1 ELSE 0 END
+2016-05-30 23:27:36.590654      , COALESCE(initvalue, 0)
+2016-05-30 23:27:36.590679 FROM "dd_weights_inf1_istrue_has_spouse"'
+2016-05-30 23:27:36.648344 0
+2016-05-30 23:27:36.648417 1
+2016-05-30 23:27:36.648447 0
+2016-05-30 23:27:36.656827 mark_done process/grounding/factor/inf1_istrue_has_spouse/dump_weights
+2016-05-30 23:27:36.673329 ##############################################################################
+2016-05-30 23:27:36.673389 
+2016-05-30 23:27:36.673407 ## process/grounding/factor/inf_imply_has_spouse_has_spouse/assign_weight_id #
+2016-05-30 23:27:36.673427 : # Done: 2016-05-29T12:22:06-0700 (1d 11h 5m 24s ago)
+2016-05-30 23:27:36.673448 # Done: 2016-05-29T12:22:06-0700 (1d 11h 5m 23s ago)
+2016-05-30 23:27:36.673485 process/grounding/factor/inf_imply_has_spouse_has_spouse/assign_weight_id/run.sh
+2016-05-30 23:27:36.684577 ++ dirname process/grounding/factor/inf_imply_has_spouse_has_spouse/assign_weight_id/run.sh
+2016-05-30 23:27:36.687943 + cd process/grounding/factor/inf_imply_has_spouse_has_spouse/assign_weight_id
+2016-05-30 23:27:36.688092 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_imply_has_spouse_has_spouse/assign_weight_id
+2016-05-30 23:27:36.688149 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_imply_has_spouse_has_spouse/assign_weight_id
+2016-05-30 23:27:36.688176 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:36.688223 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:36.690339 ++ cat weights_id_begin
+2016-05-30 23:27:36.693908 + baseId=1
+2016-05-30 23:27:36.693962 + inc=1
+2016-05-30 23:27:36.693985 + deepdive db assign_sequential_id dd_weights_inf_imply_has_spouse_has_spouse id 1 1
+2016-05-30 23:27:36.779226 NOTICE:  sequence "dd_seq_dd_weights_inf_imply_has_spouse_has_spouse_id" does not exist, skipping
+2016-05-30 23:27:36.783918 UPDATE 1
+2016-05-30 23:27:36.785467 mark_done process/grounding/factor/inf_imply_has_spouse_has_spouse/assign_weight_id
+2016-05-30 23:27:36.800796 ##############################################################################
+2016-05-30 23:27:36.800865 
+2016-05-30 23:27:36.800885 ## process/grounding/factor/inf_imply_has_spouse_has_spouse/dump #############
+2016-05-30 23:27:36.800905 : # Done: 2016-05-29T12:22:06-0700 (1d 11h 5m 24s ago)
+2016-05-30 23:27:36.800925 # Done: 2016-05-29T12:22:06-0700 (1d 11h 5m 23s ago)
+2016-05-30 23:27:36.800944 process/grounding/factor/inf_imply_has_spouse_has_spouse/dump/run.sh
+2016-05-30 23:27:36.822408 ++ dirname process/grounding/factor/inf_imply_has_spouse_has_spouse/dump/run.sh
+2016-05-30 23:27:36.825966 + cd process/grounding/factor/inf_imply_has_spouse_has_spouse/dump
+2016-05-30 23:27:36.826133 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_imply_has_spouse_has_spouse/dump
+2016-05-30 23:27:36.826186 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_imply_has_spouse_has_spouse/dump
+2016-05-30 23:27:36.826213 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:36.826260 + facPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:36.826288 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:36.831124 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:36.831220 + find . '(' -name 'factors.part-*.bin.bz2' -o -name 'nfactors.part-*' -o -name 'nedges.part-*' ')' -exec rm -rf '{}' +
+2016-05-30 23:27:36.841935 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:36.842137 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:36.842172 + export DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:36.842197 + DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:36.842268 + deepdive compute execute 'input_sql=SELECT "weights"."id" AS "weight_id"
+2016-05-30 23:27:36.842293      , "factors"."has_spouse.R0.id"
+2016-05-30 23:27:36.842314      , "factors"."has_spouse.R0.id"
+2016-05-30 23:27:36.842338 FROM "dd_factors_inf_imply_has_spouse_has_spouse" "factors", "dd_weights_inf_imply_has_spouse_has_spouse" "weights"' 'command=
+2016-05-30 23:27:36.842360                     # also record the factor count
+2016-05-30 23:27:36.842381                     tee >(wc -l >nfactors.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}) |
+2016-05-30 23:27:36.842401                     format_converter factor /dev/stdin >(pbzip2 >factors.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}.bin.bz2) 0 2 original 1 1 |
+2016-05-30 23:27:36.842419                     # and the edge count
+2016-05-30 23:27:36.842455                     tee nedges.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}
+2016-05-30 23:27:36.842486                 ' output_relation=
+2016-05-30 23:27:36.922023 Executing with the following configuration:
+2016-05-30 23:27:36.922075  DEEPDIVE_NUM_PROCESSES=3
+2016-05-30 23:27:36.922092  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-30 23:27:36.922112  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-30 23:27:37.037672 unloading to feed_processes-1: 'SELECT "weights"."id" AS "weight_id"
+2016-05-30 23:27:37.037734      , "factors"."has_spouse.R0.id"
+2016-05-30 23:27:37.037757      , "factors"."has_spouse.R0.id"
+2016-05-30 23:27:37.037780 FROM "dd_factors_inf_imply_has_spouse_has_spouse" "factors", "dd_weights_inf_imply_has_spouse_has_spouse" "weights"'
+2016-05-30 23:27:37.136088 2048
+2016-05-30 23:27:37.136163 10426
+2016-05-30 23:27:37.136714 9756
+2016-05-30 23:27:37.158352 mark_done process/grounding/factor/inf_imply_has_spouse_has_spouse/dump
+2016-05-30 23:27:37.180381 ##############################################################################
+2016-05-30 23:27:37.180452 
+2016-05-30 23:27:37.180472 ## process/grounding/factor/inf_imply_has_spouse_has_spouse/dump_weights #####
+2016-05-30 23:27:37.180494 : # Done: 2016-05-29T12:22:06-0700 (1d 11h 5m 24s ago)
+2016-05-30 23:27:37.180515 # Done: 2016-05-29T12:22:06-0700 (1d 11h 5m 23s ago)
+2016-05-30 23:27:37.180535 process/grounding/factor/inf_imply_has_spouse_has_spouse/dump_weights/run.sh
+2016-05-30 23:27:37.193270 ++ dirname process/grounding/factor/inf_imply_has_spouse_has_spouse/dump_weights/run.sh
+2016-05-30 23:27:37.196690 + cd process/grounding/factor/inf_imply_has_spouse_has_spouse/dump_weights
+2016-05-30 23:27:37.196857 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_imply_has_spouse_has_spouse/dump_weights
+2016-05-30 23:27:37.196901 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_imply_has_spouse_has_spouse/dump_weights
+2016-05-30 23:27:37.196956 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:37.196992 + facPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:37.197035 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:37.200634 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:37.200711 + find . '(' -name 'weights.part-*.bin.bz2' ')' -exec rm -rf '{}' +
+2016-05-30 23:27:37.207777 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:37.207834 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:37.207850 + export DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:37.207870 + DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:37.207892 + reuseFlag=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/weights.reuse
+2016-05-30 23:27:37.208943 ++ [[ -e /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/weights.reuse ]]
+2016-05-30 23:27:37.209003 ++ echo 'SELECT "id"
+2016-05-30 23:27:37.209028      , CASE WHEN isfixed THEN 1 ELSE 0 END
+2016-05-30 23:27:37.209051      , COALESCE(initvalue, 0)
+2016-05-30 23:27:37.209072 FROM "dd_weights_inf_imply_has_spouse_has_spouse"'
+2016-05-30 23:27:37.209331 + deepdive compute execute 'input_sql=SELECT "id"
+2016-05-30 23:27:37.209368      , CASE WHEN isfixed THEN 1 ELSE 0 END
+2016-05-30 23:27:37.209391      , COALESCE(initvalue, 0)
+2016-05-30 23:27:37.209411 FROM "dd_weights_inf_imply_has_spouse_has_spouse"' 'command=
+2016-05-30 23:27:37.209430                     format_converter weight /dev/stdin >(pbzip2 >weights.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}.bin.bz2)
+2016-05-30 23:27:37.209452                 ' output_relation=
+2016-05-30 23:27:37.287614 Executing with the following configuration:
+2016-05-30 23:27:37.287671  DEEPDIVE_NUM_PROCESSES=3
+2016-05-30 23:27:37.287695  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-30 23:27:37.287718  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-30 23:27:37.400944 unloading to feed_processes-1: 'SELECT "id"
+2016-05-30 23:27:37.401002      , CASE WHEN isfixed THEN 1 ELSE 0 END
+2016-05-30 23:27:37.401029      , COALESCE(initvalue, 0)
+2016-05-30 23:27:37.401055 FROM "dd_weights_inf_imply_has_spouse_has_spouse"'
+2016-05-30 23:27:37.469174 0
+2016-05-30 23:27:37.469241 0
+2016-05-30 23:27:37.469374 1
+2016-05-30 23:27:37.475821 mark_done process/grounding/factor/inf_imply_has_spouse_has_spouse/dump_weights
+2016-05-30 23:27:37.491835 ##############################################################################
+2016-05-30 23:27:37.491913 
+2016-05-30 23:27:37.491939 ## process/grounding/factor/inf_istrue_has_spouse/assign_weight_id ###########
+2016-05-30 23:27:37.491961 : # Done: 2016-05-29T12:22:07-0700 (1d 11h 5m 23s ago)
+2016-05-30 23:27:37.491983 # Done: 2016-05-29T12:22:07-0700 (1d 11h 5m 22s ago)
+2016-05-30 23:27:37.492003 process/grounding/factor/inf_istrue_has_spouse/assign_weight_id/run.sh
+2016-05-30 23:27:37.510019 ++ dirname process/grounding/factor/inf_istrue_has_spouse/assign_weight_id/run.sh
+2016-05-30 23:27:37.514627 + cd process/grounding/factor/inf_istrue_has_spouse/assign_weight_id
+2016-05-30 23:27:37.514803 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_istrue_has_spouse/assign_weight_id
+2016-05-30 23:27:37.514850 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_istrue_has_spouse/assign_weight_id
+2016-05-30 23:27:37.514896 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:37.514933 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse
+2016-05-30 23:27:37.515829 ++ cat weights_id_begin
+2016-05-30 23:27:37.519876 + baseId=2
+2016-05-30 23:27:37.519989 + inc=1
+2016-05-30 23:27:37.520090 + deepdive db assign_sequential_id dd_weights_inf_istrue_has_spouse id 2 1
+2016-05-30 23:27:37.605616 NOTICE:  sequence "dd_seq_dd_weights_inf_istrue_has_spouse_id" does not exist, skipping
+2016-05-30 23:27:37.828145 UPDATE 72261
+2016-05-30 23:27:37.829814 mark_done process/grounding/factor/inf_istrue_has_spouse/assign_weight_id
+2016-05-30 23:27:37.846974 ##############################################################################
+2016-05-30 23:27:37.847027 
+2016-05-30 23:27:37.847048 ## process/grounding/factor/inf_istrue_has_spouse/dump #######################
+2016-05-30 23:27:37.847068 : # Done: 2016-05-29T12:22:08-0700 (1d 11h 5m 22s ago)
+2016-05-30 23:27:37.847089 # Done: 2016-05-29T12:22:08-0700 (1d 11h 5m 21s ago)
+2016-05-30 23:27:37.847107 process/grounding/factor/inf_istrue_has_spouse/dump/run.sh
+2016-05-30 23:27:37.867034 ++ dirname process/grounding/factor/inf_istrue_has_spouse/dump/run.sh
+2016-05-30 23:27:37.873984 + cd process/grounding/factor/inf_istrue_has_spouse/dump
+2016-05-30 23:27:37.874150 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_istrue_has_spouse/dump
+2016-05-30 23:27:37.874195 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_istrue_has_spouse/dump
+2016-05-30 23:27:37.874246 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:37.874289 + facPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse
+2016-05-30 23:27:37.874328 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse
+2016-05-30 23:27:37.878489 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse
+2016-05-30 23:27:37.878585 + find . '(' -name 'factors.part-*.bin.bz2' -o -name 'nfactors.part-*' -o -name 'nedges.part-*' ')' -exec rm -rf '{}' +
+2016-05-30 23:27:37.889274 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:37.889382 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:37.889470 + export DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:37.889527 + DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:37.889735 + deepdive compute execute 'input_sql=SELECT "weights"."id" AS "weight_id"
+2016-05-30 23:27:37.889893      , "factors"."has_spouse.R0.id"
+2016-05-30 23:27:37.889990 FROM "dd_factors_inf_istrue_has_spouse" "factors", "dd_weights_inf_istrue_has_spouse" "weights"
+2016-05-30 23:27:37.890048 
+2016-05-30 23:27:37.890102 WHERE "factors"."dd_weight_column_0" = "weights"."dd_weight_column_0"' 'command=
+2016-05-30 23:27:37.890134                     # also record the factor count
+2016-05-30 23:27:37.890157                     tee >(wc -l >nfactors.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}) |
+2016-05-30 23:27:37.890179                     format_converter factor /dev/stdin >(pbzip2 >factors.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}.bin.bz2) 0 1 original 1 |
+2016-05-30 23:27:37.890202                     # and the edge count
+2016-05-30 23:27:37.890236                     tee nedges.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}
+2016-05-30 23:27:37.890276                 ' output_relation=
+2016-05-30 23:27:37.973447 Executing with the following configuration:
+2016-05-30 23:27:37.973504  DEEPDIVE_NUM_PROCESSES=3
+2016-05-30 23:27:37.973529  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-30 23:27:37.973552  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-30 23:27:38.087664 unloading to feed_processes-1: 'SELECT "weights"."id" AS "weight_id"
+2016-05-30 23:27:38.087728      , "factors"."has_spouse.R0.id"
+2016-05-30 23:27:38.087755 FROM "dd_factors_inf_istrue_has_spouse" "factors", "dd_weights_inf_istrue_has_spouse" "weights"
+2016-05-30 23:27:38.087779 
+2016-05-30 23:27:38.087809 WHERE "factors"."dd_weight_column_0" = "weights"."dd_weight_column_0"'
+2016-05-30 23:27:38.936804 57194
+2016-05-30 23:27:38.936880 61160
+2016-05-30 23:27:38.937566 76406
+2016-05-30 23:27:39.020985 mark_done process/grounding/factor/inf_istrue_has_spouse/dump
+2016-05-30 23:27:39.046530 ##############################################################################
+2016-05-30 23:27:39.046603 
+2016-05-30 23:27:39.046638 ## process/grounding/factor/inf_istrue_has_spouse/dump_weights ###############
+2016-05-30 23:27:39.046664 : # Done: 2016-05-29T12:22:08-0700 (1d 11h 5m 22s ago)
+2016-05-30 23:27:39.046689 # Done: 2016-05-29T12:22:08-0700 (1d 11h 5m 21s ago)
+2016-05-30 23:27:39.046712 process/grounding/factor/inf_istrue_has_spouse/dump_weights/run.sh
+2016-05-30 23:27:39.065175 ++ dirname process/grounding/factor/inf_istrue_has_spouse/dump_weights/run.sh
+2016-05-30 23:27:39.072235 + cd process/grounding/factor/inf_istrue_has_spouse/dump_weights
+2016-05-30 23:27:39.072676 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_istrue_has_spouse/dump_weights
+2016-05-30 23:27:39.073162 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_istrue_has_spouse/dump_weights
+2016-05-30 23:27:39.073197 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:39.073225 + facPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse
+2016-05-30 23:27:39.073248 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse
+2016-05-30 23:27:39.083818 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse
+2016-05-30 23:27:39.084054 + find . '(' -name 'weights.part-*.bin.bz2' ')' -exec rm -rf '{}' +
+2016-05-30 23:27:39.106417 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:39.106647 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:39.106717 + export DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:39.106765 + DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:39.106797 + reuseFlag=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/weights.reuse
+2016-05-30 23:27:39.110593 ++ [[ -e /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/weights.reuse ]]
+2016-05-30 23:27:39.110760 ++ echo 'SELECT "id"
+2016-05-30 23:27:39.110785      , CASE WHEN isfixed THEN 1 ELSE 0 END
+2016-05-30 23:27:39.110807      , COALESCE(initvalue, 0)
+2016-05-30 23:27:39.110876 FROM "dd_weights_inf_istrue_has_spouse"'
+2016-05-30 23:27:39.111412 + deepdive compute execute 'input_sql=SELECT "id"
+2016-05-30 23:27:39.111773      , CASE WHEN isfixed THEN 1 ELSE 0 END
+2016-05-30 23:27:39.112174      , COALESCE(initvalue, 0)
+2016-05-30 23:27:39.112551 FROM "dd_weights_inf_istrue_has_spouse"' 'command=
+2016-05-30 23:27:39.112641                     format_converter weight /dev/stdin >(pbzip2 >weights.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}.bin.bz2)
+2016-05-30 23:27:39.112694                 ' output_relation=
+2016-05-30 23:27:39.247078 Executing with the following configuration:
+2016-05-30 23:27:39.247169  DEEPDIVE_NUM_PROCESSES=3
+2016-05-30 23:27:39.247199  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-30 23:27:39.247275  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-30 23:27:39.384254 unloading to feed_processes-1: 'SELECT "id"
+2016-05-30 23:27:39.384306      , CASE WHEN isfixed THEN 1 ELSE 0 END
+2016-05-30 23:27:39.384332      , COALESCE(initvalue, 0)
+2016-05-30 23:27:39.384355 FROM "dd_weights_inf_istrue_has_spouse"'
+2016-05-30 23:27:39.508369 21701
+2016-05-30 23:27:39.508450 22927
+2016-05-30 23:27:39.509136 27633
+2016-05-30 23:27:39.518653 mark_done process/grounding/factor/inf_istrue_has_spouse/dump_weights
+2016-05-30 23:27:39.554870 ##############################################################################
+2016-05-30 23:27:39.554927 
+2016-05-30 23:27:39.554946 ## process/grounding/global_weight_table #####################################
+2016-05-30 23:27:39.554967 : # Done: 2016-05-29T12:22:08-0700 (1d 11h 5m 22s ago)
+2016-05-30 23:27:39.554988 # Done: 2016-05-29T12:22:08-0700 (1d 11h 5m 21s ago)
+2016-05-30 23:27:39.555033 process/grounding/global_weight_table/run.sh
+2016-05-30 23:27:39.567438 ++ dirname process/grounding/global_weight_table/run.sh
+2016-05-30 23:27:39.570430 + cd process/grounding/global_weight_table
+2016-05-30 23:27:39.570541 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/global_weight_table
+2016-05-30 23:27:39.570587 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/global_weight_table
+2016-05-30 23:27:39.570633 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:39.570802 + deepdive create view dd_graph_weights as '(SELECT "id"
+2016-05-30 23:27:39.570837      , "isfixed"
+2016-05-30 23:27:39.570864      , "initvalue"
+2016-05-30 23:27:39.570884      , '\''inf1_istrue_has_spouse-'\'' AS "description"
+2016-05-30 23:27:39.570908      , NULL AS "categories"
+2016-05-30 23:27:39.570930 FROM "dd_weights_inf1_istrue_has_spouse")
+2016-05-30 23:27:39.570950 UNION ALL
+2016-05-30 23:27:39.570983 (SELECT "id"
+2016-05-30 23:27:39.571003      , "isfixed"
+2016-05-30 23:27:39.571037      , "initvalue"
+2016-05-30 23:27:39.571067      , '\''inf_imply_has_spouse_has_spouse-'\'' AS "description"
+2016-05-30 23:27:39.571089      , NULL AS "categories"
+2016-05-30 23:27:39.571109 FROM "dd_weights_inf_imply_has_spouse_has_spouse")
+2016-05-30 23:27:39.571129 UNION ALL
+2016-05-30 23:27:39.571148 (SELECT "id"
+2016-05-30 23:27:39.571167      , "isfixed"
+2016-05-30 23:27:39.571187      , "initvalue"
+2016-05-30 23:27:39.571205      , '\''inf_istrue_has_spouse-'\'' ||'\''-'\''|| CASE WHEN "dd_weight_column_0" IS NULL THEN '\'''\''
+2016-05-30 23:27:39.571225               ELSE "dd_weight_column_0" || '\'''\''  -- XXX CAST(... AS TEXT) unsupported by MySQL
+2016-05-30 23:27:39.571247           END AS "description"
+2016-05-30 23:27:39.571268      , NULL AS "categories"
+2016-05-30 23:27:39.571287 FROM "dd_weights_inf_istrue_has_spouse")'
+2016-05-30 23:27:39.757183 CREATE VIEW
+2016-05-30 23:27:39.758552 mark_done process/grounding/global_weight_table
+2016-05-30 23:27:39.774714 ##############################################################################
+2016-05-30 23:27:39.774826 
+2016-05-30 23:27:39.774851 ## process/grounding/variable_holdout ########################################
+2016-05-30 23:27:39.774873 : # Done: 2016-05-29T12:22:09-0700 (1d 11h 5m 21s ago)
+2016-05-30 23:27:39.774917 # Done: 2016-05-29T12:22:09-0700 (1d 11h 5m 20s ago)
+2016-05-30 23:27:39.774958 process/grounding/variable_holdout/run.sh
+2016-05-30 23:27:39.783324 ++ dirname process/grounding/variable_holdout/run.sh
+2016-05-30 23:27:39.787056 + cd process/grounding/variable_holdout
+2016-05-30 23:27:39.787122 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable_holdout
+2016-05-30 23:27:39.787146 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable_holdout
+2016-05-30 23:27:39.787165 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:39.787184 + deepdive create table dd_graph_variables_holdout 'variable_id:BIGINT:PRIMARY KEY'
+2016-05-30 23:27:40.023877 CREATE TABLE
+2016-05-30 23:27:40.025029 + deepdive create table dd_graph_variables_observation 'variable_id:BIGINT:PRIMARY KEY'
+2016-05-30 23:27:40.229625 CREATE TABLE
+2016-05-30 23:27:40.230541 + deepdive sql '
+2016-05-30 23:27:40.230610                 INSERT INTO "dd_graph_variables_holdout" SELECT "id"
+2016-05-30 23:27:40.230639 FROM "has_spouse"
+2016-05-30 23:27:40.230664 
+2016-05-30 23:27:40.230687 WHERE "label" IS NOT NULL AND RANDOM() < 0.25;
+2016-05-30 23:27:40.230707             '
+2016-05-30 23:27:40.316059 INSERT 0 398
+2016-05-30 23:27:40.317668 mark_done process/grounding/variable_holdout
+2016-05-30 23:27:40.334963 ##############################################################################
+2016-05-30 23:27:40.335028 
+2016-05-30 23:27:40.335051 ## process/grounding/variable/has_spouse/dump ################################
+2016-05-30 23:27:40.335074 : # Done: 2016-05-29T12:22:09-0700 (1d 11h 5m 21s ago)
+2016-05-30 23:27:40.335096 # Done: 2016-05-29T12:22:09-0700 (1d 11h 5m 20s ago)
+2016-05-30 23:27:40.335138 process/grounding/variable/has_spouse/dump/run.sh
+2016-05-30 23:27:40.349862 ++ dirname process/grounding/variable/has_spouse/dump/run.sh
+2016-05-30 23:27:40.357264 + cd process/grounding/variable/has_spouse/dump
+2016-05-30 23:27:40.357443 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable/has_spouse/dump
+2016-05-30 23:27:40.357494 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable/has_spouse/dump
+2016-05-30 23:27:40.357548 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:40.357579 + table=has_spouse
+2016-05-30 23:27:40.357602 + varPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-05-30 23:27:40.357641 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-05-30 23:27:40.361473 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-05-30 23:27:40.361569 + find . -name 'variables.part-*.bin.bz2' -exec rm -rf '{}' +
+2016-05-30 23:27:40.371942 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:40.372053 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-30 23:27:40.372190 + export DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:40.372478 + DEEPDIVE_UNLOAD_MATERIALIZED=false
+2016-05-30 23:27:40.372684 + deepdive compute execute 'input_sql=SELECT "id"
+2016-05-30 23:27:40.372770      , "variable_role"
+2016-05-30 23:27:40.372823      , CASE WHEN variable_role = 0 THEN 0
+2016-05-30 23:27:40.372918                           ELSE (CASE WHEN label THEN 1 ELSE 0 END) + 0.0
+2016-05-30 23:27:40.372962                       END AS "init_value"
+2016-05-30 23:27:40.372992      , "variable_type"
+2016-05-30 23:27:40.373047      , "cardinality"
+2016-05-30 23:27:40.373118 FROM (SELECT "id" AS "id"
+2016-05-30 23:27:40.373162      , CASE WHEN               observation.variable_id IS NOT NULL
+2016-05-30 23:27:40.373192                                      AND variables."label" IS NOT NULL THEN 2
+2016-05-30 23:27:40.373252                                     WHEN               holdout.variable_id IS NOT NULL THEN 0
+2016-05-30 23:27:40.373325                                     WHEN variables."label" IS NOT NULL THEN 1
+2016-05-30 23:27:40.373384                                                                                        ELSE 0
+2016-05-30 23:27:40.373434                                 END AS "variable_role"
+2016-05-30 23:27:40.373485      , "variables"."label" AS "label"
+2016-05-30 23:27:40.373528      , 0 AS "variable_type"
+2016-05-30 23:27:40.373559      , 2 AS "cardinality"
+2016-05-30 23:27:40.373602 FROM "has_spouse" "variables"
+2016-05-30 23:27:40.373626 LEFT OUTER JOIN "dd_graph_variables_holdout" "holdout" ON "variables"."id" = "holdout"."variable_id" LEFT OUTER JOIN "dd_graph_variables_observation" "observation" ON "variables"."id" = "observation"."variable_id") "variables"' 'command=
+2016-05-30 23:27:40.373709                 format_converter variable /dev/stdin >(pbzip2 >variables.part-${DEEPDIVE_CURRENT_PROCESS_INDEX}.bin.bz2)
+2016-05-30 23:27:40.373767             ' output_relation=
+2016-05-30 23:27:40.471287 Executing with the following configuration:
+2016-05-30 23:27:40.471355  DEEPDIVE_NUM_PROCESSES=3
+2016-05-30 23:27:40.471385  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-30 23:27:40.471408  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-30 23:27:40.600709 unloading to feed_processes-1: 'SELECT "id"
+2016-05-30 23:27:40.600779      , "variable_role"
+2016-05-30 23:27:40.600806      , CASE WHEN variable_role = 0 THEN 0
+2016-05-30 23:27:40.600826                           ELSE (CASE WHEN label THEN 1 ELSE 0 END) + 0.0
+2016-05-30 23:27:40.600846                       END AS "init_value"
+2016-05-30 23:27:40.600865      , "variable_type"
+2016-05-30 23:27:40.600883      , "cardinality"
+2016-05-30 23:27:40.600901 FROM (SELECT "id" AS "id"
+2016-05-30 23:27:40.600919      , CASE WHEN               observation.variable_id IS NOT NULL
+2016-05-30 23:27:40.600937                                      AND variables."label" IS NOT NULL THEN 2
+2016-05-30 23:27:40.600954                                     WHEN               holdout.variable_id IS NOT NULL THEN 0
+2016-05-30 23:27:40.600971                                     WHEN variables."label" IS NOT NULL THEN 1
+2016-05-30 23:27:40.600989                                                                                        ELSE 0
+2016-05-30 23:27:40.601006                                 END AS "variable_role"
+2016-05-30 23:27:40.601023      , "variables"."label" AS "label"
+2016-05-30 23:27:40.601039      , 0 AS "variable_type"
+2016-05-30 23:27:40.601055      , 2 AS "cardinality"
+2016-05-30 23:27:40.601071 FROM "has_spouse" "variables"
+2016-05-30 23:27:40.601088 LEFT OUTER JOIN "dd_graph_variables_holdout" "holdout" ON "variables"."id" = "holdout"."variable_id" LEFT OUTER JOIN "dd_graph_variables_observation" "observation" ON "variables"."id" = "observation"."variable_id") "variables"'
+2016-05-30 23:27:40.681281 920
+2016-05-30 23:27:40.681687 1398
+2016-05-30 23:27:40.682435 893
+2016-05-30 23:27:40.689734 mark_done process/grounding/variable/has_spouse/dump
+2016-05-30 23:27:40.705151 ##############################################################################
+2016-05-30 23:27:40.705204 
+2016-05-30 23:27:40.705228 ## process/grounding/combine_factorgraph #####################################
+2016-05-30 23:27:40.705247 : # Done: 2016-05-29T12:22:10-0700 (1d 11h 5m 20s ago)
+2016-05-30 23:27:40.705267 # Done: 2016-05-29T12:22:10-0700 (1d 11h 5m 19s ago)
+2016-05-30 23:27:40.705284 process/grounding/combine_factorgraph/run.sh
+2016-05-30 23:27:40.728305 ++ dirname process/grounding/combine_factorgraph/run.sh
+2016-05-30 23:27:40.731360 + cd process/grounding/combine_factorgraph
+2016-05-30 23:27:40.731459 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/combine_factorgraph
+2016-05-30 23:27:40.731505 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/combine_factorgraph
+2016-05-30 23:27:40.731573 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:40.731630 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/factorgraph
+2016-05-30 23:27:40.731671 + rm -rf /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/factorgraph
+2016-05-30 23:27:40.742478 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/factorgraph
+2016-05-30 23:27:40.745944 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/factorgraph
+2016-05-30 23:27:40.746059 + for v in ''\''has_spouse'\'''
+2016-05-30 23:27:40.746090 + mkdir -p variables/has_spouse
+2016-05-30 23:27:40.750305 + find /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse -name 'variables.part-*.bin.bz2' -exec ln -sfnv -t variables/has_spouse/ '{}' +
+2016-05-30 23:27:40.756127 ‘variables/has_spouse/variables.part-1.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse/variables.part-1.bin.bz2’
+2016-05-30 23:27:40.756182 ‘variables/has_spouse/variables.part-2.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse/variables.part-2.bin.bz2’
+2016-05-30 23:27:40.756197 ‘variables/has_spouse/variables.part-3.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse/variables.part-3.bin.bz2’
+2016-05-30 23:27:40.756686 + for f in ''\''inf1_istrue_has_spouse'\''' ''\''inf_imply_has_spouse_has_spouse'\''' ''\''inf_istrue_has_spouse'\'''
+2016-05-30 23:27:40.756722 + mkdir -p factors/inf1_istrue_has_spouse weights/inf1_istrue_has_spouse
+2016-05-30 23:27:40.760320 + find /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse -name 'factors.part-*.bin.bz2' -exec ln -sfnv -t factors/inf1_istrue_has_spouse/ '{}' + -o -name 'weights.part-*.bin.bz2' -exec ln -sfnv -t weights/inf1_istrue_has_spouse/ '{}' +
+2016-05-30 23:27:40.769664 ‘weights/inf1_istrue_has_spouse/weights.part-1.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse/weights.part-1.bin.bz2’
+2016-05-30 23:27:40.769744 ‘weights/inf1_istrue_has_spouse/weights.part-2.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse/weights.part-2.bin.bz2’
+2016-05-30 23:27:40.769772 ‘weights/inf1_istrue_has_spouse/weights.part-3.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse/weights.part-3.bin.bz2’
+2016-05-30 23:27:40.773523 ‘factors/inf1_istrue_has_spouse/factors.part-1.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse/factors.part-1.bin.bz2’
+2016-05-30 23:27:40.773595 ‘factors/inf1_istrue_has_spouse/factors.part-2.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse/factors.part-2.bin.bz2’
+2016-05-30 23:27:40.773626 ‘factors/inf1_istrue_has_spouse/factors.part-3.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf1_istrue_has_spouse/factors.part-3.bin.bz2’
+2016-05-30 23:27:40.774200 + for f in ''\''inf1_istrue_has_spouse'\''' ''\''inf_imply_has_spouse_has_spouse'\''' ''\''inf_istrue_has_spouse'\'''
+2016-05-30 23:27:40.774268 + mkdir -p factors/inf_imply_has_spouse_has_spouse weights/inf_imply_has_spouse_has_spouse
+2016-05-30 23:27:40.779944 + find /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse -name 'factors.part-*.bin.bz2' -exec ln -sfnv -t factors/inf_imply_has_spouse_has_spouse/ '{}' + -o -name 'weights.part-*.bin.bz2' -exec ln -sfnv -t weights/inf_imply_has_spouse_has_spouse/ '{}' +
+2016-05-30 23:27:40.787244 ‘weights/inf_imply_has_spouse_has_spouse/weights.part-1.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse/weights.part-1.bin.bz2’
+2016-05-30 23:27:40.787313 ‘weights/inf_imply_has_spouse_has_spouse/weights.part-2.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse/weights.part-2.bin.bz2’
+2016-05-30 23:27:40.787353 ‘weights/inf_imply_has_spouse_has_spouse/weights.part-3.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse/weights.part-3.bin.bz2’
+2016-05-30 23:27:40.793451 ‘factors/inf_imply_has_spouse_has_spouse/factors.part-1.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse/factors.part-1.bin.bz2’
+2016-05-30 23:27:40.793503 ‘factors/inf_imply_has_spouse_has_spouse/factors.part-2.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse/factors.part-2.bin.bz2’
+2016-05-30 23:27:40.793519 ‘factors/inf_imply_has_spouse_has_spouse/factors.part-3.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_imply_has_spouse_has_spouse/factors.part-3.bin.bz2’
+2016-05-30 23:27:40.793933 + for f in ''\''inf1_istrue_has_spouse'\''' ''\''inf_imply_has_spouse_has_spouse'\''' ''\''inf_istrue_has_spouse'\'''
+2016-05-30 23:27:40.793979 + mkdir -p factors/inf_istrue_has_spouse weights/inf_istrue_has_spouse
+2016-05-30 23:27:40.797565 + find /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse -name 'factors.part-*.bin.bz2' -exec ln -sfnv -t factors/inf_istrue_has_spouse/ '{}' + -o -name 'weights.part-*.bin.bz2' -exec ln -sfnv -t weights/inf_istrue_has_spouse/ '{}' +
+2016-05-30 23:27:40.803791 ‘weights/inf_istrue_has_spouse/weights.part-1.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse/weights.part-1.bin.bz2’
+2016-05-30 23:27:40.803854 ‘weights/inf_istrue_has_spouse/weights.part-2.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse/weights.part-2.bin.bz2’
+2016-05-30 23:27:40.803880 ‘weights/inf_istrue_has_spouse/weights.part-3.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse/weights.part-3.bin.bz2’
+2016-05-30 23:27:40.807442 ‘factors/inf_istrue_has_spouse/factors.part-1.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse/factors.part-1.bin.bz2’
+2016-05-30 23:27:40.807497 ‘factors/inf_istrue_has_spouse/factors.part-2.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse/factors.part-2.bin.bz2’
+2016-05-30 23:27:40.807512 ‘factors/inf_istrue_has_spouse/factors.part-3.bin.bz2’ -> ‘/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/factor/inf_istrue_has_spouse/factors.part-3.bin.bz2’
+2016-05-30 23:27:40.808271 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-05-30 23:27:40.808334 + counts=()
+2016-05-30 23:27:40.808359 + counts+=($(cat factor/weights_count))
+2016-05-30 23:27:40.809081 ++ cat factor/weights_count
+2016-05-30 23:27:40.814255 + counts+=($(cat variable_count))
+2016-05-30 23:27:40.814889 ++ cat variable_count
+2016-05-30 23:27:40.820023 + cd factor
+2016-05-30 23:27:40.820084 + counts+=($(find 'inf1_istrue_has_spouse' 'inf_imply_has_spouse_has_spouse' 'inf_istrue_has_spouse' -name 'nfactors.part-*' -exec cat {} + | sumup))
+2016-05-30 23:27:40.822080 ++ find inf1_istrue_has_spouse inf_imply_has_spouse_has_spouse inf_istrue_has_spouse -name 'nfactors.part-*' -exec cat '{}' +
+2016-05-30 23:27:40.823443 ++ sumup
+2016-05-30 23:27:40.826153 ++ tr '\n' +
+2016-05-30 23:27:40.826380 ++ bc
+2016-05-30 23:27:40.837370 ++ echo 0
+2016-05-30 23:27:40.855305 + counts+=($(find 'inf1_istrue_has_spouse' 'inf_imply_has_spouse_has_spouse' 'inf_istrue_has_spouse' -name 'nedges.part-*'   -exec cat {} + | sumup))
+2016-05-30 23:27:40.856395 ++ find inf1_istrue_has_spouse inf_imply_has_spouse_has_spouse inf_istrue_has_spouse -name 'nedges.part-*' -exec cat '{}' +
+2016-05-30 23:27:40.856505 ++ sumup
+2016-05-30 23:27:40.857499 ++ tr '\n' +
+2016-05-30 23:27:40.857578 ++ bc
+2016-05-30 23:27:40.872268 ++ echo 0
+2016-05-30 23:27:40.875292 + IFS=,
+2016-05-30 23:27:40.875353 + echo 72263,3211,206187,217302
+2016-05-30 23:27:40.875674 + paths=("$DEEPDIVE_FACTORGRAPH_DIR"/{weights,variables,factors,edges})
+2016-05-30 23:27:40.876236 + IFS=,
+2016-05-30 23:27:40.876297 + echo /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/factorgraph/weights,/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/factorgraph/variables,/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/factorgraph/factors,/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/factorgraph/edges
+2016-05-30 23:27:40.877001 mark_done process/grounding/combine_factorgraph
+2016-05-30 23:27:40.896916 ##############################################################################
+2016-05-30 23:27:40.896994 

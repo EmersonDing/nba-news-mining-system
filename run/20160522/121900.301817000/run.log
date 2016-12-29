@@ -1,0 +1,133 @@
+2016-05-22 12:19:02.160722 # on eduroam-169-233-210-202.ucsc.edu: deepdive do has_spouse
+2016-05-22 12:19:02.161073 # run/20160522/121900.301817000/plan.sh
+2016-05-22 12:19:02.161107 # execution plan for data/has_spouse
+2016-05-22 12:19:02.161131 
+2016-05-22 12:19:02.161150 : ## process/init/app ##########################################################
+2016-05-22 12:19:02.161169 : # Done: 2016-05-22T11:25:05-0700 (53m 55s ago)
+2016-05-22 12:19:02.161185 : process/init/app/run.sh
+2016-05-22 12:19:02.161203 : mark_done process/init/app
+2016-05-22 12:19:02.161221 : ##############################################################################
+2016-05-22 12:19:02.161242 
+2016-05-22 12:19:02.161297 : ## process/init/relation/articles ############################################
+2016-05-22 12:19:02.161319 : # Done: 2016-05-22T11:55:52-0700 (23m 8s ago)
+2016-05-22 12:19:02.161340 : process/init/relation/articles/run.sh
+2016-05-22 12:19:02.161360 : mark_done process/init/relation/articles
+2016-05-22 12:19:02.161380 : ##############################################################################
+2016-05-22 12:19:02.161400 
+2016-05-22 12:19:02.161419 : ## data/articles #############################################################
+2016-05-22 12:19:02.161443 : # Done: 2016-05-22T11:55:52-0700 (23m 8s ago)
+2016-05-22 12:19:02.161465 : # no-op
+2016-05-22 12:19:02.161486 : mark_done data/articles
+2016-05-22 12:19:02.161505 : ##############################################################################
+2016-05-22 12:19:02.161524 
+2016-05-22 12:19:02.161544 : ## process/ext_sentences_by_nlp_markup #######################################
+2016-05-22 12:19:02.161564 : # Done: 2016-05-22T11:57:59-0700 (21m 1s ago)
+2016-05-22 12:19:02.161585 : process/ext_sentences_by_nlp_markup/run.sh
+2016-05-22 12:19:02.161605 : mark_done process/ext_sentences_by_nlp_markup
+2016-05-22 12:19:02.161624 : ##############################################################################
+2016-05-22 12:19:02.161645 
+2016-05-22 12:19:02.161667 : ## data/sentences ############################################################
+2016-05-22 12:19:02.161689 : # Done: 2016-05-22T11:57:59-0700 (21m 1s ago)
+2016-05-22 12:19:02.161709 : # no-op
+2016-05-22 12:19:02.161730 : mark_done data/sentences
+2016-05-22 12:19:02.161752 : ##############################################################################
+2016-05-22 12:19:02.161772 
+2016-05-22 12:19:02.161793 : ## process/ext_person_mention_by_map_person_mention ##########################
+2016-05-22 12:19:02.161813 : # Done: 2016-05-22T12:13:47-0700 (5m 13s ago)
+2016-05-22 12:19:02.161834 : process/ext_person_mention_by_map_person_mention/run.sh
+2016-05-22 12:19:02.161855 : mark_done process/ext_person_mention_by_map_person_mention
+2016-05-22 12:19:02.161875 : ##############################################################################
+2016-05-22 12:19:02.161896 
+2016-05-22 12:19:02.161915 : ## data/person_mention #######################################################
+2016-05-22 12:19:02.161934 : # Done: 2016-05-22T12:13:47-0700 (5m 13s ago)
+2016-05-22 12:19:02.161955 : # no-op
+2016-05-22 12:19:02.161975 : mark_done data/person_mention
+2016-05-22 12:19:02.161996 : ##############################################################################
+2016-05-22 12:19:02.162017 
+2016-05-22 12:19:02.162038 : ## process/ext_num_people ####################################################
+2016-05-22 12:19:02.162059 : # Done: 2016-05-22T12:14:33-0700 (4m 27s ago)
+2016-05-22 12:19:02.162079 : process/ext_num_people/run.sh
+2016-05-22 12:19:02.162099 : mark_done process/ext_num_people
+2016-05-22 12:19:02.162118 : ##############################################################################
+2016-05-22 12:19:02.162138 
+2016-05-22 12:19:02.162156 : ## data/num_people ###########################################################
+2016-05-22 12:19:02.162176 : # Done: 2016-05-22T12:14:33-0700 (4m 27s ago)
+2016-05-22 12:19:02.162197 : # no-op
+2016-05-22 12:19:02.162217 : mark_done data/num_people
+2016-05-22 12:19:02.162238 : ##############################################################################
+2016-05-22 12:19:02.162259 
+2016-05-22 12:19:02.162280 : ## process/ext_team_mention_by_map_team_mention ##############################
+2016-05-22 12:19:02.162299 : # Done: 2016-05-22T12:14:14-0700 (4m 46s ago)
+2016-05-22 12:19:02.162320 : process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-22 12:19:02.162339 : mark_done process/ext_team_mention_by_map_team_mention
+2016-05-22 12:19:02.162358 : ##############################################################################
+2016-05-22 12:19:02.162377 
+2016-05-22 12:19:02.162398 : ## data/team_mention #########################################################
+2016-05-22 12:19:02.162419 : # Done: 2016-05-22T12:14:14-0700 (4m 46s ago)
+2016-05-22 12:19:02.162440 : # no-op
+2016-05-22 12:19:02.162460 : mark_done data/team_mention
+2016-05-22 12:19:02.162481 : ##############################################################################
+2016-05-22 12:19:02.162501 
+2016-05-22 12:19:02.162521 : ## process/ext_spouse_candidate ##############################################
+2016-05-22 12:19:02.162542 : # Done: 2016-05-22T12:14:34-0700 (4m 26s ago)
+2016-05-22 12:19:02.162562 : process/ext_spouse_candidate/run.sh
+2016-05-22 12:19:02.162582 : mark_done process/ext_spouse_candidate
+2016-05-22 12:19:02.162601 : ##############################################################################
+2016-05-22 12:19:02.162621 
+2016-05-22 12:19:02.162639 : ## data/spouse_candidate #####################################################
+2016-05-22 12:19:02.162659 : # Done: 2016-05-22T12:14:34-0700 (4m 26s ago)
+2016-05-22 12:19:02.162679 : # no-op
+2016-05-22 12:19:02.162700 : mark_done data/spouse_candidate
+2016-05-22 12:19:02.162721 : ##############################################################################
+2016-05-22 12:19:02.162741 
+2016-05-22 12:19:02.162783 ## process/ext_spouse_label__0_by_supervise ##################################
+2016-05-22 12:19:02.162808 # Done: 2016-05-22T11:26:28-0700 (52m 32s ago)
+2016-05-22 12:19:02.162828 process/ext_spouse_label__0_by_supervise/run.sh
+2016-05-22 12:19:02.162846 ++ dirname process/ext_spouse_label__0_by_supervise/run.sh
+2016-05-22 12:19:02.162867 + cd process/ext_spouse_label__0_by_supervise
+2016-05-22 12:19:02.162887 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label__0_by_supervise
+2016-05-22 12:19:02.162923 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label__0_by_supervise
+2016-05-22 12:19:02.162948 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-22 12:19:02.162969 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-22 12:19:02.162991 + deepdive compute execute 'input_sql= SELECT R0.p_id AS "spouse_candidate.R0.p_id", R1.begin_index AS "person_mention.R1.begin_index", R1.end_index AS "person_mention.R1.end_index", R0.t_id AS "spouse_candidate.R0.t_id", R2.begin_index AS "team_mention.R2.begin_index", R2.end_index AS "team_mention.R2.end_index", R1.doc_id AS "person_mention.R1.doc_id", R1.sentence_index AS "person_mention.R1.sentence_index", R3.sentence_text AS "sentences.R3.sentence_text", R3.tokens AS "sentences.R3.tokens", R3.lemmas AS "sentences.R3.lemmas", R3.pos_tags AS "sentences.R3.pos_tags", R3.ner_tags AS "sentences.R3.ner_tags", R3.dep_types AS "sentences.R3.dep_types", R3.dep_tokens AS "sentences.R3.dep_tokens"
+2016-05-22 12:19:02.163015 FROM spouse_candidate R0, person_mention R1, team_mention R2, sentences R3
+2016-05-22 12:19:02.163035         WHERE R1.mention_id = R0.p_id  AND R2.team_id = R0.t_id  AND R3.doc_id = R1.doc_id  AND R3.sentence_index = R1.sentence_index 
+2016-05-22 12:19:02.163055           ' 'command="$DEEPDIVE_APP"/udf/supervise_spouse.py' output_relation=spouse_label__0
+2016-05-22 12:19:02.228089 Executing with the following configuration:
+2016-05-22 12:19:02.228153  DEEPDIVE_NUM_PROCESSES=3
+2016-05-22 12:19:02.228180  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-22 12:19:02.228243  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-22 12:19:02.228331  output_relation_tmp=dd_tmp_spouse_label__0
+2016-05-22 12:19:02.228368 
+2016-05-22 12:19:02.403383 CREATE TABLE
+2016-05-22 12:19:02.504316 CREATE TABLE
+2016-05-22 12:19:02.665366 unloading to feed_processes-1: ' SELECT R0.p_id AS "spouse_candidate.R0.p_id", R1.begin_index AS "person_mention.R1.begin_index", R1.end_index AS "person_mention.R1.end_index", R0.t_id AS "spouse_candidate.R0.t_id", R2.begin_index AS "team_mention.R2.begin_index", R2.end_index AS "team_mention.R2.end_index", R1.doc_id AS "person_mention.R1.doc_id", R1.sentence_index AS "person_mention.R1.sentence_index", R3.sentence_text AS "sentences.R3.sentence_text", R3.tokens AS "sentences.R3.tokens", R3.lemmas AS "sentences.R3.lemmas", R3.pos_tags AS "sentences.R3.pos_tags", R3.ner_tags AS "sentences.R3.ner_tags", R3.dep_types AS "sentences.R3.dep_types", R3.dep_tokens AS "sentences.R3.dep_tokens"
+2016-05-22 12:19:02.665435 FROM spouse_candidate R0, person_mention R1, team_mention R2, sentences R3
+2016-05-22 12:19:02.665483         WHERE R1.mention_id = R0.p_id  AND R2.team_id = R0.t_id  AND R3.doc_id = R1.doc_id  AND R3.sentence_index = R1.sentence_index 
+2016-05-22 12:19:02.665507           '
+2016-05-22 12:19:02.713867 Loading dd_tmp_spouse_label__0 from output_computed-1 (tsv format)
+2016-05-22 12:19:02.826876 Traceback (most recent call last):
+2016-05-22 12:19:02.826930   File "/Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/udf/supervise_spouse.py", line 21, in <module>
+2016-05-22 12:19:02.827013     dep_types="text[]", dep_token_indexes="int[]",
+2016-05-22 12:19:02.827112   File "/Users/emerson/local/lib/python/ddlib/util.py", line 291, in tsv_extractor
+2016-05-22 12:19:02.827366     for out_row in generator(**row._asdict()):
+2016-05-22 12:19:02.827448   File "/Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/udf/supervise_spouse.py", line 33, in supervise
+2016-05-22 12:19:02.827643     intermediate_lemmas = lemmas[t_end_idx+1:p_start_idx]
+2016-05-22 12:19:02.827746 NameError: global name 'p_start_idx' is not defined
+2016-05-22 12:19:02.832019 Traceback (most recent call last):
+2016-05-22 12:19:02.832098   File "/Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/udf/supervise_spouse.py", line 21, in <module>
+2016-05-22 12:19:02.832278     dep_types="text[]", dep_token_indexes="int[]",
+2016-05-22 12:19:02.832316   File "/Users/emerson/local/lib/python/ddlib/util.py", line 291, in tsv_extractor
+2016-05-22 12:19:02.832482     for out_row in generator(**row._asdict()):
+2016-05-22 12:19:02.832526   File "/Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/udf/supervise_spouse.py", line 33, in supervise
+2016-05-22 12:19:02.832650     intermediate_lemmas = lemmas[t_end_idx+1:p_start_idx]
+2016-05-22 12:19:02.832694 NameError: global name 'p_start_idx' is not defined
+2016-05-22 12:19:02.837017 /Users/emerson/local/util/compute-driver/local/compute-execute: line 140: kill: (9016) - No such process
+2016-05-22 12:19:02.837095 /Users/emerson/local/util/compute-driver/local/compute-execute: line 140: kill: (9018) - No such process
+2016-05-22 12:19:02.837120 /Users/emerson/local/util/compute-driver/local/compute-execute: line 140: kill: (9030) - No such process
+2016-05-22 12:19:02.838669 COPY 0
+2016-05-22 12:19:02.847221 [ERROR] command='"$DEEPDIVE_APP"/udf/supervise_spouse.py': PID 9016: finished with non-zero exit status (0)
+2016-05-22 12:19:02.847604 /Users/emerson/local/util/compute-driver/local/compute-execute: line 138:  9017 Terminated: 15          DEEPDIVE_CURRENT_PROCESS_INDEX=$i bash -c "$command" < process-$i.input > process-$i.output
+2016-05-22 12:19:02.847650 /Users/emerson/local/util/compute-driver/local/compute-execute: line 138:  9022 Terminated: 15          mkmimo process-*.output \> output_computed-*
+2016-05-22 12:19:02.847675 /Users/emerson/local/util/compute-driver/local/compute-execute: line 138:  9023 Terminated: 15          deepdive-load "$output_relation_tmp" output_computed-*
+2016-05-22 12:19:02.847697 /Users/emerson/local/util/compute-driver/local/compute-execute: line 138:  9029 Terminated: 15          deepdive-db unload "$input_sql" "$DEEPDIVE_LOAD_FORMAT" feed_processes-*

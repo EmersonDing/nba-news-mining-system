@@ -1,0 +1,15 @@
+2016-05-22 17:21:11.124737 # on eduroam-169-233-210-202.ucsc.edu: deepdive do has_spouse
+2016-05-22 17:21:11.125043 # run/20160522/172109.103395000/plan.sh
+2016-05-22 17:21:11.125063 # execution plan for data/has_spouse
+2016-05-22 17:21:11.125075 
+2016-05-22 17:21:11.125101 ## process/init/app ##########################################################
+2016-05-22 17:21:11.125121 # Done: 2016-05-22T16:58:31-0700 (22m 38s ago)
+2016-05-22 17:21:11.125140 process/init/app/run.sh
+2016-05-22 17:21:11.125159 ++ dirname process/init/app/run.sh
+2016-05-22 17:21:11.125180 + cd process/init/app
+2016-05-22 17:21:11.125200 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/app
+2016-05-22 17:21:11.125217 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/app
+2016-05-22 17:21:11.125236 + deepdive db init
+2016-05-22 17:21:16.214664 dropdb: database removal failed: ERROR:  database "deepdive_test_emerson" is being accessed by other users
+2016-05-22 17:21:16.214856 DETAIL:  There is 1 other session using the database.
+2016-05-22 17:21:16.232782 createdb: database creation failed: ERROR:  database "deepdive_test_emerson" already exists

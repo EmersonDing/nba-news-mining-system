@@ -1,0 +1,31 @@
+2016-05-25 12:13:42.835325 # on dhcp-169-233-164-19.cruznet.ucsc.edu: deepdive do spouses_dbpedia_negative
+2016-05-25 12:13:42.835622 # run/20160525/121341.540185000/plan.sh
+2016-05-25 12:13:42.835645 # execution plan for data/spouses_dbpedia_negative
+2016-05-25 12:13:42.835664 
+2016-05-25 12:13:42.835684 : ## process/init/app ##########################################################
+2016-05-25 12:13:42.835704 : # Done: 2016-05-22T17:21:25-0700 (2d 18h 52m 16s ago)
+2016-05-25 12:13:42.835722 : process/init/app/run.sh
+2016-05-25 12:13:42.835741 : mark_done process/init/app
+2016-05-25 12:13:42.835760 : ##############################################################################
+2016-05-25 12:13:42.835784 
+2016-05-25 12:13:42.835808 ## process/init/relation/spouses_dbpedia_negative ############################
+2016-05-25 12:13:42.835826 # Done: N/A
+2016-05-25 12:13:42.835844 process/init/relation/spouses_dbpedia_negative/run.sh
+2016-05-25 12:13:42.835862 ++ dirname process/init/relation/spouses_dbpedia_negative/run.sh
+2016-05-25 12:13:42.835880 + cd process/init/relation/spouses_dbpedia_negative
+2016-05-25 12:13:42.835899 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/spouses_dbpedia_negative
+2016-05-25 12:13:42.835916 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/spouses_dbpedia_negative
+2016-05-25 12:13:42.835939 + deepdive create table spouses_dbpedia_negative
+2016-05-25 12:13:42.952505 CREATE TABLE
+2016-05-25 12:13:42.953436 + deepdive load spouses_dbpedia_negative
+2016-05-25 12:13:43.058803 Loading spouses_dbpedia_negative from input/spouses_dbpedia_negative.csv (csv format)
+2016-05-25 12:13:43.114145 COPY 4961
+2016-05-25 12:13:43.151665 mark_done process/init/relation/spouses_dbpedia_negative
+2016-05-25 12:13:43.172195 ##############################################################################
+2016-05-25 12:13:43.172328 
+2016-05-25 12:13:43.172419 ## data/spouses_dbpedia_negative #############################################
+2016-05-25 12:13:43.172544 # Done: N/A
+2016-05-25 12:13:43.172937 # no-op
+2016-05-25 12:13:43.172973 mark_done data/spouses_dbpedia_negative
+2016-05-25 12:13:43.194695 ##############################################################################
+2016-05-25 12:13:43.194812 

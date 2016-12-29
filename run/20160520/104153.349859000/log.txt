@@ -1,0 +1,41 @@
+2016-05-20 10:41:58.005702 # on dhcp-169-233-138-157.cruznet.ucsc.edu: deepdive do articles
+2016-05-20 10:41:58.006090 # run/20160520/104153.349859000/plan.sh
+2016-05-20 10:41:58.006127 # execution plan for data/articles
+2016-05-20 10:41:58.006190 
+2016-05-20 10:41:58.006211 : ## process/init/app ##########################################################
+2016-05-20 10:41:58.006236 : # Done: 2016-05-20T10:13:09-0700 (28m 44s ago)
+2016-05-20 10:41:58.006258 : process/init/app/run.sh
+2016-05-20 10:41:58.006280 : mark_done process/init/app
+2016-05-20 10:41:58.006300 : ##############################################################################
+2016-05-20 10:41:58.006322 
+2016-05-20 10:41:58.006344 ## process/init/relation/articles ############################################
+2016-05-20 10:41:58.006366 # Done: 2016-05-20T10:38:31-0700 (3m 22s ago)
+2016-05-20 10:41:58.006388 process/init/relation/articles/run.sh
+2016-05-20 10:41:58.006409 ++ dirname process/init/relation/articles/run.sh
+2016-05-20 10:41:58.006429 + cd process/init/relation/articles
+2016-05-20 10:41:58.006454 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-05-20 10:41:58.006474 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-05-20 10:41:58.006494 + deepdive create table articles
+2016-05-20 10:41:58.155993 CREATE TABLE
+2016-05-20 10:41:58.157006 + deepdive load articles
+2016-05-20 10:41:58.283752 Loading articles from input/articles.tsv.sh (tsv format)
+2016-05-20 10:41:58.294786 ERROR: Missing /Users/emerson/Documents/Github/deepdive/examples/spouse/input/signalmedia/signalmedia-1m.jsonl
+2016-05-20 10:41:58.294861 # Please Download it from http://research.signalmedia.co/newsir16/signal-dataset.html
+2016-05-20 10:41:58.294939 
+2016-05-20 10:41:58.294981 # Alternatively, use our sampled data by running:
+2016-05-20 10:41:58.295004 deepdive load articles input/articles-100.tsv.bz2
+2016-05-20 10:41:58.295024 
+2016-05-20 10:41:58.295046 # Or, skipping all NLP markup processes by running:
+2016-05-20 10:41:58.295065 deepdive create table sentences
+2016-05-20 10:41:58.295084 deepdive load sentences
+2016-05-20 10:41:58.295103 deepdive mark done sentences
+2016-05-20 10:41:58.342025 COPY 0
+2016-05-20 10:41:58.347786 mark_done process/init/relation/articles
+2016-05-20 10:41:58.364043 ##############################################################################
+2016-05-20 10:41:58.364107 
+2016-05-20 10:41:58.364131 ## data/articles #############################################################
+2016-05-20 10:41:58.364151 # Done: 2016-05-20T10:38:31-0700 (3m 22s ago)
+2016-05-20 10:41:58.364170 # no-op
+2016-05-20 10:41:58.364189 mark_done data/articles
+2016-05-20 10:41:58.398889 ##############################################################################
+2016-05-20 10:41:58.398969 

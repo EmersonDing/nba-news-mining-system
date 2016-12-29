@@ -1,0 +1,10 @@
+2016-05-23 11:10:54.111326 ‘run/LATEST.COMPILE/111054.045245000’ -> ‘20160523/111054.045245000’
+2016-05-23 11:10:54.111748 ‘run/RUNNING.COMPILE’ -> ‘20160523/111054.045245000’
+2016-05-23 11:10:54.111786 Parsing DeepDive application (/Users/emerson/Documents/Github/deepdive/examples/coach_nba) to generate:
+2016-05-23 11:10:54.111812  run/compiled/schema.json
+2016-05-23 11:10:54.111834   from app.ddlog
+2016-05-23 11:10:54.874319 [error] app.ddlog[262.5] failure: `.' expected but `t' found
+2016-05-23 11:10:54.874383 
+2016-05-23 11:10:54.874407     team_mention(t_id, team_text, _, _, _, _)
+2016-05-23 11:10:54.874428 
+2016-05-23 11:10:54.874782     ^

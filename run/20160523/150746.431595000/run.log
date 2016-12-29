@@ -1,0 +1,100 @@
+2016-05-23 15:07:47.933712 # on dhcp-169-233-164-19.cruznet.ucsc.edu: deepdive do spouse_feature
+2016-05-23 15:07:47.934014 # run/20160523/150746.431595000/plan.sh
+2016-05-23 15:07:47.934039 # execution plan for data/spouse_feature
+2016-05-23 15:07:47.934052 
+2016-05-23 15:07:47.934063 : ## process/init/app ##########################################################
+2016-05-23 15:07:47.934074 : # Done: 2016-05-22T17:21:25-0700 (21h 46m 21s ago)
+2016-05-23 15:07:47.934084 : process/init/app/run.sh
+2016-05-23 15:07:47.934094 : mark_done process/init/app
+2016-05-23 15:07:47.934105 : ##############################################################################
+2016-05-23 15:07:47.934116 
+2016-05-23 15:07:47.934127 : ## process/init/relation/articles ############################################
+2016-05-23 15:07:47.934137 : # Done: 2016-05-23T12:16:43-0700 (2h 51m 3s ago)
+2016-05-23 15:07:47.934147 : process/init/relation/articles/run.sh
+2016-05-23 15:07:47.934157 : mark_done process/init/relation/articles
+2016-05-23 15:07:47.934167 : ##############################################################################
+2016-05-23 15:07:47.934178 
+2016-05-23 15:07:47.934188 : ## data/articles #############################################################
+2016-05-23 15:07:47.934198 : # Done: 2016-05-23T12:16:43-0700 (2h 51m 3s ago)
+2016-05-23 15:07:47.934208 : # no-op
+2016-05-23 15:07:47.934218 : mark_done data/articles
+2016-05-23 15:07:47.934228 : ##############################################################################
+2016-05-23 15:07:47.934238 
+2016-05-23 15:07:47.934248 : ## process/ext_sentences_by_nlp_markup #######################################
+2016-05-23 15:07:47.934258 : # Done: 2016-05-23T15:05:01-0700 (2m 45s ago)
+2016-05-23 15:07:47.934267 : process/ext_sentences_by_nlp_markup/run.sh
+2016-05-23 15:07:47.934277 : mark_done process/ext_sentences_by_nlp_markup
+2016-05-23 15:07:47.934287 : ##############################################################################
+2016-05-23 15:07:47.934297 
+2016-05-23 15:07:47.934307 : ## data/sentences ############################################################
+2016-05-23 15:07:47.934319 : # Done: 2016-05-23T15:05:01-0700 (2m 45s ago)
+2016-05-23 15:07:47.934329 : # no-op
+2016-05-23 15:07:47.934342 : mark_done data/sentences
+2016-05-23 15:07:47.934361 : ##############################################################################
+2016-05-23 15:07:47.934379 
+2016-05-23 15:07:47.934398 : ## process/ext_person_mention_by_map_person_mention ##########################
+2016-05-23 15:07:47.934416 : # Done: 2016-05-23T15:05:52-0700 (1m 54s ago)
+2016-05-23 15:07:47.934433 : process/ext_person_mention_by_map_person_mention/run.sh
+2016-05-23 15:07:47.934450 : mark_done process/ext_person_mention_by_map_person_mention
+2016-05-23 15:07:47.934467 : ##############################################################################
+2016-05-23 15:07:47.934488 
+2016-05-23 15:07:47.934508 : ## data/person_mention #######################################################
+2016-05-23 15:07:47.934528 : # Done: 2016-05-23T15:05:52-0700 (1m 54s ago)
+2016-05-23 15:07:47.934547 : # no-op
+2016-05-23 15:07:47.934566 : mark_done data/person_mention
+2016-05-23 15:07:47.934584 : ##############################################################################
+2016-05-23 15:07:47.934603 
+2016-05-23 15:07:47.934622 : ## process/ext_team_mention_by_map_team_mention ##############################
+2016-05-23 15:07:47.934643 : # Done: 2016-05-23T15:06:19-0700 (1m 27s ago)
+2016-05-23 15:07:47.934665 : process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-23 15:07:47.934676 : mark_done process/ext_team_mention_by_map_team_mention
+2016-05-23 15:07:47.934687 : ##############################################################################
+2016-05-23 15:07:47.934697 
+2016-05-23 15:07:47.934707 : ## data/team_mention #########################################################
+2016-05-23 15:07:47.934725 : # Done: 2016-05-23T15:06:19-0700 (1m 27s ago)
+2016-05-23 15:07:47.934746 : # no-op
+2016-05-23 15:07:47.934764 : mark_done data/team_mention
+2016-05-23 15:07:47.934784 : ##############################################################################
+2016-05-23 15:07:47.934810 
+2016-05-23 15:07:47.934832 ## process/ext_spouse_feature_by_extract_spouse_features #####################
+2016-05-23 15:07:47.934853 # Done: 2016-05-23T15:07:20-0700 (26s ago)
+2016-05-23 15:07:47.934871 process/ext_spouse_feature_by_extract_spouse_features/run.sh
+2016-05-23 15:07:47.934891 ++ dirname process/ext_spouse_feature_by_extract_spouse_features/run.sh
+2016-05-23 15:07:47.934911 + cd process/ext_spouse_feature_by_extract_spouse_features
+2016-05-23 15:07:47.934931 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_feature_by_extract_spouse_features
+2016-05-23 15:07:47.934950 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_feature_by_extract_spouse_features
+2016-05-23 15:07:47.934968 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-23 15:07:47.934993 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-23 15:07:47.935016 + deepdive compute execute 'input_sql= SELECT R0.mention_id AS "person_mention.R0.mention_id", R1.team_id AS "team_mention.R1.team_id", R0.begin_index AS "person_mention.R0.begin_index", R0.end_index AS "person_mention.R0.end_index", R1.begin_index AS "team_mention.R1.begin_index", R1.end_index AS "team_mention.R1.end_index", R0.doc_id AS "person_mention.R0.doc_id", R0.sentence_index AS "person_mention.R0.sentence_index", R2.tokens AS "sentences.R2.tokens", R2.lemmas AS "sentences.R2.lemmas", R2.pos_tags AS "sentences.R2.pos_tags", R2.ner_tags AS "sentences.R2.ner_tags", R2.dep_types AS "sentences.R2.dep_types", R2.dep_tokens AS "sentences.R2.dep_tokens"
+2016-05-23 15:07:47.935038 FROM person_mention R0, team_mention R1, sentences R2
+2016-05-23 15:07:47.935058         WHERE R1.doc_id = R0.doc_id  AND R1.sentence_index = R0.sentence_index  AND R2.doc_id = R0.doc_id  AND R2.sentence_index = R0.sentence_index 
+2016-05-23 15:07:47.935077           ' 'command="$DEEPDIVE_APP"/udf/extract_spouse_features.py' output_relation=spouse_feature
+2016-05-23 15:07:47.981431 Executing with the following configuration:
+2016-05-23 15:07:47.981498  DEEPDIVE_NUM_PROCESSES=3
+2016-05-23 15:07:47.981527  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-23 15:07:47.981549  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-23 15:07:47.981634  output_relation_tmp=dd_tmp_spouse_feature
+2016-05-23 15:07:47.981666 
+2016-05-23 15:07:48.186929 CREATE TABLE
+2016-05-23 15:07:48.291161 CREATE TABLE
+2016-05-23 15:07:48.465702 unloading to feed_processes-1: ' SELECT R0.mention_id AS "person_mention.R0.mention_id", R1.team_id AS "team_mention.R1.team_id", R0.begin_index AS "person_mention.R0.begin_index", R0.end_index AS "person_mention.R0.end_index", R1.begin_index AS "team_mention.R1.begin_index", R1.end_index AS "team_mention.R1.end_index", R0.doc_id AS "person_mention.R0.doc_id", R0.sentence_index AS "person_mention.R0.sentence_index", R2.tokens AS "sentences.R2.tokens", R2.lemmas AS "sentences.R2.lemmas", R2.pos_tags AS "sentences.R2.pos_tags", R2.ner_tags AS "sentences.R2.ner_tags", R2.dep_types AS "sentences.R2.dep_types", R2.dep_tokens AS "sentences.R2.dep_tokens"
+2016-05-23 15:07:48.465767 FROM person_mention R0, team_mention R1, sentences R2
+2016-05-23 15:07:48.465796         WHERE R1.doc_id = R0.doc_id  AND R1.sentence_index = R0.sentence_index  AND R2.doc_id = R0.doc_id  AND R2.sentence_index = R0.sentence_index 
+2016-05-23 15:07:48.465825           '
+2016-05-23 15:07:48.491282 Loading dd_tmp_spouse_feature from output_computed-1 (tsv format)
+2016-05-23 15:08:08.851540 COPY 910682
+2016-05-23 15:08:08.881991 Replacing spouse_feature with dd_tmp_spouse_feature
+2016-05-23 15:08:08.968234 DROP TABLE
+2016-05-23 15:08:09.048209 ALTER TABLE
+2016-05-23 15:08:09.128811 ALTER TABLE
+2016-05-23 15:08:09.202685 DROP TABLE
+2016-05-23 15:08:09.672698 ANALYZE
+2016-05-23 15:08:09.680277 mark_done process/ext_spouse_feature_by_extract_spouse_features
+2016-05-23 15:08:09.700032 ##############################################################################
+2016-05-23 15:08:09.700121 
+2016-05-23 15:08:09.700160 ## data/spouse_feature #######################################################
+2016-05-23 15:08:09.700189 # Done: 2016-05-23T15:07:20-0700 (26s ago)
+2016-05-23 15:08:09.700213 # no-op
+2016-05-23 15:08:09.700236 mark_done data/spouse_feature
+2016-05-23 15:08:09.722220 ##############################################################################
+2016-05-23 15:08:09.722287 

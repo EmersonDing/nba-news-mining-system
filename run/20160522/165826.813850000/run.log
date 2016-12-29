@@ -1,0 +1,394 @@
+2016-05-22 16:58:28.886549 # on eduroam-169-233-210-202.ucsc.edu: deepdive do spouse_label
+2016-05-22 16:58:28.886850 # run/20160522/165826.813850000/plan.sh
+2016-05-22 16:58:28.886871 # execution plan for data/spouse_label
+2016-05-22 16:58:28.886883 
+2016-05-22 16:58:28.886894 ## process/init/app ##########################################################
+2016-05-22 16:58:28.886905 : # Done: 2016-05-22T11:25:05-0700 (5h 33m 22s ago)
+2016-05-22 16:58:28.886915 # Done: 2016-05-22T11:25:05-0700 (5h 33m 21s ago)
+2016-05-22 16:58:28.886924 process/init/app/run.sh
+2016-05-22 16:58:28.886935 ++ dirname process/init/app/run.sh
+2016-05-22 16:58:28.886945 + cd process/init/app
+2016-05-22 16:58:28.886954 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/app
+2016-05-22 16:58:28.886964 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/app
+2016-05-22 16:58:28.886974 + deepdive db init
+2016-05-22 16:58:31.361598 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba
+2016-05-22 16:58:31.361729 + [[ -r schema.sql ]]
+2016-05-22 16:58:31.361817 + [[ -x input/init.sh ]]
+2016-05-22 16:58:31.361870 + input/init.sh
+2016-05-22 16:58:31.374090 mark_done process/init/app
+2016-05-22 16:58:31.389447 ##############################################################################
+2016-05-22 16:58:31.389525 
+2016-05-22 16:58:31.389546 ## process/init/relation/articles ############################################
+2016-05-22 16:58:31.389567 : # Done: 2016-05-22T11:55:52-0700 (5h 2m 35s ago)
+2016-05-22 16:58:31.389586 # Done: 2016-05-22T11:55:52-0700 (5h 2m 34s ago)
+2016-05-22 16:58:31.389607 process/init/relation/articles/run.sh
+2016-05-22 16:58:31.399441 ++ dirname process/init/relation/articles/run.sh
+2016-05-22 16:58:31.403847 + cd process/init/relation/articles
+2016-05-22 16:58:31.403961 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-05-22 16:58:31.404013 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-05-22 16:58:31.404042 + deepdive create table articles
+2016-05-22 16:58:31.557401 NOTICE:  table "articles" does not exist, skipping
+2016-05-22 16:58:31.583390 CREATE TABLE
+2016-05-22 16:58:31.584734 + deepdive load articles
+2016-05-22 16:58:31.683718 Loading articles from input/articles.tsv.sh (tsv format)
+2016-05-22 16:58:31.693497 ERROR: Missing /Users/emerson/Documents/Github/deepdive/examples/coach_nba/input/signalmedia/signalmedia-1m.jsonl
+2016-05-22 16:58:31.693570 # Please Download it from http://research.signalmedia.co/newsir16/signal-dataset.html
+2016-05-22 16:58:31.693638 
+2016-05-22 16:58:31.693679 # Alternatively, use our sampled data by running:
+2016-05-22 16:58:31.693702 deepdive load articles input/articles-100.tsv.bz2
+2016-05-22 16:58:31.693721 
+2016-05-22 16:58:31.693744 # Or, skipping all NLP markup processes by running:
+2016-05-22 16:58:31.693762 deepdive create table sentences
+2016-05-22 16:58:31.693781 deepdive load sentences
+2016-05-22 16:58:31.693799 deepdive mark done sentences
+2016-05-22 16:58:31.725455 COPY 0
+2016-05-22 16:58:31.732591 mark_done process/init/relation/articles
+2016-05-22 16:58:31.752230 ##############################################################################
+2016-05-22 16:58:31.752285 
+2016-05-22 16:58:31.752304 ## data/articles #############################################################
+2016-05-22 16:58:31.752324 : # Done: 2016-05-22T11:55:52-0700 (5h 2m 35s ago)
+2016-05-22 16:58:31.752345 # Done: 2016-05-22T11:55:52-0700 (5h 2m 34s ago)
+2016-05-22 16:58:31.752408 # no-op
+2016-05-22 16:58:31.752441 mark_done data/articles
+2016-05-22 16:58:31.773053 ##############################################################################
+2016-05-22 16:58:31.773139 
+2016-05-22 16:58:31.773173 ## process/ext_sentences_by_nlp_markup #######################################
+2016-05-22 16:58:31.773198 : # Done: 2016-05-22T11:57:59-0700 (5h 28s ago)
+2016-05-22 16:58:31.773219 # Done: 2016-05-22T11:57:59-0700 (5h 27s ago)
+2016-05-22 16:58:31.773240 process/ext_sentences_by_nlp_markup/run.sh
+2016-05-22 16:58:31.782133 ++ dirname process/ext_sentences_by_nlp_markup/run.sh
+2016-05-22 16:58:31.785399 + cd process/ext_sentences_by_nlp_markup
+2016-05-22 16:58:31.785501 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_sentences_by_nlp_markup
+2016-05-22 16:58:31.785542 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_sentences_by_nlp_markup
+2016-05-22 16:58:31.785591 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-22 16:58:31.785618 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-22 16:58:31.785643 + deepdive compute execute 'input_sql= SELECT R0.id AS "articles.R0.id", R0.content AS "articles.R0.content"
+2016-05-22 16:58:31.785665 FROM articles R0
+2016-05-22 16:58:31.785685         
+2016-05-22 16:58:31.785705           ' 'command="$DEEPDIVE_APP"/udf/nlp_markup.sh' output_relation=sentences
+2016-05-22 16:58:31.868568 Executing with the following configuration:
+2016-05-22 16:58:31.868617  DEEPDIVE_NUM_PROCESSES=3
+2016-05-22 16:58:31.868634  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-22 16:58:31.868653  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-22 16:58:31.868696  output_relation_tmp=dd_tmp_sentences
+2016-05-22 16:58:31.868720 
+2016-05-22 16:58:32.038761 NOTICE:  table "sentences" does not exist, skipping
+2016-05-22 16:58:32.045510 CREATE TABLE
+2016-05-22 16:58:32.151737 CREATE TABLE
+2016-05-22 16:58:32.314423 unloading to feed_processes-1: ' SELECT R0.id AS "articles.R0.id", R0.content AS "articles.R0.content"
+2016-05-22 16:58:32.314492 FROM articles R0
+2016-05-22 16:58:32.314521         
+2016-05-22 16:58:32.314542           '
+2016-05-22 16:58:32.358900 Loading dd_tmp_sentences from output_computed-1 (tsv format)
+2016-05-22 16:58:33.664405 Parsing with max_len=100
+2016-05-22 16:58:33.665132 Parsing with max_len=100
+2016-05-22 16:58:33.754541 Parsing with max_len=100
+2016-05-22 16:58:33.940318 Adding annotator tokenize
+2016-05-22 16:58:33.952757 TokenizerAnnotator: No tokenizer type provided. Defaulting to PTBTokenizer.
+2016-05-22 16:58:33.967826 Adding annotator cleanxml
+2016-05-22 16:58:33.974364 Adding annotator tokenize
+2016-05-22 16:58:34.028689 TokenizerAnnotator: No tokenizer type provided. Defaulting to PTBTokenizer.
+2016-05-22 16:58:34.037182 Adding annotator cleanxml
+2016-05-22 16:58:34.040826 Adding annotator ssplit
+2016-05-22 16:58:34.046823 Adding annotator pos
+2016-05-22 16:58:34.053710 Adding annotator tokenize
+2016-05-22 16:58:34.058931 TokenizerAnnotator: No tokenizer type provided. Defaulting to PTBTokenizer.
+2016-05-22 16:58:34.070782 Adding annotator cleanxml
+2016-05-22 16:58:34.089436 Adding annotator ssplit
+2016-05-22 16:58:34.101803 Adding annotator pos
+2016-05-22 16:58:34.126572 Adding annotator ssplit
+2016-05-22 16:58:34.132226 Adding annotator pos
+2016-05-22 16:58:37.267182 Reading POS tagger model from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... Reading POS tagger model from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... Reading POS tagger model from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... done [3.1 sec].
+2016-05-22 16:58:37.267331 Adding annotator lemma
+2016-05-22 16:58:37.281559 Adding annotator ner
+2016-05-22 16:58:37.625018 Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... done [3.5 sec].
+2016-05-22 16:58:37.625574 Adding annotator lemma
+2016-05-22 16:58:37.626891 Adding annotator ner
+2016-05-22 16:58:37.719768 done [3.5 sec].
+2016-05-22 16:58:37.722133 Adding annotator lemma
+2016-05-22 16:58:37.723404 Adding annotator ner
+2016-05-22 16:58:46.945746 Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... done [9.0 sec].
+2016-05-22 16:58:46.951706 Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [9.3 sec].
+2016-05-22 16:58:47.083085 Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [9.2 sec].
+2016-05-22 16:58:51.373119 Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [4.4 sec].
+2016-05-22 16:58:51.394292 Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [4.3 sec].
+2016-05-22 16:58:51.431628 Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [4.5 sec].
+2016-05-22 16:59:00.514636 Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [9.1 sec].
+2016-05-22 16:59:00.515699 done [9.1 sec].
+2016-05-22 16:59:00.518104 sutime.binder.1.
+2016-05-22 16:59:00.518163 Initializing JollyDayHoliday for sutime with classpath:edu/stanford/nlp/models/sutime/jollyday/Holidays_sutime.xml
+2016-05-22 16:59:00.518920 sutime.binder.1.
+2016-05-22 16:59:00.519123 Initializing JollyDayHoliday for sutime with classpath:edu/stanford/nlp/models/sutime/jollyday/Holidays_sutime.xml
+2016-05-22 16:59:01.713012 Reading TokensRegex rules from edu/stanford/nlp/models/sutime/defs.sutime.txt
+2016-05-22 16:59:01.784891 Reading TokensRegex rules from edu/stanford/nlp/models/sutime/defs.sutime.txt
+2016-05-22 16:59:01.898387 Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.sutime.txt
+2016-05-22 16:59:01.962762 Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.sutime.txt
+2016-05-22 16:59:03.236440 May 22, 2016 4:59:03 PM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+2016-05-22 16:59:03.236516 信息: Ignoring inactive rule: null
+2016-05-22 16:59:03.237667 May 22, 2016 4:59:03 PM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+2016-05-22 16:59:03.237735 信息: Ignoring inactive rule: temporal-composite-8:ranges
+2016-05-22 16:59:03.238066 Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.holidays.sutime.txt
+2016-05-22 16:59:03.245487 Adding annotator parse
+2016-05-22 16:59:03.259254 May 22, 2016 4:59:03 PM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+2016-05-22 16:59:03.259327 信息: Ignoring inactive rule: null
+2016-05-22 16:59:03.260463 May 22, 2016 4:59:03 PM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+2016-05-22 16:59:03.260563 信息: Ignoring inactive rule: temporal-composite-8:ranges
+2016-05-22 16:59:03.260997 Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.holidays.sutime.txt
+2016-05-22 16:59:03.268352 Loading parser from serialized file edu/stanford/nlp/models/srparser/englishSR.ser.gz ...Adding annotator parse
+2016-05-22 16:59:05.517315 Loading parser from serialized file edu/stanford/nlp/models/srparser/englishSR.ser.gz ...done [14.1 sec].
+2016-05-22 16:59:05.572178 sutime.binder.1.
+2016-05-22 16:59:05.572259 Initializing JollyDayHoliday for sutime with classpath:edu/stanford/nlp/models/sutime/jollyday/Holidays_sutime.xml
+2016-05-22 16:59:06.923986 Reading TokensRegex rules from edu/stanford/nlp/models/sutime/defs.sutime.txt
+2016-05-22 16:59:07.043080 Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.sutime.txt
+2016-05-22 16:59:08.196840 May 22, 2016 4:59:08 PM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+2016-05-22 16:59:08.196915 信息: Ignoring inactive rule: null
+2016-05-22 16:59:08.197905 May 22, 2016 4:59:08 PM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+2016-05-22 16:59:08.197972 信息: Ignoring inactive rule: temporal-composite-8:ranges
+2016-05-22 16:59:08.198220 Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.holidays.sutime.txt
+2016-05-22 16:59:08.208617 Adding annotator parse
+2016-05-22 16:59:40.915259 Loading parser from serialized file edu/stanford/nlp/models/srparser/englishSR.ser.gz ...done [37.6 sec].
+2016-05-22 16:59:45.856234 done [37.6 sec].
+2016-05-22 16:59:46.967740 done [43.7 sec].
+2016-05-22 16:59:47.176163 COPY 0
+2016-05-22 16:59:47.195443 Replacing sentences with dd_tmp_sentences
+2016-05-22 16:59:47.290315 DROP TABLE
+2016-05-22 16:59:47.385063 ALTER TABLE
+2016-05-22 16:59:47.462949 ALTER TABLE
+2016-05-22 16:59:47.587758 DROP TABLE
+2016-05-22 16:59:47.738186 ANALYZE
+2016-05-22 16:59:47.750563 mark_done process/ext_sentences_by_nlp_markup
+2016-05-22 16:59:47.772179 ##############################################################################
+2016-05-22 16:59:47.772250 
+2016-05-22 16:59:47.772278 ## data/sentences ############################################################
+2016-05-22 16:59:47.772302 : # Done: 2016-05-22T11:57:59-0700 (5h 28s ago)
+2016-05-22 16:59:47.772414 # Done: 2016-05-22T11:57:59-0700 (5h 27s ago)
+2016-05-22 16:59:47.772447 # no-op
+2016-05-22 16:59:47.772469 mark_done data/sentences
+2016-05-22 16:59:47.794996 ##############################################################################
+2016-05-22 16:59:47.795063 
+2016-05-22 16:59:47.795083 ## process/ext_person_mention_by_map_person_mention ##########################
+2016-05-22 16:59:47.795103 # Done: 2016-05-22T12:13:47-0700 (4h 44m 40s ago)
+2016-05-22 16:59:47.795124 process/ext_person_mention_by_map_person_mention/run.sh
+2016-05-22 16:59:47.808960 ++ dirname process/ext_person_mention_by_map_person_mention/run.sh
+2016-05-22 16:59:47.813238 + cd process/ext_person_mention_by_map_person_mention
+2016-05-22 16:59:47.813581 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_person_mention_by_map_person_mention
+2016-05-22 16:59:47.813620 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_person_mention_by_map_person_mention
+2016-05-22 16:59:47.813646 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-22 16:59:47.813668 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-22 16:59:47.813699 + deepdive compute execute 'input_sql= SELECT R0.doc_id AS "sentences.R0.doc_id", R0.sentence_index AS "sentences.R0.sentence_index", R0.tokens AS "sentences.R0.tokens", R0.ner_tags AS "sentences.R0.ner_tags"
+2016-05-22 16:59:47.813720 FROM sentences R0
+2016-05-22 16:59:47.813739         
+2016-05-22 16:59:47.814103           ' 'command="$DEEPDIVE_APP"/udf/map_person_mention.py' output_relation=person_mention
+2016-05-22 16:59:47.912179 Executing with the following configuration:
+2016-05-22 16:59:47.912226  DEEPDIVE_NUM_PROCESSES=3
+2016-05-22 16:59:47.912242  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-22 16:59:47.912262  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-22 16:59:47.912306  output_relation_tmp=dd_tmp_person_mention
+2016-05-22 16:59:47.912333 
+2016-05-22 16:59:48.094095 NOTICE:  table "person_mention" does not exist, skipping
+2016-05-22 16:59:48.098853 CREATE TABLE
+2016-05-22 16:59:48.224637 CREATE TABLE
+2016-05-22 16:59:48.389505 unloading to feed_processes-1: ' SELECT R0.doc_id AS "sentences.R0.doc_id", R0.sentence_index AS "sentences.R0.sentence_index", R0.tokens AS "sentences.R0.tokens", R0.ner_tags AS "sentences.R0.ner_tags"
+2016-05-22 16:59:48.389566 FROM sentences R0
+2016-05-22 16:59:48.389592         
+2016-05-22 16:59:48.389616           '
+2016-05-22 16:59:48.419020 Loading dd_tmp_person_mention from output_computed-1 (tsv format)
+2016-05-22 16:59:48.670667 COPY 0
+2016-05-22 16:59:48.676138 Replacing person_mention with dd_tmp_person_mention
+2016-05-22 16:59:48.751233 DROP TABLE
+2016-05-22 16:59:48.834789 ALTER TABLE
+2016-05-22 16:59:48.913152 ALTER TABLE
+2016-05-22 16:59:48.990604 DROP TABLE
+2016-05-22 16:59:49.019414 ANALYZE
+2016-05-22 16:59:49.026039 mark_done process/ext_person_mention_by_map_person_mention
+2016-05-22 16:59:49.052560 ##############################################################################
+2016-05-22 16:59:49.052702 
+2016-05-22 16:59:49.052772 ## data/person_mention #######################################################
+2016-05-22 16:59:49.052807 # Done: 2016-05-22T12:13:47-0700 (4h 44m 40s ago)
+2016-05-22 16:59:49.052831 # no-op
+2016-05-22 16:59:49.052858 mark_done data/person_mention
+2016-05-22 16:59:49.075030 ##############################################################################
+2016-05-22 16:59:49.075110 
+2016-05-22 16:59:49.075148 ## process/ext_num_people ####################################################
+2016-05-22 16:59:49.075175 # Done: 2016-05-22T12:14:33-0700 (4h 43m 54s ago)
+2016-05-22 16:59:49.075215 process/ext_num_people/run.sh
+2016-05-22 16:59:49.091615 ++ dirname process/ext_num_people/run.sh
+2016-05-22 16:59:49.094924 + cd process/ext_num_people
+2016-05-22 16:59:49.095051 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_num_people
+2016-05-22 16:59:49.095099 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_num_people
+2016-05-22 16:59:49.095127 + deepdive create view num_people as 'SELECT R0.doc_id AS column_0, R0.sentence_index AS column_1, COUNT(R0.mention_id) AS column_2
+2016-05-22 16:59:49.095148 FROM person_mention R0
+2016-05-22 16:59:49.095167         
+2016-05-22 16:59:49.095186         GROUP BY R0.doc_id, R0.sentence_index'
+2016-05-22 16:59:49.308956 CREATE VIEW
+2016-05-22 16:59:49.310337 mark_done process/ext_num_people
+2016-05-22 16:59:49.326280 ##############################################################################
+2016-05-22 16:59:49.326328 
+2016-05-22 16:59:49.326354 ## data/num_people ###########################################################
+2016-05-22 16:59:49.326376 # Done: 2016-05-22T12:14:33-0700 (4h 43m 54s ago)
+2016-05-22 16:59:49.326397 # no-op
+2016-05-22 16:59:49.326416 mark_done data/num_people
+2016-05-22 16:59:49.346801 ##############################################################################
+2016-05-22 16:59:49.346917 
+2016-05-22 16:59:49.346947 ## process/ext_team_mention_by_map_team_mention ##############################
+2016-05-22 16:59:49.346970 # Done: 2016-05-22T12:14:14-0700 (4h 44m 13s ago)
+2016-05-22 16:59:49.346988 process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-22 16:59:49.357035 ++ dirname process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-22 16:59:49.360137 + cd process/ext_team_mention_by_map_team_mention
+2016-05-22 16:59:49.360251 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_team_mention_by_map_team_mention
+2016-05-22 16:59:49.360296 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_team_mention_by_map_team_mention
+2016-05-22 16:59:49.360322 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-22 16:59:49.360342 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-22 16:59:49.360391 + deepdive compute execute 'input_sql= SELECT R0.doc_id AS "sentences.R0.doc_id", R0.sentence_index AS "sentences.R0.sentence_index", R0.tokens AS "sentences.R0.tokens", R0.ner_tags AS "sentences.R0.ner_tags"
+2016-05-22 16:59:49.360423 FROM sentences R0
+2016-05-22 16:59:49.360444         
+2016-05-22 16:59:49.360466           ' 'command="$DEEPDIVE_APP"/udf/map_team_mention.py' output_relation=team_mention
+2016-05-22 16:59:49.444059 Executing with the following configuration:
+2016-05-22 16:59:49.444107  DEEPDIVE_NUM_PROCESSES=3
+2016-05-22 16:59:49.444124  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-22 16:59:49.444144  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-22 16:59:49.444188  output_relation_tmp=dd_tmp_team_mention
+2016-05-22 16:59:49.444212 
+2016-05-22 16:59:49.614480 NOTICE:  table "team_mention" does not exist, skipping
+2016-05-22 16:59:49.619698 CREATE TABLE
+2016-05-22 16:59:49.719330 CREATE TABLE
+2016-05-22 16:59:49.880428 unloading to feed_processes-1: ' SELECT R0.doc_id AS "sentences.R0.doc_id", R0.sentence_index AS "sentences.R0.sentence_index", R0.tokens AS "sentences.R0.tokens", R0.ner_tags AS "sentences.R0.ner_tags"
+2016-05-22 16:59:49.880503 FROM sentences R0
+2016-05-22 16:59:49.880526         
+2016-05-22 16:59:49.880547           '
+2016-05-22 16:59:49.920245 Loading dd_tmp_team_mention from output_computed-1 (tsv format)
+2016-05-22 16:59:50.030977 COPY 0
+2016-05-22 16:59:50.041153 Replacing team_mention with dd_tmp_team_mention
+2016-05-22 16:59:50.112927 DROP TABLE
+2016-05-22 16:59:50.188968 ALTER TABLE
+2016-05-22 16:59:50.263624 ALTER TABLE
+2016-05-22 16:59:50.342329 DROP TABLE
+2016-05-22 16:59:50.370497 ANALYZE
+2016-05-22 16:59:50.376157 mark_done process/ext_team_mention_by_map_team_mention
+2016-05-22 16:59:50.398054 ##############################################################################
+2016-05-22 16:59:50.398131 
+2016-05-22 16:59:50.398157 ## data/team_mention #########################################################
+2016-05-22 16:59:50.398178 # Done: 2016-05-22T12:14:14-0700 (4h 44m 13s ago)
+2016-05-22 16:59:50.398197 # no-op
+2016-05-22 16:59:50.398214 mark_done data/team_mention
+2016-05-22 16:59:50.421643 ##############################################################################
+2016-05-22 16:59:50.421737 
+2016-05-22 16:59:50.421767 ## process/ext_spouse_candidate ##############################################
+2016-05-22 16:59:50.421790 # Done: 2016-05-22T12:14:34-0700 (4h 43m 53s ago)
+2016-05-22 16:59:50.421811 process/ext_spouse_candidate/run.sh
+2016-05-22 16:59:50.432750 ++ dirname process/ext_spouse_candidate/run.sh
+2016-05-22 16:59:50.439215 + cd process/ext_spouse_candidate
+2016-05-22 16:59:50.439429 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_candidate
+2016-05-22 16:59:50.439470 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_candidate
+2016-05-22 16:59:50.439497 + deepdive create table spouse_candidate
+2016-05-22 16:59:50.563998 NOTICE:  table "spouse_candidate" does not exist, skipping
+2016-05-22 16:59:50.569000 CREATE TABLE
+2016-05-22 16:59:50.570498 + deepdive sql 'INSERT INTO spouse_candidate SELECT R1.mention_id AS "person_mention.R1.mention_id", R1.mention_text AS "person_mention.R1.mention_text", R2.team_id AS "team_mention.R2.team_id", R2.team_text AS "team_mention.R2.team_text"
+2016-05-22 16:59:50.570559 FROM num_people R0, person_mention R1, team_mention R2
+2016-05-22 16:59:50.570584         WHERE R1.doc_id = R0.column_0  AND R1.sentence_index = R0.column_1  AND R2.doc_id = R0.column_0  AND R2.sentence_index = R0.column_1  AND R0.column_2 < 3'
+2016-05-22 16:59:50.671641 INSERT 0 0
+2016-05-22 16:59:50.673457 mark_done process/ext_spouse_candidate
+2016-05-22 16:59:50.689746 ##############################################################################
+2016-05-22 16:59:50.689796 
+2016-05-22 16:59:50.689810 ## data/spouse_candidate #####################################################
+2016-05-22 16:59:50.689829 # Done: 2016-05-22T12:14:34-0700 (4h 43m 53s ago)
+2016-05-22 16:59:50.689849 # no-op
+2016-05-22 16:59:50.689868 mark_done data/spouse_candidate
+2016-05-22 16:59:50.705250 ##############################################################################
+2016-05-22 16:59:50.705299 
+2016-05-22 16:59:50.705316 ## process/ext_spouse_label__0_by_supervise ##################################
+2016-05-22 16:59:50.705337 # Done: 2016-05-22T12:28:31-0700 (4h 29m 56s ago)
+2016-05-22 16:59:50.705358 process/ext_spouse_label__0_by_supervise/run.sh
+2016-05-22 16:59:50.718429 ++ dirname process/ext_spouse_label__0_by_supervise/run.sh
+2016-05-22 16:59:50.721566 + cd process/ext_spouse_label__0_by_supervise
+2016-05-22 16:59:50.721647 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label__0_by_supervise
+2016-05-22 16:59:50.721693 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label__0_by_supervise
+2016-05-22 16:59:50.721718 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-22 16:59:50.721740 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-22 16:59:50.721827 + deepdive compute execute 'input_sql= SELECT R0.p_id AS "spouse_candidate.R0.p_id", R1.begin_index AS "person_mention.R1.begin_index", R1.end_index AS "person_mention.R1.end_index", R0.t_id AS "spouse_candidate.R0.t_id", R2.begin_index AS "team_mention.R2.begin_index", R2.end_index AS "team_mention.R2.end_index", R1.doc_id AS "person_mention.R1.doc_id", R1.sentence_index AS "person_mention.R1.sentence_index", R3.sentence_text AS "sentences.R3.sentence_text", R3.tokens AS "sentences.R3.tokens", R3.lemmas AS "sentences.R3.lemmas", R3.pos_tags AS "sentences.R3.pos_tags", R3.ner_tags AS "sentences.R3.ner_tags", R3.dep_types AS "sentences.R3.dep_types", R3.dep_tokens AS "sentences.R3.dep_tokens"
+2016-05-22 16:59:50.721862 FROM spouse_candidate R0, person_mention R1, team_mention R2, sentences R3
+2016-05-22 16:59:50.721887         WHERE R1.mention_id = R0.p_id  AND R2.team_id = R0.t_id  AND R3.doc_id = R1.doc_id  AND R3.sentence_index = R1.sentence_index 
+2016-05-22 16:59:50.721923           ' 'command="$DEEPDIVE_APP"/udf/supervise_spouse.py' output_relation=spouse_label__0
+2016-05-22 16:59:50.807182 Executing with the following configuration:
+2016-05-22 16:59:50.807230  DEEPDIVE_NUM_PROCESSES=3
+2016-05-22 16:59:50.807247  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-22 16:59:50.807265  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-22 16:59:50.807310  output_relation_tmp=dd_tmp_spouse_label__0
+2016-05-22 16:59:50.807334 
+2016-05-22 16:59:50.969391 NOTICE:  table "spouse_label__0" does not exist, skipping
+2016-05-22 16:59:50.974811 CREATE TABLE
+2016-05-22 16:59:51.073212 CREATE TABLE
+2016-05-22 16:59:51.243408 unloading to feed_processes-1: ' SELECT R0.p_id AS "spouse_candidate.R0.p_id", R1.begin_index AS "person_mention.R1.begin_index", R1.end_index AS "person_mention.R1.end_index", R0.t_id AS "spouse_candidate.R0.t_id", R2.begin_index AS "team_mention.R2.begin_index", R2.end_index AS "team_mention.R2.end_index", R1.doc_id AS "person_mention.R1.doc_id", R1.sentence_index AS "person_mention.R1.sentence_index", R3.sentence_text AS "sentences.R3.sentence_text", R3.tokens AS "sentences.R3.tokens", R3.lemmas AS "sentences.R3.lemmas", R3.pos_tags AS "sentences.R3.pos_tags", R3.ner_tags AS "sentences.R3.ner_tags", R3.dep_types AS "sentences.R3.dep_types", R3.dep_tokens AS "sentences.R3.dep_tokens"
+2016-05-22 16:59:51.243467 FROM spouse_candidate R0, person_mention R1, team_mention R2, sentences R3
+2016-05-22 16:59:51.243491         WHERE R1.mention_id = R0.p_id  AND R2.team_id = R0.t_id  AND R3.doc_id = R1.doc_id  AND R3.sentence_index = R1.sentence_index 
+2016-05-22 16:59:51.243515           '
+2016-05-22 16:59:51.285888 Loading dd_tmp_spouse_label__0 from output_computed-1 (tsv format)
+2016-05-22 16:59:51.462658 COPY 0
+2016-05-22 16:59:51.468294 Replacing spouse_label__0 with dd_tmp_spouse_label__0
+2016-05-22 16:59:51.541991 DROP TABLE
+2016-05-22 16:59:51.619869 ALTER TABLE
+2016-05-22 16:59:51.701519 ALTER TABLE
+2016-05-22 16:59:51.785130 DROP TABLE
+2016-05-22 16:59:51.813444 ANALYZE
+2016-05-22 16:59:51.818859 mark_done process/ext_spouse_label__0_by_supervise
+2016-05-22 16:59:51.841968 ##############################################################################
+2016-05-22 16:59:51.842020 
+2016-05-22 16:59:51.842038 ## data/spouse_label__0 ######################################################
+2016-05-22 16:59:51.842059 # Done: 2016-05-22T12:28:31-0700 (4h 29m 56s ago)
+2016-05-22 16:59:51.842079 # no-op
+2016-05-22 16:59:51.842098 mark_done data/spouse_label__0
+2016-05-22 16:59:51.862084 ##############################################################################
+2016-05-22 16:59:51.862153 
+2016-05-22 16:59:51.862184 ## process/init/relation/spouses_dbpedia #####################################
+2016-05-22 16:59:51.862206 # Done: 2016-05-22T15:50:19-0700 (1h 8m 8s ago)
+2016-05-22 16:59:51.862229 process/init/relation/spouses_dbpedia/run.sh
+2016-05-22 16:59:51.870032 ++ dirname process/init/relation/spouses_dbpedia/run.sh
+2016-05-22 16:59:51.873176 + cd process/init/relation/spouses_dbpedia
+2016-05-22 16:59:51.873280 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/spouses_dbpedia
+2016-05-22 16:59:51.873317 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/spouses_dbpedia
+2016-05-22 16:59:51.873369 + deepdive create table spouses_dbpedia
+2016-05-22 16:59:52.004777 NOTICE:  table "spouses_dbpedia" does not exist, skipping
+2016-05-22 16:59:52.009434 CREATE TABLE
+2016-05-22 16:59:52.010455 + deepdive load spouses_dbpedia
+2016-05-22 16:59:52.111641 Loading spouses_dbpedia from input/spouses_dbpedia.csv (csv format)
+2016-05-22 16:59:52.155152 COPY 363
+2016-05-22 16:59:52.161308 mark_done process/init/relation/spouses_dbpedia
+2016-05-22 16:59:52.182657 ##############################################################################
+2016-05-22 16:59:52.182734 
+2016-05-22 16:59:52.182755 ## data/spouses_dbpedia ######################################################
+2016-05-22 16:59:52.182776 # Done: 2016-05-22T15:50:19-0700 (1h 8m 8s ago)
+2016-05-22 16:59:52.182798 # no-op
+2016-05-22 16:59:52.182817 mark_done data/spouses_dbpedia
+2016-05-22 16:59:52.203131 ##############################################################################
+2016-05-22 16:59:52.203240 
+2016-05-22 16:59:52.203282 ## process/ext_spouse_label ##################################################
+2016-05-22 16:59:52.203319 # Done: 2016-05-22T16:55:22-0700 (3m 5s ago)
+2016-05-22 16:59:52.203346 process/ext_spouse_label/run.sh
+2016-05-22 16:59:52.211257 ++ dirname process/ext_spouse_label/run.sh
+2016-05-22 16:59:52.214426 + cd process/ext_spouse_label
+2016-05-22 16:59:52.214541 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label
+2016-05-22 16:59:52.214565 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label
+2016-05-22 16:59:52.214578 + deepdive create table spouse_label
+2016-05-22 16:59:52.346879 NOTICE:  table "spouse_label" does not exist, skipping
+2016-05-22 16:59:52.351155 CREATE TABLE
+2016-05-22 16:59:52.352374 + deepdive sql 'INSERT INTO spouse_label SELECT R0.p_id AS "spouse_candidate.R0.p_id", R0.t_id AS "spouse_candidate.R0.t_id", 0 AS column_2, NULL AS column_3
+2016-05-22 16:59:52.352425 FROM spouse_candidate R0
+2016-05-22 16:59:52.352439         
+2016-05-22 16:59:52.352451 UNION ALL
+2016-05-22 16:59:52.352461 SELECT R0.p_id AS "spouse_candidate.R0.p_id", R0.t_id AS "spouse_candidate.R0.t_id", 1 AS column_2, '\''from_dbpedia'\'' AS column_3
+2016-05-22 16:59:52.352472 FROM spouse_candidate R0, spouses_dbpedia R1
+2016-05-22 16:59:52.352482         WHERE ((lower(R1.p_name) = lower(R0.p_name) AND lower(R1.t_name) = lower(R0.p_name)) OR (lower(R1.t_name) = lower(R0.t_name) AND lower(R1.p_name) = lower(R0.t_name)))
+2016-05-22 16:59:52.352493 UNION ALL
+2016-05-22 16:59:52.352511 SELECT R0.p_id AS "spouse_label__0.R0.p_id", R0.t_id AS "spouse_label__0.R0.t_id", R0.label AS "spouse_label__0.R0.label", R0.rule_id AS "spouse_label__0.R0.rule_id"
+2016-05-22 16:59:52.352530 FROM spouse_label__0 R0
+2016-05-22 16:59:52.352551         '
+2016-05-22 16:59:52.434063 INSERT 0 0
+2016-05-22 16:59:52.435480 mark_done process/ext_spouse_label
+2016-05-22 16:59:52.450979 ##############################################################################
+2016-05-22 16:59:52.451033 
+2016-05-22 16:59:52.451048 ## data/spouse_label #########################################################
+2016-05-22 16:59:52.451067 # Done: 2016-05-22T16:55:22-0700 (3m 5s ago)
+2016-05-22 16:59:52.451087 # no-op
+2016-05-22 16:59:52.451107 mark_done data/spouse_label
+2016-05-22 16:59:52.466521 ##############################################################################
+2016-05-22 16:59:52.466574 

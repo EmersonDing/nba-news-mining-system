@@ -1,0 +1,21 @@
+2016-05-25 12:13:14.109093 # on dhcp-169-233-164-19.cruznet.ucsc.edu: deepdive do spouses_dbpedia_negative
+2016-05-25 12:13:14.109390 # run/20160525/121313.000476000/plan.sh
+2016-05-25 12:13:14.109412 # execution plan for data/spouses_dbpedia_negative
+2016-05-25 12:13:14.109431 
+2016-05-25 12:13:14.109452 : ## process/init/app ##########################################################
+2016-05-25 12:13:14.109472 : # Done: 2016-05-22T17:21:25-0700 (2d 18h 51m 48s ago)
+2016-05-25 12:13:14.109491 : process/init/app/run.sh
+2016-05-25 12:13:14.109510 : mark_done process/init/app
+2016-05-25 12:13:14.109552 : ##############################################################################
+2016-05-25 12:13:14.109582 
+2016-05-25 12:13:14.109604 ## process/init/relation/spouses_dbpedia_negative ############################
+2016-05-25 12:13:14.109624 # Done: N/A
+2016-05-25 12:13:14.109645 process/init/relation/spouses_dbpedia_negative/run.sh
+2016-05-25 12:13:14.109665 ++ dirname process/init/relation/spouses_dbpedia_negative/run.sh
+2016-05-25 12:13:14.109684 + cd process/init/relation/spouses_dbpedia_negative
+2016-05-25 12:13:14.109704 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/spouses_dbpedia_negative
+2016-05-25 12:13:14.109723 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/spouses_dbpedia_negative
+2016-05-25 12:13:14.109743 + deepdive create table spouses_dbpedia_negative
+2016-05-25 12:13:14.226777 CREATE TABLE
+2016-05-25 12:13:14.227991 + deepdive load spouses_dbpedia_negative
+2016-05-25 12:13:14.334445 parse error: Expected separator between values at line 2206, column 38

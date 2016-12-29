@@ -1,0 +1,16 @@
+2016-05-22 11:24:34.972412 # on eduroam-169-233-210-202.ucsc.edu: deepdive do process/init/app model/calibration-plots
+2016-05-22 11:24:34.972938 # run/20160522/112430.222144000/plan.sh
+2016-05-22 11:24:34.972976 # execution plan for process/init/app model/calibration-plots
+2016-05-22 11:24:34.972998 
+2016-05-22 11:24:34.973020 ## process/init/app ##########################################################
+2016-05-22 11:24:34.973040 : # Done: 2016-05-20T15:47:44-0700 (1d 19h 36m 47s ago)
+2016-05-22 11:24:34.973063 # Done: 2016-05-20T15:47:44-0700 (1d 19h 36m 46s ago)
+2016-05-22 11:24:34.973085 process/init/app/run.sh
+2016-05-22 11:24:34.973107 ++ dirname process/init/app/run.sh
+2016-05-22 11:24:34.973129 + cd process/init/app
+2016-05-22 11:24:34.973153 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/app
+2016-05-22 11:24:34.973190 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/app
+2016-05-22 11:24:34.973226 + deepdive db init
+2016-05-22 11:24:39.953875 dropdb: database removal failed: ERROR:  database "deepdive_test_emerson" is being accessed by other users
+2016-05-22 11:24:39.953998 DETAIL:  There is 1 other session using the database.
+2016-05-22 11:24:39.986841 createdb: database creation failed: ERROR:  database "deepdive_test_emerson" already exists

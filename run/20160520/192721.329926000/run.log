@@ -1,0 +1,60 @@
+2016-05-20 19:27:22.671272 # on dhcp-169-233-138-157.cruznet.ucsc.edu: deepdive do team_mention
+2016-05-20 19:27:22.671556 # run/20160520/192721.329926000/plan.sh
+2016-05-20 19:27:22.671577 # execution plan for data/team_mention
+2016-05-20 19:27:22.671596 
+2016-05-20 19:27:22.671614 : ## process/init/app ##########################################################
+2016-05-20 19:27:22.671635 : # Done: 2016-05-20T15:47:44-0700 (3h 39m 37s ago)
+2016-05-20 19:27:22.671655 : process/init/app/run.sh
+2016-05-20 19:27:22.671673 : mark_done process/init/app
+2016-05-20 19:27:22.671692 : ##############################################################################
+2016-05-20 19:27:22.671713 
+2016-05-20 19:27:22.671732 : ## process/init/relation/articles ############################################
+2016-05-20 19:27:22.671753 : # Done: 2016-05-20T19:16:48-0700 (10m 33s ago)
+2016-05-20 19:27:22.671772 : process/init/relation/articles/run.sh
+2016-05-20 19:27:22.671791 : mark_done process/init/relation/articles
+2016-05-20 19:27:22.671809 : ##############################################################################
+2016-05-20 19:27:22.671827 
+2016-05-20 19:27:22.671846 : ## data/articles #############################################################
+2016-05-20 19:27:22.671864 : # Done: 2016-05-20T19:16:48-0700 (10m 33s ago)
+2016-05-20 19:27:22.671882 : # no-op
+2016-05-20 19:27:22.671900 : mark_done data/articles
+2016-05-20 19:27:22.671932 : ##############################################################################
+2016-05-20 19:27:22.671962 
+2016-05-20 19:27:22.671983 : ## process/ext_sentences_by_nlp_markup #######################################
+2016-05-20 19:27:22.672004 : # Done: 2016-05-20T19:20:04-0700 (7m 17s ago)
+2016-05-20 19:27:22.672024 : process/ext_sentences_by_nlp_markup/run.sh
+2016-05-20 19:27:22.672044 : mark_done process/ext_sentences_by_nlp_markup
+2016-05-20 19:27:22.672063 : ##############################################################################
+2016-05-20 19:27:22.672095 
+2016-05-20 19:27:22.672116 : ## data/sentences ############################################################
+2016-05-20 19:27:22.672137 : # Done: 2016-05-20T19:20:04-0700 (7m 17s ago)
+2016-05-20 19:27:22.672157 : # no-op
+2016-05-20 19:27:22.672179 : mark_done data/sentences
+2016-05-20 19:27:22.672200 : ##############################################################################
+2016-05-20 19:27:22.672222 
+2016-05-20 19:27:22.672242 ## process/ext_team_mention_by_map_team_mention ##############################
+2016-05-20 19:27:22.672263 # Done: 2016-05-20T19:14:11-0700 (13m 10s ago)
+2016-05-20 19:27:22.672284 process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-20 19:27:22.672305 ++ dirname process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-20 19:27:22.672325 + cd process/ext_team_mention_by_map_team_mention
+2016-05-20 19:27:22.672344 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_team_mention_by_map_team_mention
+2016-05-20 19:27:22.672365 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_team_mention_by_map_team_mention
+2016-05-20 19:27:22.672383 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-20 19:27:22.672403 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-20 19:27:22.672425 + deepdive compute execute 'input_sql= SELECT R0.doc_id AS "sentences.R0.doc_id", R0.sentence_index AS "sentences.R0.sentence_index", R0.tokens AS "sentences.R0.tokens", R0.ner_tags AS "sentences.R0.ner_tags"
+2016-05-20 19:27:22.672447 FROM sentences R0
+2016-05-20 19:27:22.672467         
+2016-05-20 19:27:22.672489           ' 'command="$DEEPDIVE_APP"/udf/map_team_mention.py' output_relation=team_mention
+2016-05-20 19:27:22.711658 Executing with the following configuration:
+2016-05-20 19:27:22.711723  DEEPDIVE_NUM_PROCESSES=3
+2016-05-20 19:27:22.711749  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-20 19:27:22.711771  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-20 19:27:22.711851  output_relation_tmp=dd_tmp_team_mention
+2016-05-20 19:27:22.711880 
+2016-05-20 19:27:22.886904 CREATE TABLE
+2016-05-20 19:27:22.996510 CREATE TABLE
+2016-05-20 19:27:23.215028 unloading to feed_processes-1: ' SELECT R0.doc_id AS "sentences.R0.doc_id", R0.sentence_index AS "sentences.R0.sentence_index", R0.tokens AS "sentences.R0.tokens", R0.ner_tags AS "sentences.R0.ner_tags"
+2016-05-20 19:27:23.215091 FROM sentences R0
+2016-05-20 19:27:23.215113         
+2016-05-20 19:27:23.215132           '
+2016-05-20 19:27:23.245244 Loading dd_tmp_team_mention from output_computed-1 (tsv format)

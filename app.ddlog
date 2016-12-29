@@ -1,0 +1,299 @@
+## Random variable to predict #################################################
+
+# This application's goal is to predict whether a person mention is the coach
+# of team in the sentence
+@extraction
+has_spouse?(
+    @key
+    @references(relation="person_mention", column="mention_id", alias="p")
+    p_id text,
+    @key
+    @references(relation="team_mention", column="team_id", alias="t")
+    t_id text
+).
+
+## Input Data #################################################################
+#declare the structure of input data
+#The raw NBA news
+@source
+articles(
+    @key
+    @distributed_by
+    id text,
+    @searchable
+    content text
+).
+
+#The positive evidences of coach-team relation from Internet
+@source
+spouses_dbpedia(
+    @key
+    p_name text,
+    @key
+    t_name text
+).
+
+#The negative evidences of coach-team relation from dbpedia
+#Since player is a huge noise when we trying to extract coach
+#we build a player dictionary as the negative evidence of finding coach
+@source
+spouses_dbpedia_negative(
+    @key
+    p_name text,
+    @key
+    t_name text
+).
+
+## NLP markup #################################################################
+#Declare the strucutre of sentences of NBA news
+#Each work in sentence include three kind of tags: lemmas, pos tags, ner tags.
+@source
+sentences(
+    @key
+    @distributed_by
+    # XXX This breaks the search index.  @source should not be derived from another @source
+    #@references(relation="articles", column="id")
+    doc_id         text,
+    @key
+    sentence_index int,
+    @searchable
+    sentence_text  text,
+    tokens         text[],
+    lemmas         text[],
+    pos_tags       text[],
+    ner_tags       text[],
+    doc_offsets    int[],
+    dep_types      text[],
+    dep_tokens     int[]
+).
+
+#Use udf shell file nlp_markup.sh to connect with Stanford Core NLP 
+function nlp_markup over (
+        doc_id text,
+        content text
+    ) returns rows like sentences
+    implementation "udf/nlp_markup.sh" handles tsv lines.
+
+sentences += nlp_markup(doc_id, content) :-
+    articles(doc_id, content).
+
+
+## Candidate mapping ##########################################################
+#Declare the strucutre of Person mention
+@extraction
+person_mention(
+    @key
+    mention_id text,
+    @searchable
+    mention_text text,
+    @distributed_by
+    @references(relation="sentences", column="doc_id",         alias="appears_in")
+    doc_id text,
+    @references(relation="sentences", column="sentence_index", alias="appears_in")
+    sentence_index int,
+    begin_index int,
+    end_index int
+).
+
+#Use udf map_perosn_mention.py to extract person mentions
+function map_person_mention over (
+        doc_id text,
+        sentence_index int,
+        tokens text[],
+        ner_tags text[]
+    ) returns rows like person_mention
+    implementation "udf/map_person_mention.py" handles tsv lines.
+
+person_mention += map_person_mention(
+    doc_id, sentence_index, tokens, ner_tags
+) :- sentences(doc_id, sentence_index, _, tokens, _, _, ner_tags, _, _, _).
+
+#Declare the structure of Team mention
+@extraction
+team_mention(
+    @key
+    team_id text,
+    @searchable
+    team_text text,
+    @distributed_by
+    @references(relation="sentences", column="doc_id",         alias="appears_in")
+    doc_id text,
+    @references(relation="sentences", column="sentence_index", alias="appears_in")
+    sentence_index int,
+    begin_index int,
+    end_index int
+).
+
+#Use udf map_team_mention.py to extract team mentions
+function map_team_mention over (
+        doc_id text,
+        sentence_index int,
+        tokens text[],
+        ner_tags text[]
+    ) returns rows like team_mention
+    implementation "udf/map_team_mention.py" handles tsv lines.
+
+team_mention += map_team_mention(
+    doc_id, sentence_index, tokens, ner_tags
+) :- sentences(doc_id, sentence_index, _, tokens, _, _, ner_tags, _, _, _).
+
+#Declare the strucutre of spouse, i.e. the (Person Mention, Team Mention) pair
+spouse_candidate(
+    p_id text,
+    p_name text,
+    t_id text,
+    t_name text
+).
+
+#Find number of person in each sentence
+num_people(doc_id, sentence_index, COUNT(p)) :-
+    person_mention(p, _, doc_id, sentence_index, _, _),
+    team_mention(p, _, doc_id, sentence_index, _, _).
+
+#Extract the relation candidate in the sentence that person number less than 3 
+spouse_candidate(p, p_name, t, t_name) :-
+    num_people(same_doc, same_sentence, num_p),
+    person_mention(p, p_name, same_doc, same_sentence, p_begin, _),
+    team_mention(t, t_name, same_doc, same_sentence, t_begin, _),
+    num_p < 3.
+
+
+## Feature Extraction #########################################################
+
+# Feature extraction (using DDLIB via a UDF) at the relation level
+#Declare the structure of feature
+@extraction
+spouse_feature(
+    @key
+    @references(relation="has_spouse", column="p_id", alias="has_spouse")
+    p_id text,
+    @key
+    @references(relation="has_spouse", column="t_id", alias="has_spouse")
+    t_id text,
+    @key
+    feature text
+).
+
+#Use extract_spouse_features.py, which uses the ddlib to extract features.
+function extract_spouse_features over (
+        p_id text,
+        t_id text,
+        p_begin_index int,
+        p_end_index int,
+        t_begin_index int,
+        t_end_index int,
+        doc_id text,
+        sent_index int,
+        tokens text[],
+        lemmas text[],
+        pos_tags text[],
+        ner_tags text[],
+        dep_types text[],
+        dep_tokens int[]
+    ) returns rows like spouse_feature
+    implementation "udf/extract_spouse_features.py" handles tsv lines.
+
+spouse_feature += extract_spouse_features(
+    p_id, t_id, p_begin_index, p_end_index, t_begin_index, t_end_index,
+    doc_id, sent_index, tokens, lemmas, pos_tags, ner_tags, dep_types, dep_tokens
+) :-
+    person_mention(p_id, _, doc_id, sent_index, p_begin_index, p_end_index),
+    team_mention(t_id, _, doc_id, sent_index, t_begin_index, t_end_index),
+    sentences(doc_id, sent_index, _, tokens, lemmas, pos_tags, ner_tags, _, dep_types, dep_tokens).
+
+
+## Distant Supervision ########################################################
+#Declare the structure of label
+@extraction
+spouse_label(
+    @key
+    @references(relation="has_spouse", column="p_id", alias="has_spouse")
+    p_id text,
+    @key
+    @references(relation="has_spouse", column="t_id", alias="has_spouse")
+    t_id text,
+    @navigable
+    label int,
+    @navigable
+    rule_id text
+).
+
+# make sure all pairs in spouse_candidate are considered as unsupervised examples
+spouse_label(p,t, 0, NULL) :- spouse_candidate(p, _, t, _).
+
+# distant supervision using positive evidences from DBpedia
+spouse_label(p, t, 1, "from_dbpedia") :-
+    spouse_candidate(p, p_name, t, t_name),
+    spouses_dbpedia(n1, n2),
+    [ lower(n1) = lower(p_name), lower(n2) = lower(p_name) ;
+      lower(n2) = lower(t_name), lower(n1) = lower(t_name) ].
+
+# supervision by heuristic rules in supervise_spouse.py
+function supervise over (
+        p_id text, p_begin int, p_end int,
+        t_id text, t_begin int, t_end int,
+        doc_id         text,
+        sentence_index int,
+        sentence_text  text,
+        tokens         text[],
+        lemmas         text[],
+        pos_tags       text[],
+        ner_tags       text[],
+        dep_types      text[],
+        dep_tokens    int[]
+    ) returns (
+        p_id text, t_id text, label int, rule_id text
+    )
+    implementation "udf/supervise_spouse.py" handles tsv lines.
+
+spouse_label += supervise(
+    p_id, p_begin, p_end,
+    t_id, t_begin, t_end,
+    doc_id, sentence_index, sentence_text,
+    tokens, lemmas, pos_tags, ner_tags, dep_types, dep_token_indexes
+) :- spouse_candidate(p_id, _, t_id, _),
+    person_mention(p_id, p_text, doc_id, sentence_index, p_begin, p_end),
+    team_mention(t_id, t_text,      _,              _, t_begin, t_end),
+    sentences(
+        doc_id, sentence_index, sentence_text,
+        tokens, lemmas, pos_tags, ner_tags, _, dep_types, dep_token_indexes
+    ).
+
+
+# resolve multiple labels by majority vote (summing the labels in {-1,0,1})
+spouse_label_resolved(p_id, t_id, SUM(vote)) :- spouse_label(p_id, t_id, vote, rule_id).
+
+# assign the resolved labels for the spouse relation
+has_spouse(p_id, t_id) = if l > 0 then TRUE
+                      else if l < 0 then FALSE
+                      else NULL end :- spouse_label_resolved(p_id, t_id, l).
+
+###############################################################################
+
+## Inference Rules ############################################################
+# Learning the weight for Features
+@weight(f)
+has_spouse(p_id, t_id) :-
+    spouse_candidate(p_id, _, t_id, _),
+    spouse_feature(p_id, t_id, f).
+
+#Manually give features connect with positive evidences with 3.0
+@weight(3.0)
+has_spouse(p_id, t_id) :-
+    person_mention(p_id, mention_text, _, _, _, _),
+    team_mention(t_id, team_text, _, _, _, _),
+    spouses_dbpedia(mention_text, team_text).
+
+#Manually give features connect with negative evidences with -3.0
+@weight(-3.0)
+has_spouse(p_id, t_id) :-
+    person_mention(p_id, mention_text, _, _, _, _),
+    team_mention(t_id, team_text, _, _, _, _),
+    spouses_dbpedia_negative(mention_text, team_text).
+
+#Manually give conflict candidates with -1.0
+@weight(-1.0)
+has_spouse(p_id, t_id) => has_spouse(p_id, t_id) :-
+    spouse_candidate(p_id, _, t_id, _),
+    spouse_candidate(p1_id, _, t_id, _),
+    spouse_candidate(p_id, _, t2_id, _).

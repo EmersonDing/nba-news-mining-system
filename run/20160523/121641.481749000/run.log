@@ -1,0 +1,41 @@
+2016-05-23 12:16:42.935064 # on dhcp-169-233-164-19.cruznet.ucsc.edu: deepdive do articles
+2016-05-23 12:16:42.935588 # run/20160523/121641.481749000/plan.sh
+2016-05-23 12:16:42.935625 # execution plan for data/articles
+2016-05-23 12:16:42.935648 
+2016-05-23 12:16:42.935669 : ## process/init/app ##########################################################
+2016-05-23 12:16:42.935690 : # Done: 2016-05-22T17:21:25-0700 (18h 55m 16s ago)
+2016-05-23 12:16:42.935711 : process/init/app/run.sh
+2016-05-23 12:16:42.935733 : mark_done process/init/app
+2016-05-23 12:16:42.935755 : ##############################################################################
+2016-05-23 12:16:42.935777 
+2016-05-23 12:16:42.935798 ## process/init/relation/articles ############################################
+2016-05-23 12:16:42.935882 # Done: 2016-05-22T17:23:58-0700 (18h 52m 43s ago)
+2016-05-23 12:16:42.935935 process/init/relation/articles/run.sh
+2016-05-23 12:16:42.935972 ++ dirname process/init/relation/articles/run.sh
+2016-05-23 12:16:42.936008 + cd process/init/relation/articles
+2016-05-23 12:16:42.936044 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-05-23 12:16:42.936085 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-05-23 12:16:42.936123 + deepdive create table articles
+2016-05-23 12:16:43.215553 CREATE TABLE
+2016-05-23 12:16:43.216820 + deepdive load articles
+2016-05-23 12:16:43.311962 Loading articles from input/articles.tsv.sh (tsv format)
+2016-05-23 12:16:43.321980 ERROR: Missing /Users/emerson/Documents/Github/deepdive/examples/coach_nba/input/signalmedia/signalmedia-1m.jsonl
+2016-05-23 12:16:43.322046 # Please Download it from http://research.signalmedia.co/newsir16/signal-dataset.html
+2016-05-23 12:16:43.322073 
+2016-05-23 12:16:43.322094 # Alternatively, use our sampled data by running:
+2016-05-23 12:16:43.322115 deepdive load articles input/articles-100.tsv.bz2
+2016-05-23 12:16:43.322135 
+2016-05-23 12:16:43.322155 # Or, skipping all NLP markup processes by running:
+2016-05-23 12:16:43.322175 deepdive create table sentences
+2016-05-23 12:16:43.322193 deepdive load sentences
+2016-05-23 12:16:43.322210 deepdive mark done sentences
+2016-05-23 12:16:43.355240 COPY 0
+2016-05-23 12:16:43.377783 mark_done process/init/relation/articles
+2016-05-23 12:16:43.415009 ##############################################################################
+2016-05-23 12:16:43.415093 
+2016-05-23 12:16:43.415124 ## data/articles #############################################################
+2016-05-23 12:16:43.415184 # Done: 2016-05-22T17:23:58-0700 (18h 52m 43s ago)
+2016-05-23 12:16:43.415222 # no-op
+2016-05-23 12:16:43.415289 mark_done data/articles
+2016-05-23 12:16:43.431392 ##############################################################################
+2016-05-23 12:16:43.431453 

@@ -1,0 +1,60 @@
+2016-05-20 18:19:11.049683 # on dhcp-169-233-138-157.cruznet.ucsc.edu: deepdive do team_mention
+2016-05-20 18:19:11.050001 # run/20160520/181758.222012000/plan.sh
+2016-05-20 18:19:11.050029 # execution plan for data/team_mention
+2016-05-20 18:19:11.050051 
+2016-05-20 18:19:11.050074 : ## process/init/app ##########################################################
+2016-05-20 18:19:11.050095 : # Done: 2016-05-20T15:47:44-0700 (2h 30m 14s ago)
+2016-05-20 18:19:11.050115 : process/init/app/run.sh
+2016-05-20 18:19:11.050137 : mark_done process/init/app
+2016-05-20 18:19:11.050157 : ##############################################################################
+2016-05-20 18:19:11.050176 
+2016-05-20 18:19:11.050199 : ## process/init/relation/articles ############################################
+2016-05-20 18:19:11.050219 : # Done: 2016-05-20T18:03:05-0700 (14m 53s ago)
+2016-05-20 18:19:11.050237 : process/init/relation/articles/run.sh
+2016-05-20 18:19:11.050255 : mark_done process/init/relation/articles
+2016-05-20 18:19:11.050273 : ##############################################################################
+2016-05-20 18:19:11.050291 
+2016-05-20 18:19:11.050309 : ## data/articles #############################################################
+2016-05-20 18:19:11.050331 : # Done: 2016-05-20T18:03:05-0700 (14m 53s ago)
+2016-05-20 18:19:11.050350 : # no-op
+2016-05-20 18:19:11.050368 : mark_done data/articles
+2016-05-20 18:19:11.050387 : ##############################################################################
+2016-05-20 18:19:11.050407 
+2016-05-20 18:19:11.050426 : ## process/ext_sentences_by_nlp_markup #######################################
+2016-05-20 18:19:11.050445 : # Done: 2016-05-20T18:04:33-0700 (13m 25s ago)
+2016-05-20 18:19:11.050463 : process/ext_sentences_by_nlp_markup/run.sh
+2016-05-20 18:19:11.050482 : mark_done process/ext_sentences_by_nlp_markup
+2016-05-20 18:19:11.050500 : ##############################################################################
+2016-05-20 18:19:11.050520 
+2016-05-20 18:19:11.050539 : ## data/sentences ############################################################
+2016-05-20 18:19:11.050559 : # Done: 2016-05-20T18:04:33-0700 (13m 25s ago)
+2016-05-20 18:19:11.050582 : # no-op
+2016-05-20 18:19:11.050604 : mark_done data/sentences
+2016-05-20 18:19:11.050623 : ##############################################################################
+2016-05-20 18:19:11.050641 
+2016-05-20 18:19:11.050661 ## data/team_mention #########################################################
+2016-05-20 18:19:11.050681 # Done: N/A
+2016-05-20 18:19:11.050701 # no-op
+2016-05-20 18:19:11.050720 mark_done data/team_mention
+2016-05-20 18:19:11.050740 ##############################################################################
+2016-05-20 18:19:11.050752 
+2016-05-20 18:19:11.050762 ## process/ext_team_mention_by_map_team_mention ##############################
+2016-05-20 18:19:11.050773 # Done: N/A
+2016-05-20 18:19:11.050783 process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-20 18:19:11.050793 ++ dirname process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-20 18:19:11.050807 + cd process/ext_team_mention_by_map_team_mention
+2016-05-20 18:19:11.050828 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_team_mention_by_map_team_mention
+2016-05-20 18:19:11.050849 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_team_mention_by_map_team_mention
+2016-05-20 18:19:11.050869 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-20 18:19:11.050889 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-20 18:19:11.050910 + deepdive compute execute 'input_sql= SELECT R0.doc_id AS "sentences.R0.doc_id", R0.sentence_index AS "sentences.R0.sentence_index", R0.tokens AS "sentences.R0.tokens", R0.ner_tags AS "sentences.R0.ner_tags"
+2016-05-20 18:19:11.050932 FROM sentences R0
+2016-05-20 18:19:11.050957         
+2016-05-20 18:19:11.050978           ' 'command="$DEEPDIVE_APP"/udf/map_team_mention.py' output_relation=team_mention
+2016-05-20 18:19:11.118845 Executing with the following configuration:
+2016-05-20 18:19:11.118895  DEEPDIVE_NUM_PROCESSES=3
+2016-05-20 18:19:11.118913  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-20 18:19:11.118934  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-20 18:19:11.119009  output_relation_tmp=dd_tmp_team_mention
+2016-05-20 18:19:11.119053 
+2016-05-20 18:19:11.262292 [ERROR] team_mention: No such table defined in schema

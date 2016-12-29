@@ -1,0 +1,19 @@
+2016-05-20 17:51:35.189977 # on dhcp-169-233-138-157.cruznet.ucsc.edu: deepdive do articles
+2016-05-20 17:51:35.190339 # run/20160520/175133.231379000/plan.sh
+2016-05-20 17:51:35.190377 # execution plan for data/articles
+2016-05-20 17:51:35.190402 
+2016-05-20 17:51:35.190424 : ## process/init/app ##########################################################
+2016-05-20 17:51:35.190446 : # Done: 2016-05-20T15:47:44-0700 (2h 3m 49s ago)
+2016-05-20 17:51:35.190467 : process/init/app/run.sh
+2016-05-20 17:51:35.190519 : mark_done process/init/app
+2016-05-20 17:51:35.190550 : ##############################################################################
+2016-05-20 17:51:35.190570 
+2016-05-20 17:51:35.190590 ## process/init/relation/articles ############################################
+2016-05-20 17:51:35.190608 # Done: 2016-05-20T15:47:44-0700 (2h 3m 49s ago)
+2016-05-20 17:51:35.190627 process/init/relation/articles/run.sh
+2016-05-20 17:51:35.190647 ++ dirname process/init/relation/articles/run.sh
+2016-05-20 17:51:35.190667 + cd process/init/relation/articles
+2016-05-20 17:51:35.190686 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-05-20 17:51:35.190706 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-05-20 17:51:35.190729 + deepdive create table articles
+2016-05-20 17:51:35.306563 psql: FATAL:  database "deepdive_nba_emerson" does not exist

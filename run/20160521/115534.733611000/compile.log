@@ -1,0 +1,13 @@
+2016-05-21 11:55:35.081640 ‘run/LATEST.COMPILE/115534.733611000’ -> ‘20160521/115534.733611000’
+2016-05-21 11:55:35.082654 ‘run/RUNNING.COMPILE’ -> ‘20160521/115534.733611000’
+2016-05-21 11:55:35.082698 Parsing DeepDive application (/Users/emerson/Documents/Github/deepdive/examples/Coach_NBA) to generate:
+2016-05-21 11:55:35.082723  run/compiled/schema.json
+2016-05-21 11:55:35.082742   from app.ddlog
+2016-05-21 11:55:36.199002  run/compiled/deepdive.conf
+2016-05-21 11:55:36.199219   from app.ddlog
+2016-05-21 11:55:37.106727 [error] Variable p_name, t must have bindings
+2016-05-21 11:55:37.106805 spouse_label(p, t, 1, "from_dbpedia") :-
+2016-05-21 11:55:37.106838     spouse_candidate(p, t_name, p, t_name),
+2016-05-21 11:55:37.106863     spouses_dbpedia(n1, n2),
+2016-05-21 11:55:37.106886     [[lower(n1) = lower(p_name), lower(n2) = lower(p_name)]; [lower(n2) = lower(t_name), lower(n1) = lower(t_name)]].
+2016-05-21 11:55:37.106910 

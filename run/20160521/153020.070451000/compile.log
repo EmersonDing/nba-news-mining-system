@@ -1,0 +1,5 @@
+2016-05-21 15:30:20.161761 ‘run/LATEST.COMPILE/153020.070451000’ -> ‘20160521/153020.070451000’
+2016-05-21 15:30:20.162228 ‘run/RUNNING.COMPILE’ -> ‘20160521/153020.070451000’
+2016-05-21 15:30:20.162273 Parsing DeepDive application (/Users/emerson/Documents/Github/deepdive/examples/Coach_NBA) to generate:
+2016-05-21 15:30:20.162302  run/compiled/schema.json
+2016-05-21 15:30:20.162325   from app.ddlog

@@ -1,0 +1,41 @@
+2016-05-22 11:31:32.599832 # on eduroam-169-233-210-202.ucsc.edu: deepdive do articles
+2016-05-22 11:31:32.601153 # run/20160522/113129.939816000/plan.sh
+2016-05-22 11:31:32.601204 # execution plan for data/articles
+2016-05-22 11:31:32.601235 
+2016-05-22 11:31:32.601290 : ## process/init/app ##########################################################
+2016-05-22 11:31:32.601319 : # Done: 2016-05-22T11:25:05-0700 (6m 25s ago)
+2016-05-22 11:31:32.601342 : process/init/app/run.sh
+2016-05-22 11:31:32.601364 : mark_done process/init/app
+2016-05-22 11:31:32.601386 : ##############################################################################
+2016-05-22 11:31:32.601408 
+2016-05-22 11:31:32.601431 ## process/init/relation/articles ############################################
+2016-05-22 11:31:32.601454 # Done: 2016-05-22T11:25:05-0700 (6m 25s ago)
+2016-05-22 11:31:32.601476 process/init/relation/articles/run.sh
+2016-05-22 11:31:32.601499 ++ dirname process/init/relation/articles/run.sh
+2016-05-22 11:31:32.601522 + cd process/init/relation/articles
+2016-05-22 11:31:32.601547 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-05-22 11:31:32.601569 + DEEPDIVE_CURRENT_PROCESS_NAME=process/init/relation/articles
+2016-05-22 11:31:32.601592 + deepdive create table articles
+2016-05-22 11:31:32.961304 CREATE TABLE
+2016-05-22 11:31:32.962785 + deepdive load articles
+2016-05-22 11:31:33.143177 Loading articles from input/articles.tsv.sh (tsv format)
+2016-05-22 11:31:33.164243 ERROR: Missing /Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/input/signalmedia/signalmedia-1m.jsonl
+2016-05-22 11:31:33.164308 # Please Download it from http://research.signalmedia.co/newsir16/signal-dataset.html
+2016-05-22 11:31:33.164330 
+2016-05-22 11:31:33.164350 # Alternatively, use our sampled data by running:
+2016-05-22 11:31:33.164370 deepdive load articles input/articles-100.tsv.bz2
+2016-05-22 11:31:33.164389 
+2016-05-22 11:31:33.164408 # Or, skipping all NLP markup processes by running:
+2016-05-22 11:31:33.164427 deepdive create table sentences
+2016-05-22 11:31:33.164447 deepdive load sentences
+2016-05-22 11:31:33.164466 deepdive mark done sentences
+2016-05-22 11:31:33.226840 COPY 0
+2016-05-22 11:31:33.247348 mark_done process/init/relation/articles
+2016-05-22 11:31:33.298131 ##############################################################################
+2016-05-22 11:31:33.298214 
+2016-05-22 11:31:33.298294 ## data/articles #############################################################
+2016-05-22 11:31:33.298338 # Done: 2016-05-22T11:25:05-0700 (6m 25s ago)
+2016-05-22 11:31:33.298366 # no-op
+2016-05-22 11:31:33.298393 mark_done data/articles
+2016-05-22 11:31:33.329102 ##############################################################################
+2016-05-22 11:31:33.329187 

@@ -1,0 +1,299 @@
+2016-05-20 22:17:52.263470 # on dhcp-169-233-138-157.cruznet.ucsc.edu: deepdive do probabilities
+2016-05-20 22:17:52.264037 # run/20160520/221748.359432000/plan.sh
+2016-05-20 22:17:52.264083 # execution plan for data/model/probabilities
+2016-05-20 22:17:52.264110 
+2016-05-20 22:17:52.264128 : ## process/init/app ##########################################################
+2016-05-20 22:17:52.264150 : # Done: 2016-05-20T15:47:44-0700 (6h 30m 5s ago)
+2016-05-20 22:17:52.264169 : process/init/app/run.sh
+2016-05-20 22:17:52.264189 : mark_done process/init/app
+2016-05-20 22:17:52.264211 : ##############################################################################
+2016-05-20 22:17:52.264230 
+2016-05-20 22:17:52.264251 : ## process/init/relation/articles ############################################
+2016-05-20 22:17:52.264271 : # Done: 2016-05-20T19:16:48-0700 (3h 1m 1s ago)
+2016-05-20 22:17:52.264290 : process/init/relation/articles/run.sh
+2016-05-20 22:17:52.264308 : mark_done process/init/relation/articles
+2016-05-20 22:17:52.264332 : ##############################################################################
+2016-05-20 22:17:52.264351 
+2016-05-20 22:17:52.264368 : ## data/articles #############################################################
+2016-05-20 22:17:52.264385 : # Done: 2016-05-20T19:16:48-0700 (3h 1m 1s ago)
+2016-05-20 22:17:52.264402 : # no-op
+2016-05-20 22:17:52.264422 : mark_done data/articles
+2016-05-20 22:17:52.264459 : ##############################################################################
+2016-05-20 22:17:52.264480 
+2016-05-20 22:17:52.264498 : ## process/ext_sentences_by_nlp_markup #######################################
+2016-05-20 22:17:52.264516 : # Done: 2016-05-20T19:20:04-0700 (2h 57m 45s ago)
+2016-05-20 22:17:52.264533 : process/ext_sentences_by_nlp_markup/run.sh
+2016-05-20 22:17:52.264551 : mark_done process/ext_sentences_by_nlp_markup
+2016-05-20 22:17:52.264568 : ##############################################################################
+2016-05-20 22:17:52.264587 
+2016-05-20 22:17:52.264605 : ## data/sentences ############################################################
+2016-05-20 22:17:52.264623 : # Done: 2016-05-20T19:20:04-0700 (2h 57m 45s ago)
+2016-05-20 22:17:52.264640 : # no-op
+2016-05-20 22:17:52.264657 : mark_done data/sentences
+2016-05-20 22:17:52.264675 : ##############################################################################
+2016-05-20 22:17:52.264693 
+2016-05-20 22:17:52.264709 : ## process/ext_person_mention_by_map_person_mention ##########################
+2016-05-20 22:17:52.264727 : # Done: 2016-05-20T20:58:22-0700 (1h 19m 27s ago)
+2016-05-20 22:17:52.264745 : process/ext_person_mention_by_map_person_mention/run.sh
+2016-05-20 22:17:52.264764 : mark_done process/ext_person_mention_by_map_person_mention
+2016-05-20 22:17:52.264782 : ##############################################################################
+2016-05-20 22:17:52.264801 
+2016-05-20 22:17:52.264820 : ## data/person_mention #######################################################
+2016-05-20 22:17:52.264839 : # Done: 2016-05-20T20:58:22-0700 (1h 19m 27s ago)
+2016-05-20 22:17:52.264858 : # no-op
+2016-05-20 22:17:52.264876 : mark_done data/person_mention
+2016-05-20 22:17:52.264895 : ##############################################################################
+2016-05-20 22:17:52.264913 
+2016-05-20 22:17:52.264932 : ## process/ext_num_people ####################################################
+2016-05-20 22:17:52.264951 : # Done: 2016-05-20T21:35:41-0700 (42m 8s ago)
+2016-05-20 22:17:52.264970 : process/ext_num_people/run.sh
+2016-05-20 22:17:52.264990 : mark_done process/ext_num_people
+2016-05-20 22:17:52.265009 : ##############################################################################
+2016-05-20 22:17:52.265027 
+2016-05-20 22:17:52.265046 : ## data/num_people ###########################################################
+2016-05-20 22:17:52.265065 : # Done: 2016-05-20T21:35:41-0700 (42m 8s ago)
+2016-05-20 22:17:52.265083 : # no-op
+2016-05-20 22:17:52.265101 : mark_done data/num_people
+2016-05-20 22:17:52.265118 : ##############################################################################
+2016-05-20 22:17:52.265137 
+2016-05-20 22:17:52.265154 : ## process/ext_team_mention_by_map_team_mention ##############################
+2016-05-20 22:17:52.265172 : # Done: 2016-05-20T21:23:06-0700 (54m 43s ago)
+2016-05-20 22:17:52.265190 : process/ext_team_mention_by_map_team_mention/run.sh
+2016-05-20 22:17:52.265211 : mark_done process/ext_team_mention_by_map_team_mention
+2016-05-20 22:17:52.265234 : ##############################################################################
+2016-05-20 22:17:52.265253 
+2016-05-20 22:17:52.265273 : ## data/team_mention #########################################################
+2016-05-20 22:17:52.265294 : # Done: 2016-05-20T22:05:04-0700 (12m 45s ago)
+2016-05-20 22:17:52.265314 : # no-op
+2016-05-20 22:17:52.265335 : mark_done data/team_mention
+2016-05-20 22:17:52.265355 : ##############################################################################
+2016-05-20 22:17:52.265374 
+2016-05-20 22:17:52.265395 ## process/ext_spouse_candidate ##############################################
+2016-05-20 22:17:52.265416 : # Done: 2016-05-20T21:49:21-0700 (28m 28s ago)
+2016-05-20 22:17:52.265439 # Done: 2016-05-20T21:49:21-0700 (28m 27s ago)
+2016-05-20 22:17:52.265461 process/ext_spouse_candidate/run.sh
+2016-05-20 22:17:52.265482 ++ dirname process/ext_spouse_candidate/run.sh
+2016-05-20 22:17:52.265504 + cd process/ext_spouse_candidate
+2016-05-20 22:17:52.265523 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_candidate
+2016-05-20 22:17:52.265543 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_candidate
+2016-05-20 22:17:52.265562 + deepdive create table spouse_candidate
+2016-05-20 22:17:52.402499 CREATE TABLE
+2016-05-20 22:17:52.403826 + deepdive sql 'INSERT INTO spouse_candidate SELECT R1.mention_id AS "person_mention.R1.mention_id", R1.mention_text AS "person_mention.R1.mention_text", R2.team_id AS "team_mention.R2.team_id", R2.team_text AS "team_mention.R2.team_text"
+2016-05-20 22:17:52.403890 FROM num_people R0, person_mention R1, team_mention R2
+2016-05-20 22:17:52.403917         WHERE R1.doc_id = R0.column_0  AND R1.sentence_index = R0.column_1  AND R2.doc_id = R0.column_0  AND R2.sentence_index = R0.column_1  AND R0.column_2 < 3'
+2016-05-20 22:17:52.497445 INSERT 0 103
+2016-05-20 22:17:52.499063 mark_done process/ext_spouse_candidate
+2016-05-20 22:17:52.517096 ##############################################################################
+2016-05-20 22:17:52.517149 
+2016-05-20 22:17:52.517165 ## data/spouse_candidate #####################################################
+2016-05-20 22:17:52.517177 : # Done: 2016-05-20T21:49:21-0700 (28m 28s ago)
+2016-05-20 22:17:52.517309 # Done: 2016-05-20T21:49:21-0700 (28m 27s ago)
+2016-05-20 22:17:52.517341 # no-op
+2016-05-20 22:17:52.517364 mark_done data/spouse_candidate
+2016-05-20 22:17:52.539088 ##############################################################################
+2016-05-20 22:17:52.539196 
+2016-05-20 22:17:52.539232 ## process/ext_spouse_label__0_by_supervise ##################################
+2016-05-20 22:17:52.539257 : # Done: 2016-05-20T15:47:44-0700 (6h 30m 5s ago)
+2016-05-20 22:17:52.539280 # Done: 2016-05-20T15:47:44-0700 (6h 30m 4s ago)
+2016-05-20 22:17:52.539327 process/ext_spouse_label__0_by_supervise/run.sh
+2016-05-20 22:17:52.551060 ++ dirname process/ext_spouse_label__0_by_supervise/run.sh
+2016-05-20 22:17:52.554354 + cd process/ext_spouse_label__0_by_supervise
+2016-05-20 22:17:52.554453 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label__0_by_supervise
+2016-05-20 22:17:52.554497 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label__0_by_supervise
+2016-05-20 22:17:52.554520 + export DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-20 22:17:52.554541 + DEEPDIVE_LOAD_FORMAT=tsv
+2016-05-20 22:17:52.554784 + deepdive compute execute 'input_sql= SELECT R0.p_id AS "spouse_candidate.R0.p_id", R1.begin_index AS "person_mention.R1.begin_index", R1.end_index AS "person_mention.R1.end_index", R0.t_id AS "spouse_candidate.R0.t_id", R2.begin_index AS "person_mention.R2.begin_index", R2.end_index AS "person_mention.R2.end_index", R1.doc_id AS "person_mention.R1.doc_id", R1.sentence_index AS "person_mention.R1.sentence_index", R3.sentence_text AS "sentences.R3.sentence_text", R3.tokens AS "sentences.R3.tokens", R3.lemmas AS "sentences.R3.lemmas", R3.pos_tags AS "sentences.R3.pos_tags", R3.ner_tags AS "sentences.R3.ner_tags", R3.dep_types AS "sentences.R3.dep_types", R3.dep_tokens AS "sentences.R3.dep_tokens"
+2016-05-20 22:17:52.554816 FROM spouse_candidate R0, person_mention R1, person_mention R2, sentences R3
+2016-05-20 22:17:52.554838         WHERE R1.mention_id = R0.p_id  AND R2.mention_id = R0.t_id  AND R3.doc_id = R1.doc_id  AND R3.sentence_index = R1.sentence_index 
+2016-05-20 22:17:52.554858           ' 'command="$DEEPDIVE_APP"/udf/supervise_spouse.py' output_relation=spouse_label__0
+2016-05-20 22:17:52.662681 Executing with the following configuration:
+2016-05-20 22:17:52.662742  DEEPDIVE_NUM_PROCESSES=3
+2016-05-20 22:17:52.662767  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2016-05-20 22:17:52.662789  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2016-05-20 22:17:52.662823  output_relation_tmp=dd_tmp_spouse_label__0
+2016-05-20 22:17:52.662855 
+2016-05-20 22:17:52.879402 CREATE TABLE
+2016-05-20 22:17:52.997530 CREATE TABLE
+2016-05-20 22:17:53.188079 unloading to feed_processes-1: ' SELECT R0.p_id AS "spouse_candidate.R0.p_id", R1.begin_index AS "person_mention.R1.begin_index", R1.end_index AS "person_mention.R1.end_index", R0.t_id AS "spouse_candidate.R0.t_id", R2.begin_index AS "person_mention.R2.begin_index", R2.end_index AS "person_mention.R2.end_index", R1.doc_id AS "person_mention.R1.doc_id", R1.sentence_index AS "person_mention.R1.sentence_index", R3.sentence_text AS "sentences.R3.sentence_text", R3.tokens AS "sentences.R3.tokens", R3.lemmas AS "sentences.R3.lemmas", R3.pos_tags AS "sentences.R3.pos_tags", R3.ner_tags AS "sentences.R3.ner_tags", R3.dep_types AS "sentences.R3.dep_types", R3.dep_tokens AS "sentences.R3.dep_tokens"
+2016-05-20 22:17:53.188148 FROM spouse_candidate R0, person_mention R1, person_mention R2, sentences R3
+2016-05-20 22:17:53.188175         WHERE R1.mention_id = R0.p_id  AND R2.mention_id = R0.t_id  AND R3.doc_id = R1.doc_id  AND R3.sentence_index = R1.sentence_index 
+2016-05-20 22:17:53.188198           '
+2016-05-20 22:17:53.230229 Loading dd_tmp_spouse_label__0 from output_computed-1 (tsv format)
+2016-05-20 22:17:53.400504 COPY 0
+2016-05-20 22:17:53.406613 Replacing spouse_label__0 with dd_tmp_spouse_label__0
+2016-05-20 22:17:53.493604 DROP TABLE
+2016-05-20 22:17:53.579085 ALTER TABLE
+2016-05-20 22:17:53.664474 ALTER TABLE
+2016-05-20 22:17:53.751458 DROP TABLE
+2016-05-20 22:17:53.784441 ANALYZE
+2016-05-20 22:17:53.795522 mark_done process/ext_spouse_label__0_by_supervise
+2016-05-20 22:17:53.817226 ##############################################################################
+2016-05-20 22:17:53.817361 
+2016-05-20 22:17:53.817404 ## data/spouse_label__0 ######################################################
+2016-05-20 22:17:53.817446 : # Done: 2016-05-20T15:47:43-0700 (6h 30m 6s ago)
+2016-05-20 22:17:53.817481 # Done: 2016-05-20T15:47:43-0700 (6h 30m 5s ago)
+2016-05-20 22:17:53.817582 # no-op
+2016-05-20 22:17:53.817635 mark_done data/spouse_label__0
+2016-05-20 22:17:53.836083 ##############################################################################
+2016-05-20 22:17:53.836151 
+2016-05-20 22:17:53.836183 : ## process/init/relation/spouses_dbpedia #####################################
+2016-05-20 22:17:53.836207 : # Done: 2016-05-20T15:47:44-0700 (6h 30m 5s ago)
+2016-05-20 22:17:53.836230 : process/init/relation/spouses_dbpedia/run.sh
+2016-05-20 22:17:53.836254 : mark_done process/init/relation/spouses_dbpedia
+2016-05-20 22:17:53.836276 : ##############################################################################
+2016-05-20 22:17:53.836296 
+2016-05-20 22:17:53.836315 ## data/spouses_dbpedia ######################################################
+2016-05-20 22:17:53.836334 : # Done: 2016-05-20T15:47:43-0700 (6h 30m 6s ago)
+2016-05-20 22:17:53.836354 # Done: 2016-05-20T15:47:43-0700 (6h 30m 5s ago)
+2016-05-20 22:17:53.836373 # no-op
+2016-05-20 22:17:53.836393 mark_done data/spouses_dbpedia
+2016-05-20 22:17:53.859944 ##############################################################################
+2016-05-20 22:17:53.860010 
+2016-05-20 22:17:53.860036 ## process/ext_spouse_label ##################################################
+2016-05-20 22:17:53.860055 : # Done: 2016-05-20T15:47:44-0700 (6h 30m 5s ago)
+2016-05-20 22:17:53.860074 # Done: 2016-05-20T15:47:44-0700 (6h 30m 4s ago)
+2016-05-20 22:17:53.860093 process/ext_spouse_label/run.sh
+2016-05-20 22:17:53.871823 ++ dirname process/ext_spouse_label/run.sh
+2016-05-20 22:17:53.875074 + cd process/ext_spouse_label
+2016-05-20 22:17:53.875209 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label
+2016-05-20 22:17:53.875246 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label
+2016-05-20 22:17:53.875270 + deepdive create table spouse_label
+2016-05-20 22:17:54.032481 NOTICE:  drop cascades to view spouse_label_resolved
+2016-05-20 22:17:54.045252 CREATE TABLE
+2016-05-20 22:17:54.046638 + deepdive sql 'INSERT INTO spouse_label SELECT R0.p_id AS "spouse_candidate.R0.p_id", R0.t_id AS "spouse_candidate.R0.t_id", 0 AS column_2, NULL AS column_3
+2016-05-20 22:17:54.046708 FROM spouse_candidate R0
+2016-05-20 22:17:54.046741         
+2016-05-20 22:17:54.046767 UNION ALL
+2016-05-20 22:17:54.046792 SELECT R0.p_id AS "spouse_candidate.R0.p_id", R0.t_id AS "spouse_candidate.R0.t_id", 1 AS column_2, '\''from_dbpedia'\'' AS column_3
+2016-05-20 22:17:54.046814 FROM spouse_candidate R0, spouses_dbpedia R1
+2016-05-20 22:17:54.046835         WHERE ((lower(R1.person1_name) = lower(R0.p_name) AND lower(R1.person2_name) = lower(R0.t_name)) OR (lower(R1.person2_name) = lower(R0.p_name) AND lower(R1.person1_name) = lower(R0.t_name)))
+2016-05-20 22:17:54.046856 UNION ALL
+2016-05-20 22:17:54.046876 SELECT R0.p1_id AS "spouse_label__0.R0.p1_id", R0.p2_id AS "spouse_label__0.R0.p2_id", R0.label AS "spouse_label__0.R0.label", R0.rule_id AS "spouse_label__0.R0.rule_id"
+2016-05-20 22:17:54.046897 FROM spouse_label__0 R0
+2016-05-20 22:17:54.046917         '
+2016-05-20 22:17:55.019556 INSERT 0 103
+2016-05-20 22:17:55.020871 mark_done process/ext_spouse_label
+2016-05-20 22:17:55.037733 ##############################################################################
+2016-05-20 22:17:55.037804 
+2016-05-20 22:17:55.037824 ## data/spouse_label #########################################################
+2016-05-20 22:17:55.037845 : # Done: 2016-05-20T15:47:43-0700 (6h 30m 6s ago)
+2016-05-20 22:17:55.037865 # Done: 2016-05-20T15:47:43-0700 (6h 30m 5s ago)
+2016-05-20 22:17:55.037910 # no-op
+2016-05-20 22:17:55.037941 mark_done data/spouse_label
+2016-05-20 22:17:55.056793 ##############################################################################
+2016-05-20 22:17:55.056885 
+2016-05-20 22:17:55.056915 ## process/ext_spouse_label_resolved #########################################
+2016-05-20 22:17:55.056938 : # Done: 2016-05-20T15:47:44-0700 (6h 30m 5s ago)
+2016-05-20 22:17:55.056960 # Done: 2016-05-20T15:47:44-0700 (6h 30m 4s ago)
+2016-05-20 22:17:55.056978 process/ext_spouse_label_resolved/run.sh
+2016-05-20 22:17:55.065341 ++ dirname process/ext_spouse_label_resolved/run.sh
+2016-05-20 22:17:55.070326 + cd process/ext_spouse_label_resolved
+2016-05-20 22:17:55.070445 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label_resolved
+2016-05-20 22:17:55.070487 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_spouse_label_resolved
+2016-05-20 22:17:55.070546 + deepdive create view spouse_label_resolved as 'SELECT R0.p1_id AS column_0, R0.p2_id AS column_1, SUM(R0.label) AS column_2
+2016-05-20 22:17:55.070580 FROM spouse_label R0
+2016-05-20 22:17:55.070602         
+2016-05-20 22:17:55.070624         GROUP BY R0.p1_id, R0.p2_id'
+2016-05-20 22:17:55.254600 CREATE VIEW
+2016-05-20 22:17:55.256234 mark_done process/ext_spouse_label_resolved
+2016-05-20 22:17:55.280432 ##############################################################################
+2016-05-20 22:17:55.280502 
+2016-05-20 22:17:55.280533 ## data/spouse_label_resolved ################################################
+2016-05-20 22:17:55.280560 : # Done: 2016-05-20T15:47:43-0700 (6h 30m 6s ago)
+2016-05-20 22:17:55.280583 # Done: 2016-05-20T15:47:43-0700 (6h 30m 5s ago)
+2016-05-20 22:17:55.280605 # no-op
+2016-05-20 22:17:55.280727 mark_done data/spouse_label_resolved
+2016-05-20 22:17:55.309717 ##############################################################################
+2016-05-20 22:17:55.309791 
+2016-05-20 22:17:55.309827 ## process/ext_has_spouse ####################################################
+2016-05-20 22:17:55.309855 : # Done: 2016-05-20T15:47:44-0700 (6h 30m 5s ago)
+2016-05-20 22:17:55.309879 # Done: 2016-05-20T15:47:44-0700 (6h 30m 4s ago)
+2016-05-20 22:17:55.309907 process/ext_has_spouse/run.sh
+2016-05-20 22:17:55.322154 ++ dirname process/ext_has_spouse/run.sh
+2016-05-20 22:17:55.325161 + cd process/ext_has_spouse
+2016-05-20 22:17:55.325246 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_has_spouse
+2016-05-20 22:17:55.325275 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_has_spouse
+2016-05-20 22:17:55.325296 + deepdive create table has_spouse
+2016-05-20 22:17:55.461577 NOTICE:  drop cascades to 2 other objects
+2016-05-20 22:17:55.461626 DETAIL:  drop cascades to view has_spouse_label_inference
+2016-05-20 22:17:55.461643 drop cascades to view has_spouse_label_calibration
+2016-05-20 22:17:55.479838 CREATE TABLE
+2016-05-20 22:17:55.480889 + deepdive sql 'INSERT INTO has_spouse SELECT DISTINCT R0.column_0, R0.column_1, 0 AS id, 
+2016-05-20 22:17:55.480949 CASE WHEN R0.column_2 > 0 THEN true
+2016-05-20 22:17:55.480970      WHEN R0.column_2 < 0 THEN false
+2016-05-20 22:17:55.480993      ELSE NULL
+2016-05-20 22:17:55.481014 END AS label
+2016-05-20 22:17:55.481034           FROM spouse_label_resolved R0
+2016-05-20 22:17:55.481054         
+2016-05-20 22:17:55.481079           '
+2016-05-20 22:17:55.562973 INSERT 0 103
+2016-05-20 22:17:55.564282 mark_done process/ext_has_spouse
+2016-05-20 22:17:55.580243 ##############################################################################
+2016-05-20 22:17:55.580298 
+2016-05-20 22:17:55.580323 ## data/has_spouse ###########################################################
+2016-05-20 22:17:55.580343 : # Done: 2016-05-20T15:47:43-0700 (6h 30m 7s ago)
+2016-05-20 22:17:55.580361 # Done: 2016-05-20T15:47:43-0700 (6h 30m 5s ago)
+2016-05-20 22:17:55.580398 # no-op
+2016-05-20 22:17:55.580426 mark_done data/has_spouse
+2016-05-20 22:17:55.596255 ##############################################################################
+2016-05-20 22:17:55.596307 
+2016-05-20 22:17:55.596331 ## process/grounding/variable_id_partition ###################################
+2016-05-20 22:17:55.596351 : # Done: 2016-05-20T15:47:44-0700 (6h 30m 6s ago)
+2016-05-20 22:17:55.596370 # Done: 2016-05-20T15:47:44-0700 (6h 30m 4s ago)
+2016-05-20 22:17:55.596424 process/grounding/variable_id_partition/run.sh
+2016-05-20 22:17:55.608612 ++ dirname process/grounding/variable_id_partition/run.sh
+2016-05-20 22:17:55.613192 + cd process/grounding/variable_id_partition
+2016-05-20 22:17:55.613344 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable_id_partition
+2016-05-20 22:17:55.613407 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable_id_partition
+2016-05-20 22:17:55.613538 + : /Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/run/model/grounding
+2016-05-20 22:17:55.614661 + RANGE_BEGIN=0
+2016-05-20 22:17:55.614896 + partition_id_range has_spouse
+2016-05-20 22:17:55.615242 + variableCountTotal=0
+2016-05-20 22:17:55.615374 + read table begin excludeEnd
+2016-05-20 22:17:55.710294 + varPath=/Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/run/model/grounding/variable/has_spouse
+2016-05-20 22:17:55.710375 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/run/model/grounding/variable/has_spouse
+2016-05-20 22:17:55.713975 + cd /Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/run/model/grounding/variable/has_spouse
+2016-05-20 22:17:55.714043 + echo 0
+2016-05-20 22:17:55.715887 + echo 103
+2016-05-20 22:17:55.721590 + echo 103
+2016-05-20 22:17:55.727894 + variableCountTotal=103
+2016-05-20 22:17:55.727999 + read table begin excludeEnd
+2016-05-20 22:17:55.728053 + echo 103
+2016-05-20 22:17:55.733909 mark_done process/grounding/variable_id_partition
+2016-05-20 22:17:55.755493 ##############################################################################
+2016-05-20 22:17:55.755565 
+2016-05-20 22:17:55.755598 ## process/grounding/variable/has_spouse/assign_id ###########################
+2016-05-20 22:17:55.755620 : # Done: 2016-05-20T15:47:44-0700 (6h 30m 6s ago)
+2016-05-20 22:17:55.755640 # Done: 2016-05-20T15:47:44-0700 (6h 30m 4s ago)
+2016-05-20 22:17:55.755660 process/grounding/variable/has_spouse/assign_id/run.sh
+2016-05-20 22:17:55.765499 ++ dirname process/grounding/variable/has_spouse/assign_id/run.sh
+2016-05-20 22:17:55.771824 + cd process/grounding/variable/has_spouse/assign_id
+2016-05-20 22:17:55.772004 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable/has_spouse/assign_id
+2016-05-20 22:17:55.772049 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable/has_spouse/assign_id
+2016-05-20 22:17:55.772076 + : /Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/run/model/grounding
+2016-05-20 22:17:55.772098 + table=has_spouse
+2016-05-20 22:17:55.772122 + cd /Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/run/model/grounding/variable/has_spouse
+2016-05-20 22:17:55.772717 ++ cat id_begin
+2016-05-20 22:17:55.776166 + baseId=0
+2016-05-20 22:17:55.776227 + deepdive db assign_sequential_id has_spouse id 0
+2016-05-20 22:17:55.859928 NOTICE:  sequence "dd_seq_has_spouse_id" does not exist, skipping
+2016-05-20 22:17:55.867297 UPDATE 103
+2016-05-20 22:17:55.869069 mark_done process/grounding/variable/has_spouse/assign_id
+2016-05-20 22:17:55.885379 ##############################################################################
+2016-05-20 22:17:55.885453 
+2016-05-20 22:17:55.885479 ## process/grounding/factor/inf1_imply_has_spouse_has_spouse/materialize #####
+2016-05-20 22:17:55.885502 : # Done: 2016-05-20T15:47:44-0700 (6h 30m 6s ago)
+2016-05-20 22:17:55.885525 # Done: 2016-05-20T15:47:44-0700 (6h 30m 4s ago)
+2016-05-20 22:17:55.885549 process/grounding/factor/inf1_imply_has_spouse_has_spouse/materialize/run.sh
+2016-05-20 22:17:55.895717 ++ dirname process/grounding/factor/inf1_imply_has_spouse_has_spouse/materialize/run.sh
+2016-05-20 22:17:55.901052 + cd process/grounding/factor/inf1_imply_has_spouse_has_spouse/materialize
+2016-05-20 22:17:55.901216 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_imply_has_spouse_has_spouse/materialize
+2016-05-20 22:17:55.901276 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_imply_has_spouse_has_spouse/materialize
+2016-05-20 22:17:55.901310 + : /Users/emerson/Documents/Github/deepdive/examples/Coach_NBA/run/model/grounding
+2016-05-20 22:17:55.901382 + deepdive create table dd_factors_inf1_imply_has_spouse_has_spouse as '
+2016-05-20 22:17:55.901412           SELECT R0.id AS "has_spouse.R0.id" , R0.id AS "has_spouse.R0.id" 
+2016-05-20 22:17:55.901437           FROM has_spouse R0, has_spouse R1, spouse_candidate R2, spouse_candidate R3, spouse_candidate R4
+2016-05-20 22:17:55.901458         WHERE R1.p_id = R0.p_id  AND R1.t_id = R0.t_id  AND R2.p_id = R0.p_id  AND R2.t_id = R0.t_id  AND R3.t_id = R0.t_id  AND R4.p_id = R0.p_id '
+2016-05-20 22:17:56.104375 ERROR:  column r1.p_id does not exist
+2016-05-20 22:17:56.104440 LINE 4:         WHERE R1.p_id = R0.p_id  AND R1.t_id = R0.t_id  AND ...
+2016-05-20 22:17:56.104465                       ^

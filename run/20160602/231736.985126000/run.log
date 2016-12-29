@@ -1,0 +1,233 @@
+2016-06-02 23:17:45.483035 # on dhcp-169-233-187-63.cruznet.ucsc.edu: deepdive do probabilities
+2016-06-02 23:17:45.483463 # run/20160602/231736.985126000/plan.sh
+2016-06-02 23:17:45.483487 # execution plan for data/model/probabilities
+2016-06-02 23:17:45.483498 
+2016-06-02 23:17:45.483509 : ## process/init/app ##########################################################
+2016-06-02 23:17:45.483519 : # Done: 2016-05-22T17:21:25-0700 (11d 5h 56m 12s ago)
+2016-06-02 23:17:45.483530 : process/init/app/run.sh
+2016-06-02 23:17:45.483540 : mark_done process/init/app
+2016-06-02 23:17:45.483551 : ##############################################################################
+2016-06-02 23:17:45.483561 
+2016-06-02 23:17:45.483571 : ## process/init/relation/articles ############################################
+2016-06-02 23:17:45.483581 : # Done: 2016-05-23T12:16:43-0700 (10d 11h 54s ago)
+2016-06-02 23:17:45.483591 : process/init/relation/articles/run.sh
+2016-06-02 23:17:45.483601 : mark_done process/init/relation/articles
+2016-06-02 23:17:45.483611 : ##############################################################################
+2016-06-02 23:17:45.483621 
+2016-06-02 23:17:45.483632 : ## data/articles #############################################################
+2016-06-02 23:17:45.483642 : # Done: 2016-05-23T12:16:43-0700 (10d 11h 54s ago)
+2016-06-02 23:17:45.483651 : # no-op
+2016-06-02 23:17:45.483661 : mark_done data/articles
+2016-06-02 23:17:45.483671 : ##############################################################################
+2016-06-02 23:17:45.483681 
+2016-06-02 23:17:45.483691 : ## process/ext_sentences_by_nlp_markup #######################################
+2016-06-02 23:17:45.483701 : # Done: 2016-05-23T15:05:01-0700 (10d 8h 12m 36s ago)
+2016-06-02 23:17:45.483711 : process/ext_sentences_by_nlp_markup/run.sh
+2016-06-02 23:17:45.483720 : mark_done process/ext_sentences_by_nlp_markup
+2016-06-02 23:17:45.483730 : ##############################################################################
+2016-06-02 23:17:45.483740 
+2016-06-02 23:17:45.483750 : ## data/sentences ############################################################
+2016-06-02 23:17:45.483760 : # Done: 2016-05-23T15:05:01-0700 (10d 8h 12m 36s ago)
+2016-06-02 23:17:45.483770 : # no-op
+2016-06-02 23:17:45.483780 : mark_done data/sentences
+2016-06-02 23:17:45.483790 : ##############################################################################
+2016-06-02 23:17:45.483800 
+2016-06-02 23:17:45.483810 : ## process/ext_person_mention_by_map_person_mention ##########################
+2016-06-02 23:17:45.483819 : # Done: 2016-05-23T15:05:52-0700 (10d 8h 11m 45s ago)
+2016-06-02 23:17:45.483829 : process/ext_person_mention_by_map_person_mention/run.sh
+2016-06-02 23:17:45.483839 : mark_done process/ext_person_mention_by_map_person_mention
+2016-06-02 23:17:45.483849 : ##############################################################################
+2016-06-02 23:17:45.483859 
+2016-06-02 23:17:45.483869 : ## data/person_mention #######################################################
+2016-06-02 23:17:45.483878 : # Done: 2016-05-23T15:05:52-0700 (10d 8h 11m 45s ago)
+2016-06-02 23:17:45.483888 : # no-op
+2016-06-02 23:17:45.483898 : mark_done data/person_mention
+2016-06-02 23:17:45.483908 : ##############################################################################
+2016-06-02 23:17:45.483918 
+2016-06-02 23:17:45.483928 : ## process/init/relation/spouses_dbpedia #####################################
+2016-06-02 23:17:45.483937 : # Done: 2016-06-02T22:27:40-0700 (49m 57s ago)
+2016-06-02 23:17:45.483947 : process/init/relation/spouses_dbpedia/run.sh
+2016-06-02 23:17:45.483957 : mark_done process/init/relation/spouses_dbpedia
+2016-06-02 23:17:45.483967 : ##############################################################################
+2016-06-02 23:17:45.483977 
+2016-06-02 23:17:45.483987 : ## data/spouses_dbpedia ######################################################
+2016-06-02 23:17:45.483996 : # Done: 2016-06-02T22:27:40-0700 (49m 57s ago)
+2016-06-02 23:17:45.484006 : # no-op
+2016-06-02 23:17:45.484016 : mark_done data/spouses_dbpedia
+2016-06-02 23:17:45.484026 : ##############################################################################
+2016-06-02 23:17:45.484036 
+2016-06-02 23:17:45.484046 : ## process/ext_team_mention_by_map_team_mention ##############################
+2016-06-02 23:17:45.484056 : # Done: 2016-05-23T15:06:19-0700 (10d 8h 11m 18s ago)
+2016-06-02 23:17:45.484066 : process/ext_team_mention_by_map_team_mention/run.sh
+2016-06-02 23:17:45.484076 : mark_done process/ext_team_mention_by_map_team_mention
+2016-06-02 23:17:45.484086 : ##############################################################################
+2016-06-02 23:17:45.484095 
+2016-06-02 23:17:45.484105 : ## data/team_mention #########################################################
+2016-06-02 23:17:45.484115 : # Done: 2016-05-23T15:06:19-0700 (10d 8h 11m 18s ago)
+2016-06-02 23:17:45.484125 : # no-op
+2016-06-02 23:17:45.484134 : mark_done data/team_mention
+2016-06-02 23:17:45.484144 : ##############################################################################
+2016-06-02 23:17:45.484154 
+2016-06-02 23:17:45.484164 : ## process/ext_num_people ####################################################
+2016-06-02 23:17:45.484173 : # Done: 2016-05-23T15:06:46-0700 (10d 8h 10m 52s ago)
+2016-06-02 23:17:45.484183 : process/ext_num_people/run.sh
+2016-06-02 23:17:45.484193 : mark_done process/ext_num_people
+2016-06-02 23:17:45.484203 : ##############################################################################
+2016-06-02 23:17:45.484213 
+2016-06-02 23:17:45.484223 : ## data/num_people ###########################################################
+2016-06-02 23:17:45.484232 : # Done: 2016-05-23T15:06:46-0700 (10d 8h 10m 52s ago)
+2016-06-02 23:17:45.484242 : # no-op
+2016-06-02 23:17:45.484252 : mark_done data/num_people
+2016-06-02 23:17:45.484262 : ##############################################################################
+2016-06-02 23:17:45.484272 
+2016-06-02 23:17:45.484281 : ## process/ext_spouse_candidate ##############################################
+2016-06-02 23:17:45.484291 : # Done: 2016-05-23T15:07:38-0700 (10d 8h 10m ago)
+2016-06-02 23:17:45.484301 : process/ext_spouse_candidate/run.sh
+2016-06-02 23:17:45.484311 : mark_done process/ext_spouse_candidate
+2016-06-02 23:17:45.484320 : ##############################################################################
+2016-06-02 23:17:45.484330 
+2016-06-02 23:17:45.484340 : ## data/spouse_candidate #####################################################
+2016-06-02 23:17:45.484349 : # Done: 2016-05-23T15:07:38-0700 (10d 8h 10m ago)
+2016-06-02 23:17:45.484359 : # no-op
+2016-06-02 23:17:45.484369 : mark_done data/spouse_candidate
+2016-06-02 23:17:45.484379 : ##############################################################################
+2016-06-02 23:17:45.484388 
+2016-06-02 23:17:45.484398 : ## process/ext_spouse_label__0_by_supervise ##################################
+2016-06-02 23:17:45.484408 : # Done: 2016-05-23T15:08:48-0700 (10d 8h 8m 50s ago)
+2016-06-02 23:17:45.484418 : process/ext_spouse_label__0_by_supervise/run.sh
+2016-06-02 23:17:45.484427 : mark_done process/ext_spouse_label__0_by_supervise
+2016-06-02 23:17:45.484437 : ##############################################################################
+2016-06-02 23:17:45.484447 
+2016-06-02 23:17:45.484457 : ## data/spouse_label__0 ######################################################
+2016-06-02 23:17:45.484466 : # Done: 2016-05-23T15:08:48-0700 (10d 8h 8m 50s ago)
+2016-06-02 23:17:45.484476 : # no-op
+2016-06-02 23:17:45.484486 : mark_done data/spouse_label__0
+2016-06-02 23:17:45.484496 : ##############################################################################
+2016-06-02 23:17:45.484505 
+2016-06-02 23:17:45.484515 : ## process/ext_spouse_label ##################################################
+2016-06-02 23:17:45.484525 : # Done: 2016-06-02T22:28:10-0700 (49m 28s ago)
+2016-06-02 23:17:45.484535 : process/ext_spouse_label/run.sh
+2016-06-02 23:17:45.484545 : mark_done process/ext_spouse_label
+2016-06-02 23:17:45.484554 : ##############################################################################
+2016-06-02 23:17:45.484704 
+2016-06-02 23:17:45.484726 : ## data/spouse_label #########################################################
+2016-06-02 23:17:45.484746 : # Done: 2016-06-02T22:28:10-0700 (49m 28s ago)
+2016-06-02 23:17:45.484766 : # no-op
+2016-06-02 23:17:45.484785 : mark_done data/spouse_label
+2016-06-02 23:17:45.484805 : ##############################################################################
+2016-06-02 23:17:45.484824 
+2016-06-02 23:17:45.484844 : ## process/ext_spouse_label_resolved #########################################
+2016-06-02 23:17:45.484864 : # Done: 2016-06-02T22:28:10-0700 (49m 28s ago)
+2016-06-02 23:17:45.484883 : process/ext_spouse_label_resolved/run.sh
+2016-06-02 23:17:45.484902 : mark_done process/ext_spouse_label_resolved
+2016-06-02 23:17:45.484921 : ##############################################################################
+2016-06-02 23:17:45.484941 
+2016-06-02 23:17:45.484960 : ## data/spouse_label_resolved ################################################
+2016-06-02 23:17:45.484978 : # Done: 2016-06-02T22:28:10-0700 (49m 28s ago)
+2016-06-02 23:17:45.484998 : # no-op
+2016-06-02 23:17:45.485018 : mark_done data/spouse_label_resolved
+2016-06-02 23:17:45.485037 : ##############################################################################
+2016-06-02 23:17:45.485056 
+2016-06-02 23:17:45.485075 : ## process/init/relation/spouses_dbpedia_negative ############################
+2016-06-02 23:17:45.485094 : # Done: 2016-05-25T12:13:43-0700 (8d 11h 3m 55s ago)
+2016-06-02 23:17:45.485139 : process/init/relation/spouses_dbpedia_negative/run.sh
+2016-06-02 23:17:45.485173 : mark_done process/init/relation/spouses_dbpedia_negative
+2016-06-02 23:17:45.485198 : ##############################################################################
+2016-06-02 23:17:45.485220 
+2016-06-02 23:17:45.485242 : ## data/spouses_dbpedia_negative #############################################
+2016-06-02 23:17:45.485263 : # Done: 2016-06-02T22:50:00-0700 (27m 38s ago)
+2016-06-02 23:17:45.485283 : # no-op
+2016-06-02 23:17:45.485302 : mark_done data/spouses_dbpedia_negative
+2016-06-02 23:17:45.485320 : ##############################################################################
+2016-06-02 23:17:45.485338 
+2016-06-02 23:17:45.485357 : ## process/ext_has_spouse ####################################################
+2016-06-02 23:17:45.485376 : # Done: 2016-06-02T23:14:20-0700 (3m 18s ago)
+2016-06-02 23:17:45.485395 : process/ext_has_spouse/run.sh
+2016-06-02 23:17:45.485414 : mark_done process/ext_has_spouse
+2016-06-02 23:17:45.485433 : ##############################################################################
+2016-06-02 23:17:45.485452 
+2016-06-02 23:17:45.485472 : ## data/has_spouse ###########################################################
+2016-06-02 23:17:45.485490 : # Done: 2016-06-02T23:14:20-0700 (3m 18s ago)
+2016-06-02 23:17:45.485510 : # no-op
+2016-06-02 23:17:45.485531 : mark_done data/has_spouse
+2016-06-02 23:17:45.485551 : ##############################################################################
+2016-06-02 23:17:45.485571 
+2016-06-02 23:17:45.485590 ## process/grounding/variable_id_partition ###################################
+2016-06-02 23:17:45.485609 : # Done: 2016-05-30T23:28:10-0700 (2d 23h 49m 28s ago)
+2016-06-02 23:17:45.485628 # Done: 2016-05-30T23:28:10-0700 (2d 23h 49m 27s ago)
+2016-06-02 23:17:45.485649 process/grounding/variable_id_partition/run.sh
+2016-06-02 23:17:45.485670 ++ dirname process/grounding/variable_id_partition/run.sh
+2016-06-02 23:17:45.485692 + cd process/grounding/variable_id_partition
+2016-06-02 23:17:45.485713 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable_id_partition
+2016-06-02 23:17:45.485734 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable_id_partition
+2016-06-02 23:17:45.485754 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-06-02 23:17:45.485773 + RANGE_BEGIN=0
+2016-06-02 23:17:45.485793 + partition_id_range has_spouse
+2016-06-02 23:17:45.485810 + variableCountTotal=0
+2016-06-02 23:17:45.485832 + read table begin excludeEnd
+2016-06-02 23:17:45.533591 + varPath=/Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-06-02 23:17:45.533655 + mkdir -p /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-06-02 23:17:45.538404 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-06-02 23:17:45.538552 + echo 0
+2016-06-02 23:17:45.541195 + echo 3211
+2016-06-02 23:17:45.547281 + echo 3211
+2016-06-02 23:17:45.552028 + variableCountTotal=3211
+2016-06-02 23:17:45.552103 + read table begin excludeEnd
+2016-06-02 23:17:45.552142 + echo 3211
+2016-06-02 23:17:45.558530 mark_done process/grounding/variable_id_partition
+2016-06-02 23:17:45.582967 ##############################################################################
+2016-06-02 23:17:45.583046 
+2016-06-02 23:17:45.583075 ## process/grounding/variable/has_spouse/assign_id ###########################
+2016-06-02 23:17:45.583097 : # Done: 2016-05-30T23:28:10-0700 (2d 23h 49m 28s ago)
+2016-06-02 23:17:45.583118 # Done: 2016-05-30T23:28:10-0700 (2d 23h 49m 27s ago)
+2016-06-02 23:17:45.583139 process/grounding/variable/has_spouse/assign_id/run.sh
+2016-06-02 23:17:45.592029 ++ dirname process/grounding/variable/has_spouse/assign_id/run.sh
+2016-06-02 23:17:45.599645 + cd process/grounding/variable/has_spouse/assign_id
+2016-06-02 23:17:45.599841 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable/has_spouse/assign_id
+2016-06-02 23:17:45.599969 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/variable/has_spouse/assign_id
+2016-06-02 23:17:45.600019 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-06-02 23:17:45.600055 + table=has_spouse
+2016-06-02 23:17:45.600082 + cd /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding/variable/has_spouse
+2016-06-02 23:17:45.600798 ++ cat id_begin
+2016-06-02 23:17:45.605029 + baseId=0
+2016-06-02 23:17:45.605126 + deepdive db assign_sequential_id has_spouse id 0
+2016-06-02 23:17:45.702048 NOTICE:  sequence "dd_seq_has_spouse_id" does not exist, skipping
+2016-06-02 23:17:45.725949 UPDATE 3211
+2016-06-02 23:17:45.727594 mark_done process/grounding/variable/has_spouse/assign_id
+2016-06-02 23:17:45.748566 ##############################################################################
+2016-06-02 23:17:45.748641 
+2016-06-02 23:17:45.748667 ## process/grounding/factor/inf1_istrue_has_spouse/materialize ###############
+2016-06-02 23:17:45.748689 : # Done: 2016-05-30T23:28:10-0700 (2d 23h 49m 28s ago)
+2016-06-02 23:17:45.748708 # Done: 2016-05-30T23:28:10-0700 (2d 23h 49m 27s ago)
+2016-06-02 23:17:45.748727 process/grounding/factor/inf1_istrue_has_spouse/materialize/run.sh
+2016-06-02 23:17:45.760024 ++ dirname process/grounding/factor/inf1_istrue_has_spouse/materialize/run.sh
+2016-06-02 23:17:45.766937 + cd process/grounding/factor/inf1_istrue_has_spouse/materialize
+2016-06-02 23:17:45.767090 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_istrue_has_spouse/materialize
+2016-06-02 23:17:45.767131 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf1_istrue_has_spouse/materialize
+2016-06-02 23:17:45.767221 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-06-02 23:17:45.767313 + deepdive create table dd_factors_inf1_istrue_has_spouse as '
+2016-06-02 23:17:45.767348           SELECT R0.id AS "has_spouse.R0.id" 
+2016-06-02 23:17:45.767375           FROM has_spouse R0, person_mention R1, team_mention R2, spouses_dbpedia R3
+2016-06-02 23:17:45.767396         WHERE R1.mention_id = R0.p_id  AND R2.team_id = R0.t_id  AND R3.p_name = R1.mention_text  AND R3.t_name = R2.team_text '
+2016-06-02 23:17:46.099044 SELECT 312
+2016-06-02 23:17:46.100390 + deepdive create table dd_weights_inf1_istrue_has_spouse as 'SELECT true AS "isfixed"
+2016-06-02 23:17:46.100464      , 3 AS "initvalue"
+2016-06-02 23:17:46.100499      , -1 AS "id"'
+2016-06-02 23:17:46.368752 SELECT 1
+2016-06-02 23:17:46.370140 mark_done process/grounding/factor/inf1_istrue_has_spouse/materialize
+2016-06-02 23:17:46.388353 ##############################################################################
+2016-06-02 23:17:46.388410 
+2016-06-02 23:17:46.388435 ## process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize ######
+2016-06-02 23:17:46.388459 : # Done: 2016-05-30T23:28:11-0700 (2d 23h 49m 27s ago)
+2016-06-02 23:17:46.388481 # Done: 2016-05-30T23:28:11-0700 (2d 23h 49m 26s ago)
+2016-06-02 23:17:46.388502 process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize/run.sh
+2016-06-02 23:17:46.404711 ++ dirname process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize/run.sh
+2016-06-02 23:17:46.410508 + cd process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize
+2016-06-02 23:17:46.410666 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize
+2016-06-02 23:17:46.410702 + DEEPDIVE_CURRENT_PROCESS_NAME=process/grounding/factor/inf_imply_has_spouse_has_spouse/materialize
+2016-06-02 23:17:46.410763 + : /Users/emerson/Documents/Github/deepdive/examples/coach_nba/run/model/grounding
+2016-06-02 23:17:46.410848 + deepdive create table dd_factors_inf_imply_has_spouse_has_spouse as '
+2016-06-02 23:17:46.410875           SELECT R0.id AS "has_spouse.R0.id" , R0.id AS "has_spouse.R0.id" 
+2016-06-02 23:17:46.410897           FROM has_spouse R0, has_spouse R1, spouse_candidate R2, spouse_candidate R3, spouse_candidate R4
+2016-06-02 23:17:46.410920         WHERE R1.p_id = R0.p_id  AND R1.t_id = R0.t_id  AND R2.p_id = R0.p_id  AND R2.t_id = R0.t_id  AND R3.t_id = R0.t_id  AND R4.p_id = R0.p_id '
+2016-06-02 23:17:46.709115 ERROR:  column "has_spouse.R0.id" specified more than once
