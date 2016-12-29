@@ -8,13 +8,13 @@ app.ddlog has to be opened through vim in terminal.
 
 ###1. Download Postgresql
 	Installing Homebrew: 
-	`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 	Installing Postgresql with Homebrew:
-	`brew install postgresql`
+	brew install postgresql
 
 	Start the server:
-	`brew services start postgresql`
+	brew services start postgresql
 
 ###2. Access the database
 	sql -U $USER template1
