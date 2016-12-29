@@ -71,7 +71,7 @@ Apply the changes with “deepdive compile && deepdive do has_spouse“. One can
 ###8. Weighting Rules
 Declares inference rules for both learned weighting rules and manual weighting rules. Use “deepdive compile && deepdive do probabilities” to calculate the weights of the features and the marginal probabilities of variables.
 One can view the result in data view has_spouse_label_inference.
-##Below is a sql sentence query the more detailed joined result with prob > 0.9.
+Below is a sql sentence query the more detailed joined result with prob > 0.9.
 select mention_text, team_text, expectation from (select * from has_spouse_label_inference where expectation > 0.9) as a, person_mention, team_mention where p_id = mention_id and t_id = team_id order by team_text;
 
 ###9. Error Analysis
