@@ -6,6 +6,12 @@
 //  Copyright © 2016年 Emerson. All rights reserved.
 //
 
+/**
+* Simple word count program shows words with top frequency
+**/
+
+#define LOWER_FREQUENCY 100
+
 #include <iostream>
 #include <iostream>
 #include <fstream>
@@ -30,7 +36,6 @@ vector<string> Black_list()
     blackList.push_back("It");
     blackList.push_back("to");
     blackList.push_back("we");
-    
     return blackList;
 }
 
@@ -40,16 +45,13 @@ int main(int argc, const char * argv[]) {
     ifstream file = Open_File();
     
     
-    while(!file.eof())
-    {
+    while(!file.eof()) {
         file >> word;
         map[word]++;
     }
-    for(auto &it: map)
-    {
-        if(it.second < 100 && it.second > 30)
+    for(auto &it: map) 
+        if(it.second > LOWER_FREQUENCY)
             cout << it.first << " " << it.second << endl;
     }
-    
     return 0;
 }
